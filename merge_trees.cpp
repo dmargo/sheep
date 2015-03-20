@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
   }
 
   if (optind + 1 >= argc) {
-    printf("USAGE: merge_trees [options ...] first.tree second.tree ...\n");
+    printf("USAGE: merge_trees [options ...] first.tree second.tree\n");
     return 1;
   }
    
