@@ -59,7 +59,7 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
 
     By default graph2tree is serial, but it supports MPI through the -ir flags.
     Use -r for an MPI reduce. This is your bread-and-butter parallelism.
-    ***You must give an input sequence, or else the result of the tree reduce will be incoherent garbage.***
+    ***You must give an input sequence, or else the result of the distributed reduce will be incoherent garbage.***
     ***You can use the -i option or the degree_sequence binary to obtain a whole graph degree sequence.***
     Example: mpiexec -np 6 ./graph2tree $GRAPH -s $INPUT_SEQUENCE -o $OUTPUT_TREE -r
 
@@ -67,12 +67,13 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
     This gives you a fast, distributed method to compute the graph's degree sequence.
     Example: mpiexec -np 6 ./graph2tree $GRAPH -s $OUTPUT_SEQUENCE -o $OUTPUT_TREE -ir
 
-  usage: partition_tree $TREE $NUM_PARTITIONS [-g $GRAPH] [-s $SEQUENCE] [options...]
+  usage: partition_tree [options...] [-g $GRAPH] $SEQUENCE $TREE $NUM_PARTITIONS
     partition_tree partitions $TREE into $NUM_PARTITIONS parts.
     If $GRAPH is given then these partitions are then evaluated on $GRAPH.
     ***THIS TAKES TIME; THE EVALUATION CODE IS INTENDED TO BE EXHAUSTIVE, NOT EFFICIENT.***
 
-    Some of the evaluators require a $SEQUENCE; by default this is the degree sequence of $GRAPH.
+    partition_tree requires the $SEQUENCE of the $TREE.
+    If $GRAPH is given and $SEQUENCE is "-" then $SEQUENCE will be the degree sequence of $GRAPH.
     If you used a different $SEQUENCE to create the tree, then make sure to give the same sequence here.
     This is why ./graph2tree -i writes an output sequence; it's so you can reuse the same sequence here.
 
@@ -87,7 +88,7 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
       done
     See degree_sequence and merge_trees for more details.
 
-  usage: degree_sequence $INPUT_GRAPH $OUTPUT_SEQUENCE
+  usage: degree_sequence [options..] $INPUT_GRAPH $OUTPUT_SEQUENCE
     This produces a degree sequence for $INPUT_GRAPH and writes it to $OUTPUT_SEQUENCE.
     This is generally unnecessary; for in-memory graphs either let graph2tree compute its own sequence
     or use the -i option, described above. This is for out-of-memory graphs.
