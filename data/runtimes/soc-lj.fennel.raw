@@ -1,0 +1,112 @@
+
+Loaded in: 7011ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1699ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2556746 (0.037197%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17476ms
+Loaded in: 6666ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1710ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2558640 (0.037225%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17185ms
+Loaded in: 6754ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1706ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2557199 (0.037204%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17377ms
+Loaded in: 6739ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1701ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2557562 (0.037209%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17257ms
+Loaded in: 6726ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1714ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2557627 (0.037210%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17228ms
+Loaded in: 6766ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1718ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2557952 (0.037215%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17314ms
+Loaded in: 7381ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1714ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2557635 (0.037210%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17934ms
+Loaded in: 6710ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1692ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2556520 (0.037194%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17181ms
+Loaded in: 7426ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1689ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2556774 (0.037198%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17878ms
+Loaded in: 7249ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1717ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2556915 (0.037200%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17740ms
+Loaded in: 6774ms
+Nodes:4847571 Edges:68734582
+Actually created 2 partitions.
+First two partition sizes: 1447612 and 3399959
+Partitioning took: 1709ms
+edges cut: 13978967 (0.203376%)
+Vcom. vol: 3284936 (0.047792%)
+ECV(rand): 2557260 (0.037205%)
+ECV(hash): 2022426 (0.029424%)
+Finished in: 17351ms
+

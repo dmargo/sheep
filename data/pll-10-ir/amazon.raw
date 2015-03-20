@@ -1,0 +1,528 @@
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.115000 seconds
+Sorted in: 0.012000 seconds
+Mapped in: 0.087000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.105000 seconds
+Sorted in: 0.011000 seconds
+Mapped in: 0.088000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.104000 seconds
+Sorted in: 0.011000 seconds
+Mapped in: 0.087000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.122000 seconds
+Sorted in: 0.017000 seconds
+Mapped in: 0.090000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.117000 seconds
+Sorted in: 0.014000 seconds
+Mapped in: 0.088000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.116000 seconds
+Sorted in: 0.011000 seconds
+Mapped in: 0.088000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.111000 seconds
+Sorted in: 0.011000 seconds
+Mapped in: 0.087000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.122000 seconds
+Sorted in: 0.011000 seconds
+Mapped in: 0.085000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.125000 seconds
+Sorted in: 0.012000 seconds
+Mapped in: 0.088000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.123000 seconds
+Sorted in: 0.020000 seconds
+Mapped in: 0.090000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:0 c:1
+Loaded graph in: 0.116000 seconds
+Sorted in: 0.011000 seconds
+Mapped in: 0.087000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.351000 seconds
+Sorted in: 0.031000 seconds
+Mapped in: 0.071000 seconds
+Reduced in: 0.037000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.352000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.069000 seconds
+Reduced in: 0.039000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.351000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.071000 seconds
+Reduced in: 0.037000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.352000 seconds
+Sorted in: 0.033000 seconds
+Mapped in: 0.073000 seconds
+Reduced in: 0.038000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.350000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.071000 seconds
+Reduced in: 0.038000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.347000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.070000 seconds
+Reduced in: 0.038000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.354000 seconds
+Sorted in: 0.031000 seconds
+Mapped in: 0.072000 seconds
+Reduced in: 0.038000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.350000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.073000 seconds
+Reduced in: 0.038000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.352000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.073000 seconds
+Reduced in: 0.038000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.350000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.072000 seconds
+Reduced in: 0.038000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:0 c:2
+Loaded graph in: 0.354000 seconds
+Sorted in: 0.031000 seconds
+Mapped in: 0.071000 seconds
+Reduced in: 0.037000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.320000 seconds
+Sorted in: 0.036000 seconds
+Mapped in: 0.066000 seconds
+Reduced in: 0.067000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.321000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.069000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.324000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.066000 seconds
+Reduced in: 0.069000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.321000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.067000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.323000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.067000 seconds
+Reduced in: 0.063000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.320000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.068000 seconds
+Reduced in: 0.062000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.317000 seconds
+Sorted in: 0.036000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.070000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.322000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.068000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.319000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.066000 seconds
+Reduced in: 0.069000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.324000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.066000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:0 c:3
+Loaded graph in: 0.321000 seconds
+Sorted in: 0.034000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.068000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.308000 seconds
+Sorted in: 0.039000 seconds
+Mapped in: 0.068000 seconds
+Reduced in: 0.070000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.306000 seconds
+Sorted in: 0.039000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.071000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.306000 seconds
+Sorted in: 0.040000 seconds
+Mapped in: 0.063000 seconds
+Reduced in: 0.073000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.311000 seconds
+Sorted in: 0.038000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.072000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.310000 seconds
+Sorted in: 0.038000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.069000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.306000 seconds
+Sorted in: 0.039000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.070000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.308000 seconds
+Sorted in: 0.038000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.072000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.308000 seconds
+Sorted in: 0.039000 seconds
+Mapped in: 0.061000 seconds
+Reduced in: 0.077000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.304000 seconds
+Sorted in: 0.039000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.070000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.308000 seconds
+Sorted in: 0.038000 seconds
+Mapped in: 0.068000 seconds
+Reduced in: 0.069000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:0 c:4
+Loaded graph in: 0.305000 seconds
+Sorted in: 0.039000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.071000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.303000 seconds
+Sorted in: 0.043000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.092000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.306000 seconds
+Sorted in: 0.043000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.091000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.306000 seconds
+Sorted in: 0.043000 seconds
+Mapped in: 0.062000 seconds
+Reduced in: 0.094000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.306000 seconds
+Sorted in: 0.042000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.093000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.303000 seconds
+Sorted in: 0.044000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.091000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.304000 seconds
+Sorted in: 0.043000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.093000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.305000 seconds
+Sorted in: 0.042000 seconds
+Mapped in: 0.060000 seconds
+Reduced in: 0.096000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.303000 seconds
+Sorted in: 0.043000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.089000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.301000 seconds
+Sorted in: 0.044000 seconds
+Mapped in: 0.061000 seconds
+Reduced in: 0.095000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.299000 seconds
+Sorted in: 0.043000 seconds
+Mapped in: 0.061000 seconds
+Reduced in: 0.093000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:0 c:5
+Loaded graph in: 0.305000 seconds
+Sorted in: 0.043000 seconds
+Mapped in: 0.061000 seconds
+Reduced in: 0.095000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.295000 seconds
+Sorted in: 0.049000 seconds
+Mapped in: 0.062000 seconds
+Reduced in: 0.099000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.299000 seconds
+Sorted in: 0.049000 seconds
+Mapped in: 0.066000 seconds
+Reduced in: 0.098000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.296000 seconds
+Sorted in: 0.051000 seconds
+Mapped in: 0.066000 seconds
+Reduced in: 0.096000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.295000 seconds
+Sorted in: 0.050000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.096000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.297000 seconds
+Sorted in: 0.051000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.099000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.298000 seconds
+Sorted in: 0.049000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.098000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.303000 seconds
+Sorted in: 0.048000 seconds
+Mapped in: 0.063000 seconds
+Reduced in: 0.100000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.306000 seconds
+Sorted in: 0.049000 seconds
+Mapped in: 0.066000 seconds
+Reduced in: 0.095000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.298000 seconds
+Sorted in: 0.050000 seconds
+Mapped in: 0.064000 seconds
+Reduced in: 0.098000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.297000 seconds
+Sorted in: 0.049000 seconds
+Mapped in: 0.063000 seconds
+Reduced in: 0.101000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/amazon/com-amazon.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:0 c:6
+Loaded graph in: 0.299000 seconds
+Sorted in: 0.050000 seconds
+Mapped in: 0.065000 seconds
+Reduced in: 0.097000 seconds
+

@@ -1,0 +1,1038 @@
+dmargo@zod:~/jtree/src/jtree$ q[Kargstring[K[K[K[K[K[K[K[K[Kfor p in $(seq 2 32); do
+> for t in $seq 11); do
+bash: syntax error near unexpected token `)'
+dmargo@zod:~/jtree/src/jtree$ for p in $(seq 2 32); do for t in $seq 11); do[K[K[K[K[K[K[K[K[K[K[K(seq 11); do
+> argstring="${argstring} ${p}"
+> done
+> done
+dmargo@zod:~/jtree/src/jtree$ echo $argstring
+2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6 7 7 7 7 7 7 7 7 7 7 7 8 8 8 8 8 8 8 8 8 8 8 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12 12 12 13 13 13 13 13 13 13 13 13 13 13 14 14 14 14 14 14 14 14 14 14 14 15 15 15 15 15 15 15 15 15 15 15 16 16 16 16 16 16 16 16 16 16 16 17 17 17 17 17 17 17 17 17 17 17 18 18 18 18 18 18 18 18 18 18 18 19 19 19 19 19 19 19 19 19 19 19 20 20 20 20 20 20 20 20 20 20 20 21 21 21 21 21 21 21 21 21 21 21 22 22 22 22 22 22 22 22 22 22 22 23 23 23 23 23 23 23 23 23 23 23 24 24 24 24 24 24 24 24 24 24 24 25 25 25 25 25 25 25 25 25 25 25 26 26 26 26 26 26 26 26 26 26 26 27 27 27 27 27 27 27 27 27 27 27 28 28 28 28 28 28 28 28 28 28 28 29 29 29 29 29 29 29 29 29 29 29 30 30 30 30 30 30 30 30 30 30 30 31 31 31 31 31 31 31 31 31 31 31 32 32 32 32 32 32 32 32 32 32 32
+dmargo@zod:~/jtree/src/jtree$ ./fennel ~/data/orkut/com-orkut.ungraph.dat $argstring
+Loaded in: 12094ms
+Nodes:3072441 Edges:117185083
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1763ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1715ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1711ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1715ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1718ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1713ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1711ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1711ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1714ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1710ms
+Actually created 2 partitions.
+First two partition sizes: 1986325 and 1086116
+Partitioning took: 1716ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2065ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2064ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2071ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2062ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2059ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2066ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2065ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2061ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2063ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2058ms
+Actually created 3 partitions.
+First two partition sizes: 1336356 and 571245
+Partitioning took: 2063ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2120ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2119ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2117ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2120ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2121ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2119ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2120ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2121ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2121ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2118ms
+Actually created 4 partitions.
+First two partition sizes: 784094 and 768599
+Partitioning took: 2118ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2471ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2473ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2474ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2476ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2472ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2473ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2474ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2473ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2475ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2476ms
+Actually created 5 partitions.
+First two partition sizes: 585271 and 762249
+Partitioning took: 2475ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2855ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2853ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2853ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2854ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2853ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2853ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2853ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2855ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2853ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2852ms
+Actually created 6 partitions.
+First two partition sizes: 487698 and 623547
+Partitioning took: 2854ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3238ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3240ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3242ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3239ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3240ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3238ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3238ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3236ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3240ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3240ms
+Actually created 7 partitions.
+First two partition sizes: 446131 and 734920
+Partitioning took: 3239ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3722ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3720ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3722ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3722ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3723ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3719ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3722ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3719ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3721ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3720ms
+Actually created 8 partitions.
+First two partition sizes: 491735 and 111506
+Partitioning took: 3722ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4227ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4227ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4226ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4229ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4226ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4227ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4225ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4229ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4226ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4228ms
+Actually created 9 partitions.
+First two partition sizes: 513135 and 244692
+Partitioning took: 4229ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4476ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4478ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4477ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4479ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4477ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4478ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4476ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4478ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4479ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4476ms
+Actually created 10 partitions.
+First two partition sizes: 498359 and 361565
+Partitioning took: 4478ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4899ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4901ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4901ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4900ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4901ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4901ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4900ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4901ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4900ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4901ms
+Actually created 11 partitions.
+First two partition sizes: 385341 and 331423
+Partitioning took: 4901ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5474ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5475ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5476ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5474ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5476ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5474ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5476ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5473ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5475ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5475ms
+Actually created 12 partitions.
+First two partition sizes: 319186 and 256500
+Partitioning took: 5474ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5772ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5772ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5772ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5773ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5771ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5772ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5771ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5773ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5773ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5771ms
+Actually created 13 partitions.
+First two partition sizes: 317898 and 135667
+Partitioning took: 5771ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6217ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6216ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6218ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6218ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6217ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6218ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6217ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6217ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6217ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6217ms
+Actually created 14 partitions.
+First two partition sizes: 236948 and 174800
+Partitioning took: 6217ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6690ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6690ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6690ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6689ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6691ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6690ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6691ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6689ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6690ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6691ms
+Actually created 15 partitions.
+First two partition sizes: 224288 and 107651
+Partitioning took: 6690ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7240ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7240ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7241ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7240ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7240ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7241ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7240ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7240ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7241ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7240ms
+Actually created 16 partitions.
+First two partition sizes: 183397 and 194311
+Partitioning took: 7241ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7755ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7755ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7754ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7754ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7755ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7754ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7754ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7754ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7755ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7754ms
+Actually created 17 partitions.
+First two partition sizes: 220266 and 91227
+Partitioning took: 7754ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8101ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8101ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8099ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8100ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8101ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8101ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8100ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8101ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8100ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8100ms
+Actually created 18 partitions.
+First two partition sizes: 246882 and 123271
+Partitioning took: 8099ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8478ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8479ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8481ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8480ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8479ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8482ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8481ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8481ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8479ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8481ms
+Actually created 19 partitions.
+First two partition sizes: 197335 and 161526
+Partitioning took: 8482ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8942ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8943ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8943ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8946ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8943ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8942ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8944ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8945ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8942ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8943ms
+Actually created 20 partitions.
+First two partition sizes: 215570 and 174868
+Partitioning took: 8945ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9747ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9745ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9747ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9747ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9747ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9746ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9748ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9775ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9870ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9744ms
+Actually created 21 partitions.
+First two partition sizes: 197036 and 87351
+Partitioning took: 9891ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10176ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10167ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10152ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10157ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10153ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10155ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10153ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10154ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10155ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10153ms
+Actually created 22 partitions.
+First two partition sizes: 146478 and 132245
+Partitioning took: 10154ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10519ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10517ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10520ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10517ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10520ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10517ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10519ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10516ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10518ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10516ms
+Actually created 23 partitions.
+First two partition sizes: 193454 and 111105
+Partitioning took: 10520ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10873ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10874ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10875ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10872ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10876ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10871ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10876ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10872ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10874ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10870ms
+Actually created 24 partitions.
+First two partition sizes: 170157 and 52730
+Partitioning took: 10875ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11576ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11581ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11582ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11578ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11579ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11583ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11579ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11578ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11581ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11581ms
+Actually created 25 partitions.
+First two partition sizes: 170421 and 157034
+Partitioning took: 11582ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12128ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12129ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12128ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12130ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12132ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12126ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12129ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12133ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12124ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12126ms
+Actually created 26 partitions.
+First two partition sizes: 130929 and 149165
+Partitioning took: 12126ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12396ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12393ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12395ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12397ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12394ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12397ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12396ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12398ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12395ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12392ms
+Actually created 27 partitions.
+First two partition sizes: 155220 and 47743
+Partitioning took: 12391ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12936ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12937ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12935ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12936ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12935ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12935ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12940ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12937ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12940ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12938ms
+Actually created 28 partitions.
+First two partition sizes: 125023 and 62879
+Partitioning took: 12938ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13455ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13451ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13453ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13454ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13452ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13455ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13454ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13453ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13455ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13453ms
+Actually created 29 partitions.
+First two partition sizes: 138979 and 108652
+Partitioning took: 13453ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13988ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13989ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13987ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13988ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13987ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13988ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13988ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13987ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13989ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13987ms
+Actually created 30 partitions.
+First two partition sizes: 57669 and 119726
+Partitioning took: 13987ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14208ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14208ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14207ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14207ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14208ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14209ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14208ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14208ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14208ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14208ms
+Actually created 31 partitions.
+First two partition sizes: 78758 and 38820
+Partitioning took: 14207ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14893ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14892ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14929ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14907ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14894ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14893ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14894ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14894ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14892ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14891ms
+Actually created 32 partitions.
+First two partition sizes: 124113 and 111655
+Partitioning took: 14893ms
+Finished in: 2689406ms
+dmargo@zod:~/jtree/src/jtree$ exit
+exit

@@ -1,0 +1,528 @@
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.122000 seconds
+Sorted in: 0.204000 seconds
+Mapped in: 2.147000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.086000 seconds
+Sorted in: 0.206000 seconds
+Mapped in: 2.123000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.077000 seconds
+Sorted in: 0.203000 seconds
+Mapped in: 2.109000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.082000 seconds
+Sorted in: 0.204000 seconds
+Mapped in: 2.091000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.158000 seconds
+Sorted in: 0.204000 seconds
+Mapped in: 2.091000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.069000 seconds
+Sorted in: 0.203000 seconds
+Mapped in: 2.087000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.093000 seconds
+Sorted in: 0.202000 seconds
+Mapped in: 2.135000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.077000 seconds
+Sorted in: 0.205000 seconds
+Mapped in: 2.131000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.100000 seconds
+Sorted in: 0.204000 seconds
+Mapped in: 2.120000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.118000 seconds
+Sorted in: 0.204000 seconds
+Mapped in: 2.178000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 2.070000 seconds
+Sorted in: 0.204000 seconds
+Mapped in: 2.118000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .82763289 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.78068791 seconds.
+Reduced in .62267033 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .82514716 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.75622988 seconds.
+Reduced in .61271009 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .82626143 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.74942416 seconds.
+Reduced in .62222688 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .83178165 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.91307626 seconds.
+Reduced in .61317571 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .83297193 seconds.
+Loaded in 0.0 seconds.
+Mapped in 3.23541613 seconds.
+Reduced in .61344314 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .85565212 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.74583633 seconds.
+Reduced in .62032226 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .83206168 seconds.
+Loaded in 0.0 seconds.
+Mapped in 3.29395910 seconds.
+Reduced in .61311466 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .83462584 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.71526627 seconds.
+Reduced in .60876058 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .83044498 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.69963328 seconds.
+Reduced in .61538026 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .83273711 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.78765459 seconds.
+Reduced in .61872332 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .83010066 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.71274591 seconds.
+Reduced in .61458724 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .83971024 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.22582919 seconds.
+Reduced in 1.15798426 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .83256090 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.21406131 seconds.
+Reduced in 1.16142305 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .84755130 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.18992819 seconds.
+Reduced in 1.15228492 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .83251085 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.22249717 seconds.
+Reduced in 1.15736491 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .84088609 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.24550351 seconds.
+Reduced in 1.16527758 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .85452736 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.18127021 seconds.
+Reduced in 1.15827863 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .84863848 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.21703107 seconds.
+Reduced in 1.16733575 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .85247639 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.62532214 seconds.
+Reduced in 1.15881744 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .82881639 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.60537320 seconds.
+Reduced in 1.16262239 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .84617320 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.38454653 seconds.
+Reduced in 1.15615693 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .84667646 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.24748912 seconds.
+Reduced in 1.15699777 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .85109589 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.03793917 seconds.
+Reduced in 1.22797707 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .85468104 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.33229089 seconds.
+Reduced in 1.24293704 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .84439808 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.01023576 seconds.
+Reduced in 1.23018786 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .84341852 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.37385001 seconds.
+Reduced in 1.24771693 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .85733225 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.20376279 seconds.
+Reduced in 1.24551595 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .85654720 seconds.
+Loaded in 0.0 seconds.
+Mapped in 1.99627513 seconds.
+Reduced in 1.23943896 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .84885802 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.05673397 seconds.
+Reduced in 1.24284379 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .85169922 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.30664604 seconds.
+Reduced in 1.23399104 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .86028034 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.01843248 seconds.
+Reduced in 1.23179153 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .83477694 seconds.
+Loaded in 0.0 seconds.
+Mapped in 1.98538773 seconds.
+Reduced in 1.23479438 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .84010560 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.21590851 seconds.
+Reduced in 1.24450759 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .84787891 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.19924214 seconds.
+Reduced in 1.77715783 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .85252516 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.17976344 seconds.
+Reduced in 1.71055276 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .84878961 seconds.
+Loaded in 0.0 seconds.
+Mapped in 1.91889638 seconds.
+Reduced in 1.70519185 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .85241573 seconds.
+Loaded in 0.0 seconds.
+Mapped in 1.90907872 seconds.
+Reduced in 1.70407415 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .82736711 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.18015256 seconds.
+Reduced in 1.70292303 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .84520526 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.09116387 seconds.
+Reduced in 1.70188033 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .83013596 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.09589221 seconds.
+Reduced in 1.69988167 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .84612401 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.06720120 seconds.
+Reduced in 1.70555755 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .85186978 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.16435939 seconds.
+Reduced in 1.70277419 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .85108106 seconds.
+Loaded in 0.0 seconds.
+Mapped in 1.94621651 seconds.
+Reduced in 1.71636338 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .84777696 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.15315508 seconds.
+Reduced in 1.70151584 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .84421867 seconds.
+Loaded in 0.0 seconds.
+Mapped in 1.88509644 seconds.
+Reduced in 1.80437125 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .85058321 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.08549089 seconds.
+Reduced in 1.79781527 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .84651789 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.13150756 seconds.
+Reduced in 1.78827934 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .84742578 seconds.
+Loaded in 0.0 seconds.
+Mapped in 1.98210651 seconds.
+Reduced in 1.79027690 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .84960782 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.14839496 seconds.
+Reduced in 1.79985790 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .85936635 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.12040582 seconds.
+Reduced in 1.78074786 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .85324807 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.11124251 seconds.
+Reduced in 1.79263365 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .84914975 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.10431620 seconds.
+Reduced in 1.78974925 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .84588965 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.12212235 seconds.
+Reduced in 1.78653276 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .85078236 seconds.
+Loaded in 0.0 seconds.
+Mapped in 1.90661739 seconds.
+Reduced in 1.79251774 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/cit-patents/cit-Patents.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .84892180 seconds.
+Loaded in 0.0 seconds.
+Mapped in 2.05589599 seconds.
+Reduced in 1.78011692 seconds.
+

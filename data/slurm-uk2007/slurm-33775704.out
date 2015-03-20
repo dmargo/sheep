@@ -1,0 +1,2342 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 18 workers...
+s:0 a:1 i:0 r:0 c:18
+p: nodes:1 64
+Loaded graph in: 395.695000 seconds
+Sorted in: 81.186000 seconds
+Mapped in: 18.543000 seconds
+Reduced in: 126.442000 seconds
+Loaded graph in: 380.692000 seconds
+Sorted in: 112.506000 seconds
+Mapped in: 18.038000 seconds
+Reduced in: 126.650000 seconds
+Cannot open the input file: No such file or directory
+[holy2a05201:24951] *** Process received signal ***
+[holy2a05201:24951] Signal: Aborted (6)
+[holy2a05201:24951] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24920] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:24927] *** Process received signal ***
+[holy2a05201:24927] Signal: Aborted (6)
+[holy2a05201:24927] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24921] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:24922] *** Process received signal ***
+[holy2a05201:24922] Signal: Aborted (6)
+[holy2a05201:24922] Signal code:  (-6)
+[holy2a05201:24920] Signal: Aborted (6)
+[holy2a05201:24920] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24929] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:24931] *** Process received signal ***
+[holy2a05201:24931] Signal: Aborted (6)
+[holy2a05201:24931] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24949] *** Process received signal ***
+[holy2a05201:24949] Signal: Aborted (6)
+[holy2a05201:24949] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24953] *** Process received signal ***
+[holy2a05201:24953] Signal: Aborted (6)
+[holy2a05201:24953] Signal code:  (-6)
+[holy2a05201:24921] Signal: Aborted (6)
+[holy2a05201:24921] Signal code:  (-6)
+[holy2a05201:24929] Signal: Aborted (6)
+[holy2a05201:24929] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24933] *** Process received signal ***
+[holy2a05201:24933] Signal: Aborted (6)
+[holy2a05201:24933] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24941] *** Process received signal ***
+[holy2a05201:24941] Signal: Aborted (6)
+[holy2a05201:24941] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:24935] *** Process received signal ***
+[holy2a05201:24935] Signal: Aborted (6)
+[holy2a05201:24935] Signal code:  (-6)
+[holy2a05201:24943] *** Process received signal ***
+[holy2a05201:24943] Signal: Aborted (6)
+[holy2a05201:24943] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24937] *** Process received signal ***
+Cannot open the input file: No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:24945] *** Process received signal ***
+[holy2a05201:24945] Signal: Aborted (6)
+[holy2a05201:24945] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24937] Signal: Aborted (6)
+[holy2a05201:24937] Signal code:  (-6)
+[holy2a05201:24939] *** Process received signal ***
+[holy2a05201:24939] Signal: Aborted (6)
+[holy2a05201:24939] Signal code:  (-6)
+[holy2a05201:24947] *** Process received signal ***
+[holy2a05201:24947] Signal: Aborted (6)
+[holy2a05201:24947] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:24925] *** Process received signal ***
+[holy2a05201:24925] Signal: Aborted (6)
+[holy2a05201:24925] Signal code:  (-6)
+[holy2a05201:24925] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24925] [ 1] [holy2a05201:24947] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24947] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24947] [ 2] [holy2a05201:24939] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24939] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24939] [ 2] [holy2a05201:24945] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24945] [ 1] [holy2a05201:24931] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24931] [ 1] [holy2a05201:24949] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24949] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24949] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24939] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24939] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24939] [ 5] [holy2a05201:24951] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24951] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24951] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24951] [ 3] [holy2a05201:24927] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24927] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24927] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24927] [ 3] [holy2a05201:24953] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24953] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24953] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24953] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24925] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24925] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24925] [ 4] [holy2a05201:24920] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24920] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24920] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24920] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24920] [holy2a05201:24921] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24921] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24921] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24921] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24921] [holy2a05201:24929] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24929] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24929] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24929] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24929] [ 4] [holy2a05201:24941] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24941] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24941] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24941] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24941] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24941] [ 5] [holy2a05201:24943] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24943] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24943] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24943] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24943] [ 4] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24947] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24947] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24947] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24947] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24947] [ 7] [holy2a05201:24933] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24933] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24933] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24933] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24933] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24933] [ 5] [holy2a05201:24935] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24935] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24935] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24935] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24935] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24935] [holy2a05201:24937] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24937] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24937] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24937] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24937] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24937] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24937] [ 6] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24939] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24939] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24939] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24939] [ 9] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24951] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24951] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24951] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24951] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24951] [ 8] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24927] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24927] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24927] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24927] [ 7] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24953] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24953] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24953] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24953] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24953] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24925] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24925] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24925] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24925] [ 8] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24920] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24920] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24920] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24921] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24921] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24921] [ 7] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24929] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24929] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24929] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24929] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24941] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24941] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24941] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24943] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24943] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24943] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24943] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24947] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24947] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24947] *** End of error message ***
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24933] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24933] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24933] [ 8] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24935] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24935] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24935] [ 8] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24949] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24949] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24949] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24949] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24949] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24949] [ 8] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24945] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24945] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24945] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24945] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24945] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24945] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24945] [ 8] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24931] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24931] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24931] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24931] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24931] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24931] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24931] [ 8] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24937] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24937] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24937] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24937] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:24939] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24951] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24951] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24927] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24927] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24927] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24953] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24953] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24925] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24925] *** End of error message ***
+[holy2a05201:24920] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24920] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24920] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24921] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24921] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24921] *** End of error message ***
+[ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24929] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24929] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24941] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24941] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24943] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24943] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24933] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24933] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24935] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24935] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24949] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24949] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24945] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24945] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24931] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24931] *** End of error message ***
+[holy2a05201:24922] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:24922] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:24922] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:24922] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:24922] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:24922] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:24922] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:24922] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:24922] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:24922] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:24922] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 14 with PID 24947 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994243339475009/uk-2007-05-nat': No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25030] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25001] *** Process received signal ***
+[holy2a05201:25001] Signal: Aborted (6)
+[holy2a05201:25001] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25008] *** Process received signal ***
+[holy2a05201:25008] Signal: Aborted (6)
+[holy2a05201:25008] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25010] *** Process received signal ***
+[holy2a05201:25010] Signal: Aborted (6)
+[holy2a05201:25010] Signal code:  (-6)
+[holy2a05201:25030] Signal: Aborted (6)
+[holy2a05201:25030] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25002] *** Process received signal ***
+[holy2a05201:25002] Signal: Aborted (6)
+[holy2a05201:25002] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25004] *** Process received signal ***
+[holy2a05201:25004] Signal: Aborted (6)
+[holy2a05201:25004] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25012] *** Process received signal ***
+[holy2a05201:25012] Signal: Aborted (6)
+[holy2a05201:25012] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25014] *** Process received signal ***
+[holy2a05201:25014] Signal: Aborted (6)
+[holy2a05201:25014] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25022] *** Process received signal ***
+[holy2a05201:25022] Signal: Aborted (6)
+[holy2a05201:25022] Signal code:  (-6)
+[holy2a05201:25010] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25010] [ 1] [holy2a05201:25002] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25002] [ 1] [holy2a05201:25001] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25001] [ 1] [holy2a05201:25008] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25008] [ 1] [holy2a05201:25030] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25030] [ 1] [holy2a05201:25004] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25004] [ 1] [holy2a05201:25012] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25012] [ 1] Cannot open the input file: No such file or directory
+[holy2a05201:25016] *** Process received signal ***
+[holy2a05201:25016] Signal: Aborted (6)
+[holy2a05201:25016] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25018] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25024] *** Process received signal ***
+[holy2a05201:25024] Signal: Aborted (6)
+[holy2a05201:25024] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25026] *** Process received signal ***
+[holy2a05201:25026] Signal: Aborted (6)
+[holy2a05201:25026] Signal code:  (-6)
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25008] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25008] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25008] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25010] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25010] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25002] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25002] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25001] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25001] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25001] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25030] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25030] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25004] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25004] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25012] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25012] [ 3] Cannot open the input file: No such file or directory
+[holy2a05201:25020] *** Process received signal ***
+[holy2a05201:25020] Signal: Aborted (6)
+[holy2a05201:25020] Signal code:  (-6)
+[holy2a05201:25018] Signal: Aborted (6)
+[holy2a05201:25018] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25028] *** Process received signal ***
+[holy2a05201:25028] Signal: Aborted (6)
+[holy2a05201:25028] Signal code:  (-6)
+[holy2a05201:25022] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25022] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25022] [ 2] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25008] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25008] [ 6] Cannot open the input file: No such file or directory
+[holy2a05201:25006] *** Process received signal ***
+[holy2a05201:25006] Signal: Aborted (6)
+[holy2a05201:25006] Signal code:  (-6)
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25010] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25010] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25010] [ 6] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25002] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25002] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25002] [ 6] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25001] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25001] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25001] [ 7] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25030] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25030] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25030] [ 6] [holy2a05201:25014] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25014] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25014] [ 2] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25030] [ 7] [holy2a05201:25024] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25024] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25014] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25014] [ 4] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25008] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25008] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25008] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25008] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25010] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25010] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25010] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25010] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25002] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25002] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25002] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25002] *** End of error message ***
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25004] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25004] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25004] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25004] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25004] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25004] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25004] *** End of error message ***
+[holy2a05201:25016] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25016] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25016] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25016] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25016] [ 4] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25012] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25012] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25012] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25012] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25012] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25012] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25012] *** End of error message ***
+[holy2a05201:25028] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25028] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25028] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25028] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25028] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25028] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25028] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25028] [ 7] [holy2a05201:25026] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25026] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25026] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25026] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25026] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25026] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25026] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25026] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25026] [ 8] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25022] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25022] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25022] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25022] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25022] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25022] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25022] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25022] *** End of error message ***
+./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25014] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25014] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25014] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25014] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25014] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25014] *** End of error message ***
+[holy2a05201:25006] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25006] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25006] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25006] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25006] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25006] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25006] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25006] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25006] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25001] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25001] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25001] *** End of error message ***
+./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25016] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25016] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25016] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25016] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25016] [ 9] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25024] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25024] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25024] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25024] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25024] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25024] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25024] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25024] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25020] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25020] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25020] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25020] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25020] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25020] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25020] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25020] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25020] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25030] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25030] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25030] *** End of error message ***
+[holy2a05201:25018] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25018] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25018] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25018] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25018] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25018] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25018] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25018] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25018] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25018] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25016] *** End of error message ***
+[holy2a05201:25024] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25018] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25028] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25028] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25028] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25026] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25026] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25006] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25006] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25020] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25020] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 5 with PID 25010 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994244992931834/uk-2007-05-nat': No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25093] *** Process received signal ***
+[holy2a05201:25093] Signal: Aborted (6)
+[holy2a05201:25093] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25111] *** Process received signal ***
+[holy2a05201:25111] Signal: Aborted (6)
+[holy2a05201:25111] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25082] *** Process received signal ***
+[holy2a05201:25082] Signal: Aborted (6)
+[holy2a05201:25082] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25083] *** Process received signal ***
+[holy2a05201:25083] Signal: Aborted (6)
+[holy2a05201:25083] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25085] *** Process received signal ***
+[holy2a05201:25085] Signal: Aborted (6)
+[holy2a05201:25085] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25089] *** Process received signal ***
+[holy2a05201:25089] Signal: Aborted (6)
+[holy2a05201:25089] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25091] *** Process received signal ***
+[holy2a05201:25091] Signal: Aborted (6)
+[holy2a05201:25091] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25091] [ 0] Cannot open the input file: No such file or directory
+[holy2a05201:25095] *** Process received signal ***
+[holy2a05201:25095] Signal: Aborted (6)
+[holy2a05201:25095] Signal code:  (-6)
+[holy2a05201:25111] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25111] [ 1] [holy2a05201:25082] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25082] [ 1] [holy2a05201:25083] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25083] [ 1] [holy2a05201:25085] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25085] [ 1] [holy2a05201:25089] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25089] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+/lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25091] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25091] [ 2] Cannot open the input file: No such file or directory
+[holy2a05201:25097] *** Process received signal ***
+[holy2a05201:25097] Signal: Aborted (6)
+[holy2a05201:25097] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25099] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25103] *** Process received signal ***
+[holy2a05201:25103] Signal: Aborted (6)
+[holy2a05201:25103] Signal code:  (-6)
+[holy2a05201:25105] *** Process received signal ***
+[holy2a05201:25105] Signal: Aborted (6)
+[holy2a05201:25105] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25107] *** Process received signal ***
+[holy2a05201:25107] Signal: Aborted (6)
+[holy2a05201:25107] Signal code:  (-6)
+[holy2a05201:25093] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25093] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25093] [ 2] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25111] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25111] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25082] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25082] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25082] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25083] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25083] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25083] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25085] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25085] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25085] [ 4] [holy2a05201:25089] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25089] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25089] [ 4] Cannot open the input file: No such file or directory
+[holy2a05201:25101] *** Process received signal ***
+[holy2a05201:25101] Signal: Aborted (6)
+[holy2a05201:25101] Signal code:  (-6)
+[holy2a05201:25099] Signal: Aborted (6)
+[holy2a05201:25099] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25109] *** Process received signal ***
+[holy2a05201:25109] Signal: Aborted (6)
+[holy2a05201:25109] Signal code:  (-6)
+[holy2a05201:25095] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25095] [ 1] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25093] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25093] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25093] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25093] [ 6] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25111] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25111] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25111] [ 6] Cannot open the input file: No such file or directory
+[holy2a05201:25087] *** Process received signal ***
+[holy2a05201:25087] Signal: Aborted (6)
+[holy2a05201:25087] Signal code:  (-6)
+./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25082] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25082] [ 6] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25083] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25083] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25083] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25085] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25085] [ 6] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25091] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25091] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25091] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25091] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25091] [ 7] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25089] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25089] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25089] [ 7] [holy2a05201:25103] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25103] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25103] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25103] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25103] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25095] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25095] [ 3] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25093] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25093] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25093] [ 9] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25111] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25111] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25111] [ 9] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25082] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25082] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25082] [ 9] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25083] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25083] [ 9] ./graph2tree[0x41ed15]
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25085] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25085] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25085] [ 9] [holy2a05201:25097] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25097] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25097] [ 2] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25091] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25091] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25091] *** End of error message ***
+[holy2a05201:25105] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25105] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25105] [ 2] [holy2a05201:25099] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25099] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25099] [ 2] [holy2a05201:25107] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25107] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25107] [ 2] [holy2a05201:25101] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25101] [ 1] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25089] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25089] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25089] *** End of error message ***
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25105] [ 3] [holy2a05201:25109] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25109] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25109] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25109] [ 3] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25103] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25103] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25103] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25103] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25095] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25095] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25095] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25095] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25095] [ 8] ./graph2tree[0x41ed15]
+[holy2a05201:25093] *** End of error message ***
+[holy2a05201:25087] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25087] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25087] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25087] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25087] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25087] [ 5] ./graph2tree[0x41ed15]
+[holy2a05201:25111] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25082] *** End of error message ***
+[holy2a05201:25083] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25085] *** End of error message ***
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25097] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25097] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25097] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25097] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25097] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25097] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25097] [ 9] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25105] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25105] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25105] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25105] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25105] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25105] [ 9] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25109] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25109] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25109] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25109] [ 7] [holy2a05201:25103] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25103] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25095] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25095] *** End of error message ***
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25087] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25087] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25087] [ 8] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25107] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25107] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25107] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25107] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25107] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25107] [ 8] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25101] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25101] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25101] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25101] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25101] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25101] [ 7] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25099] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25099] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25099] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25099] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25099] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25099] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25087] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25087] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25107] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25107] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25101] [ 8] [holy2a05201:25099] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25099] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25097] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25105] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25109] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25109] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25109] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25101] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25101] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 25082 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994246524678077/uk-2007-05-nat': No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25195] *** Process received signal ***
+[holy2a05201:25195] Signal: Aborted (6)
+[holy2a05201:25195] Signal code:  (-6)
+[holy2a05201:25195] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25195] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25195] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25195] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25195] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25195] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25195] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25195] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25195] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25195] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25195] *** End of error message ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25197] *** Process received signal ***
+[holy2a05201:25197] Signal: Aborted (6)
+[holy2a05201:25197] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+Cannot open the input file: No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25171] *** Process received signal ***
+[holy2a05201:25171] Signal: Aborted (6)
+[holy2a05201:25171] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25164] *** Process received signal ***
+[holy2a05201:25164] Signal: Aborted (6)
+[holy2a05201:25164] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25173] *** Process received signal ***
+[holy2a05201:25173] Signal: Aborted (6)
+[holy2a05201:25173] Signal code:  (-6)
+[holy2a05201:25193] *** Process received signal ***
+[holy2a05201:25193] Signal: Aborted (6)
+[holy2a05201:25193] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25167] *** Process received signal ***
+[holy2a05201:25167] Signal: Aborted (6)
+[holy2a05201:25167] Signal code:  (-6)
+[holy2a05201:25165] *** Process received signal ***
+[holy2a05201:25165] Signal: Aborted (6)
+[holy2a05201:25165] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25175] *** Process received signal ***
+[holy2a05201:25175] Signal: Aborted (6)
+[holy2a05201:25175] Signal code:  (-6)
+[holy2a05201:25197] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25197] [ 1] Cannot open the input file: No such file or directory
+[holy2a05201:25177] *** Process received signal ***
+[holy2a05201:25177] Signal: Aborted (6)
+[holy2a05201:25177] Signal code:  (-6)
+[holy2a05201:25171] [ 0] [holy2a05201:25164] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25164] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25197] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25197] [ 3] Cannot open the input file: No such file or directory
+[holy2a05201:25185] *** Process received signal ***
+[holy2a05201:25185] Signal: Aborted (6)
+[holy2a05201:25185] Signal code:  (-6)
+[holy2a05201:25173] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25173] [ 1] [holy2a05201:25193] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25193] [ 1] [holy2a05201:25167] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25167] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25171] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25171] [ 2] [holy2a05201:25165] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25165] [ 1] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25164] [ 2] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25197] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25197] [ 5] [holy2a05201:25175] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25175] [ 1] [ 1] Cannot open the input file: No such file or directory
+[holy2a05201:25179] *** Process received signal ***
+[holy2a05201:25179] Signal: Aborted (6)
+[holy2a05201:25179] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25183] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25187] *** Process received signal ***
+[holy2a05201:25187] Signal: Aborted (6)
+[holy2a05201:25187] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25191] *** Process received signal ***
+[holy2a05201:25191] Signal: Aborted (6)
+[holy2a05201:25191] Signal code:  (-6)
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25197] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25197] [ 7] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25193] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25193] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25193] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25193] [ 5] [holy2a05201:25185] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25185] [ 1] [holy2a05201:25177] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25177] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25173] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25173] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25173] [ 4] Cannot open the input file: No such file or directory
+[holy2a05201:25169] *** Process received signal ***
+[holy2a05201:25169] Signal: Aborted (6)
+[holy2a05201:25169] Signal code:  (-6)
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25197] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25197] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25197] *** End of error message ***
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25175] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25175] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25175] [ 4] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25171] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25171] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25171] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25171] [ 6] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25165] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25165] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25165] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25165] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25167] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25167] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25167] [ 4] Cannot open the input file: No such file or directory
+[holy2a05201:25181] *** Process received signal ***
+[holy2a05201:25181] Signal: Aborted (6)
+[holy2a05201:25181] Signal code:  (-6)
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25164] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25164] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25164] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25164] [ 6] [holy2a05201:25183] Signal: Aborted (6)
+[holy2a05201:25183] Signal code:  (-6)
+[holy2a05201:25189] *** Process received signal ***
+[holy2a05201:25189] Signal: Aborted (6)
+[holy2a05201:25189] Signal code:  (-6)
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25193] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25193] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25193] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25193] [ 9] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25185] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25185] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25185] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25177] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25177] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25177] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25177] [ 5] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25173] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25173] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25173] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25173] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25175] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25175] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25175] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25175] [ 8] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25171] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25171] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25171] [ 9] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25165] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25165] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25165] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25167] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25167] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25167] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25167] [ 8] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25164] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25164] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25164] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25164] *** End of error message ***
+[holy2a05201:25187] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25187] [ 1] [holy2a05201:25183] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25183] [ 1] [holy2a05201:25191] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25191] [ 1] [holy2a05201:25189] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25189] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25189] [ 2] ./graph2tree[0x41ed15]
+[holy2a05201:25193] *** End of error message ***
+[holy2a05201:25185] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25185] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25185] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25185] [ 8] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25177] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25177] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25177] [ 8] [holy2a05201:25169] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25169] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25169] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25169] [ 3] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25173] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25173] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25171] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25165] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25165] *** End of error message ***
+[holy2a05201:25179] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25179] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25179] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25179] [ 3] [holy2a05201:25181] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25181] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25181] [ 2] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25167] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25167] *** End of error message ***
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25191] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25191] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25191] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25191] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25191] [ 6] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25185] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25185] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25177] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25177] *** End of error message ***
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25169] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25169] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25169] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25169] [ 7] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25175] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25175] *** End of error message ***
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25179] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25179] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25179] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25179] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25181] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25181] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25181] [ 5] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25187] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25187] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25187] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25187] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25187] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25187] [ 7] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25183] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25183] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25183] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25183] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25183] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25183] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25183] [ 8] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25189] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25189] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25189] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25189] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25189] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25191] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25191] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25169] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25169] [ 9] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25179] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25179] [ 9] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25181] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25181] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25181] [ 8] ./graph2tree[0x41ed15]
+[holy2a05201:25169] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25179] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25187] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25187] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25187] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25183] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25183] *** End of error message ***
+[holy2a05201:25189] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25189] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25189] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25191] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25191] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25181] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25181] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 16 with PID 25195 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994248046901833/uk-2007-05-nat': No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25276] *** Process received signal ***
+[holy2a05201:25276] Signal: Aborted (6)
+[holy2a05201:25276] Signal code:  (-6)
+[holy2a05201:25276] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25276] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25276] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25276] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25276] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25276] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25276] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25276] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25276] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25276] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25276] *** End of error message ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25278] *** Process received signal ***
+[holy2a05201:25278] Signal: Aborted (6)
+[holy2a05201:25278] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25245] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25252] *** Process received signal ***
+[holy2a05201:25252] Signal: Aborted (6)
+[holy2a05201:25252] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25245] Signal: Aborted (6)
+[holy2a05201:25245] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25256] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25274] *** Process received signal ***
+[holy2a05201:25256] Signal: Aborted (6)
+[holy2a05201:25256] Signal code:  (-6)
+[holy2a05201:25274] Signal: Aborted (6)
+[holy2a05201:25274] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25246] *** Process received signal ***
+[holy2a05201:25246] Signal: Aborted (6)
+[holy2a05201:25246] Signal code:  (-6)
+[holy2a05201:25248] *** Process received signal ***
+[holy2a05201:25248] Signal: Aborted (6)
+[holy2a05201:25248] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25254] *** Process received signal ***
+[holy2a05201:25254] Signal: Aborted (6)
+[holy2a05201:25254] Signal code:  (-6)
+[holy2a05201:25278] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25278] [ 1] Cannot open the input file: No such file or directory
+[holy2a05201:25258] *** Process received signal ***
+[holy2a05201:25258] Signal: Aborted (6)
+[holy2a05201:25258] Signal code:  (-6)
+[holy2a05201:25252] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25252] [ 1] [holy2a05201:25245] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25245] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25278] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25278] [ 3] [holy2a05201:25256] [ 0] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25278] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25278] [ 5] Cannot open the input file: No such file or directory
+[holy2a05201:25266] *** Process received signal ***
+[holy2a05201:25266] Signal: Aborted (6)
+[holy2a05201:25266] Signal code:  (-6)
+[holy2a05201:25254] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25254] [ 1] [holy2a05201:25274] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25274] [ 1] [holy2a05201:25246] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25246] [ 1] [holy2a05201:25248] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25248] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25252] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25252] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25245] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25245] [ 3] Cannot open the input file: No such file or directory
+[holy2a05201:25260] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25268] *** Process received signal ***
+[holy2a05201:25268] Signal: Aborted (6)
+[holy2a05201:25268] Signal code:  (-6)
+/lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25256] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25256] [ 2] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25254] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25254] [ 3] Cannot open the input file: No such file or directory
+[holy2a05201:25250] *** Process received signal ***
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25274] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25274] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25246] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25246] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25248] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25248] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25252] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25252] [ 5] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25245] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25245] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+Cannot open the input file: No such file or directory
+[holy2a05201:25262] *** Process received signal ***
+[holy2a05201:25262] Signal: Aborted (6)
+[holy2a05201:25262] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25264] *** Process received signal ***
+[holy2a05201:25264] Signal: Aborted (6)
+[holy2a05201:25264] Signal code:  (-6)
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25278] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25278] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25278] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25278] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25278] *** End of error message ***
+[holy2a05201:25260] Signal: Aborted (6)
+[holy2a05201:25260] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25270] *** Process received signal ***
+[holy2a05201:25270] Signal: Aborted (6)
+[holy2a05201:25270] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25272] *** Process received signal ***
+[holy2a05201:25272] Signal: Aborted (6)
+[holy2a05201:25272] Signal code:  (-6)
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25256] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25256] [ 4] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25274] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25274] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25274] [ 6] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25246] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25246] [ 5] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25248] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25248] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25248] [ 6] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25252] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25252] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25252] [ 8] [holy2a05201:25245] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25245] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25245] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25256] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25256] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25256] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25256] [ 8] [holy2a05201:25266] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25266] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25266] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25266] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25266] [ 4] [holy2a05201:25258] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25258] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25258] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25258] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25258] [ 4] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25254] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25254] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25254] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25254] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25254] [ 8] [holy2a05201:25250] Signal: Aborted (6)
+[holy2a05201:25250] Signal code:  (-6)
+[holy2a05201:25250] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25250] [ 1] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25266] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25266] [ 6] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25245] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25245] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25274] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25274] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25274] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25274] *** End of error message ***
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25246] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25246] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25246] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25246] [ 9] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25248] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25248] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25248] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25248] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25252] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25252] *** End of error message ***
+[holy2a05201:25260] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25260] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25260] [ 2] [holy2a05201:25270] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25270] [ 1] [holy2a05201:25268] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25268] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25268] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25268] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25268] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25268] [ 5] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25256] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25256] *** End of error message ***
+[holy2a05201:25272] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25272] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25272] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25272] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25272] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25250] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25250] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25250] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25250] [ 5] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25258] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25258] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25258] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25258] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25258] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25258] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25254] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25254] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25266] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25266] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25266] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25266] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25246] *** End of error message ***
+[holy2a05201:25262] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25262] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25262] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25262] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25262] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25262] [ 5] [holy2a05201:25264] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25264] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25264] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25264] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25264] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25260] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25260] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25260] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25260] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25260] [ 7] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25270] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25270] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25270] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25270] [ 5] [holy2a05201:25264] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25264] [ 6] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25270] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25270] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25270] [ 8] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25268] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25268] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25268] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25268] [ 9] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25272] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25272] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25272] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25272] [ 8] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25250] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25250] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25250] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25250] [ 9] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25262] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25262] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25262] [ 8] ./graph2tree[0x41ed15]
+[holy2a05201:25268] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25250] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25264] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25264] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25264] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25264] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25260] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25260] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25260] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25270] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25270] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25262] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25262] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25272] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25272] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 16 with PID 25276 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994249580568109/uk-2007-05-nat': No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25357] *** Process received signal ***
+[holy2a05201:25357] Signal: Aborted (6)
+[holy2a05201:25357] Signal code:  (-6)
+[holy2a05201:25357] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25357] [ 1] Cannot open the input file: No such file or directory
+[holy2a05201:25326] *** Process received signal ***
+[holy2a05201:25326] Signal: Aborted (6)
+[holy2a05201:25326] Signal code:  (-6)
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25357] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25357] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25357] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25357] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25357] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25357] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25357] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25357] [ 9] [holy2a05201:25326] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25326] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25326] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25326] [ 3] ./graph2tree[0x41ed15]
+[holy2a05201:25357] *** End of error message ***
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25326] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25326] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25326] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25326] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25326] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25326] [ 9] Cannot open the input file: No such file or directory
+[holy2a05201:25327] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25335] *** Process received signal ***
+[holy2a05201:25335] Signal: Aborted (6)
+[holy2a05201:25335] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25355] *** Process received signal ***
+[holy2a05201:25355] Signal: Aborted (6)
+[holy2a05201:25355] Signal code:  (-6)
+./graph2tree[0x41ed15]
+[holy2a05201:25326] *** End of error message ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25329] *** Process received signal ***
+[holy2a05201:25329] Signal: Aborted (6)
+[holy2a05201:25329] Signal code:  (-6)
+[holy2a05201:25327] Signal: Aborted (6)
+[holy2a05201:25327] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25337] *** Process received signal ***
+[holy2a05201:25337] Signal: Aborted (6)
+[holy2a05201:25337] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25339] *** Process received signal ***
+[holy2a05201:25339] Signal: Aborted (6)
+[holy2a05201:25339] Signal code:  (-6)
+[holy2a05201:25347] *** Process received signal ***
+[holy2a05201:25347] Signal: Aborted (6)
+[holy2a05201:25347] Signal code:  (-6)
+[holy2a05201:25335] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25335] [ 1] [holy2a05201:25327] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25327] [ 1] Cannot open the input file: No such file or directory
+[holy2a05201:25341] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25349] *** Process received signal ***
+[holy2a05201:25355] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25355] [ 1] [holy2a05201:25329] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25329] [ 1] [holy2a05201:25337] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25337] [ 1] Cannot open the input file: No such file or directory
+[holy2a05201:25343] *** Process received signal ***
+[holy2a05201:25341] Signal: Aborted (6)
+[holy2a05201:25341] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25351] *** Process received signal ***
+[holy2a05201:25349] Signal: Aborted (6)
+[holy2a05201:25349] Signal code:  (-6)
+[holy2a05201:25347] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25351] Signal: Aborted (6)
+[holy2a05201:25351] Signal code:  (-6)
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25355] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25355] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25335] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25335] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25329] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25329] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25327] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25327] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25327] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25337] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25337] [ 3] Cannot open the input file: No such file or directory
+[holy2a05201:25345] *** Process received signal ***
+[holy2a05201:25345] Signal: Aborted (6)
+[holy2a05201:25345] Signal code:  (-6)
+[holy2a05201:25343] Signal: Aborted (6)
+[holy2a05201:25343] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25353] *** Process received signal ***
+[holy2a05201:25353] Signal: Aborted (6)
+[holy2a05201:25353] Signal code:  (-6)
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25355] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25355] [ 5] [holy2a05201:25335] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25335] [ 5] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25327] [ 5] [holy2a05201:25339] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25339] [ 1] [holy2a05201:25347] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25347] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25347] [ 3] Cannot open the input file: No such file or directory
+[holy2a05201:25331] *** Process received signal ***
+[holy2a05201:25331] Signal: Aborted (6)
+[holy2a05201:25331] Signal code:  (-6)
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25339] [ 2] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25355] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25355] [ 7] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25329] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25329] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25329] [ 6] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25335] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25335] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25335] [ 8] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25337] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25337] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25337] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25337] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25327] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25327] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25327] [ 8] [holy2a05201:25341] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25341] [ 1] [holy2a05201:25349] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25349] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25349] [ 2] [holy2a05201:25331] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25331] [ 1] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25347] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25347] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25347] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25347] [ 7] [holy2a05201:25351] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25351] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25351] [ 2] [holy2a05201:25353] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25353] [ 1] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25339] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25339] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25339] [ 5] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25355] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25355] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25355] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25329] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25329] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25329] [ 9] ./graph2tree[0x41ed15]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25335] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25335] *** End of error message ***
+[ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25337] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25337] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25337] *** End of error message ***
+[holy2a05201:25345] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25345] [ 1] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25327] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25327] *** End of error message ***
+[holy2a05201:25343] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25343] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25343] [ 2] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25341] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25341] [ 3] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25343] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25341] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25341] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25341] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25341] [ 7] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25349] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25349] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25349] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25349] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25349] [ 7] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25331] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25331] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25331] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25331] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25331] [ 6] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25347] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25347] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25347] *** End of error message ***
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25351] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25351] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25351] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25351] [ 6] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25353] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25353] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25353] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25353] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25339] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25339] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25339] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25339] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25339] *** End of error message ***
+[holy2a05201:25329] *** End of error message ***
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25345] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25345] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25345] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25345] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25345] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25345] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25341] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25341] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25341] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25349] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25349] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25349] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25331] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25331] [ 8] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25351] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25351] [ 8] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25343] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25343] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25343] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25343] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25343] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25343] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25343] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25345] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25345] [ 9] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25331] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25331] *** End of error message ***
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25353] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25353] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25353] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25353] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25353] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25351] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25351] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25345] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 16 with PID 25357 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994251122781993/uk-2007-05-nat': No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25438] *** Process received signal ***
+[holy2a05201:25438] Signal: Aborted (6)
+[holy2a05201:25438] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25440] *** Process received signal ***
+[holy2a05201:25440] Signal: Aborted (6)
+[holy2a05201:25440] Signal code:  (-6)
+[holy2a05201:25438] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25438] [ 1] [holy2a05201:25440] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25440] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25440] [ 2] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25438] [ 2] Cannot open the input file: No such file or directory
+[holy2a05201:25422] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25428] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25430] *** Process received signal ***
+[holy2a05201:25430] Signal: Aborted (6)
+[holy2a05201:25430] Signal code:  (-6)
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25438] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25438] [ 4] Cannot open the input file: No such file or directory
+[holy2a05201:25424] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25426] *** Process received signal ***
+[holy2a05201:25426] Signal: Aborted (6)
+[holy2a05201:25426] Signal code:  (-6)
+[holy2a05201:25422] Signal: Aborted (6)
+[holy2a05201:25422] Signal code:  (-6)
+[holy2a05201:25428] Signal: Aborted (6)
+[holy2a05201:25428] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25432] *** Process received signal ***
+[holy2a05201:25432] Signal: Aborted (6)
+[holy2a05201:25432] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25434] *** Process received signal ***
+[holy2a05201:25434] Signal: Aborted (6)
+[holy2a05201:25434] Signal code:  (-6)
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25440] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25440] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25440] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25440] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25440] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25440] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25438] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25438] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25438] [ 7] [holy2a05201:25424] Signal: Aborted (6)
+[holy2a05201:25424] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25440] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25440] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25438] [ 8] [holy2a05201:25412] *** Process received signal ***
+[holy2a05201:25412] Signal: Aborted (6)
+[holy2a05201:25412] Signal code:  (-6)
+[holy2a05201:25422] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25422] [ 1] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25438] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25438] *** End of error message ***
+[holy2a05201:25430] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25430] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25430] [ 2] [holy2a05201:25424] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25424] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25424] [ 2] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25422] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25422] [ 3] [holy2a05201:25426] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25426] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25426] [ 2] [holy2a05201:25428] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25428] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25428] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25428] [ 3] [holy2a05201:25432] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25432] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25432] [ 2] Cannot open the input file: No such file or directory
+[holy2a05201:25436] *** Process received signal ***
+[holy2a05201:25436] Signal: Aborted (6)
+[holy2a05201:25436] Signal code:  (-6)
+[holy2a05201:25434] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25434] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25434] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25426] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25428] [ 4] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25434] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25434] [ 4] Cannot open the input file: No such file or directory
+[holy2a05201:25407] *** Process received signal ***
+[holy2a05201:25407] Signal: Aborted (6)
+[holy2a05201:25407] Signal code:  (-6)
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25430] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25430] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25430] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25430] [ 6] Cannot open the input file: No such file or directory
+[holy2a05201:25414] *** Process received signal ***
+[holy2a05201:25414] Signal: Aborted (6)
+[holy2a05201:25414] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25416] *** Process received signal ***
+[holy2a05201:25416] Signal: Aborted (6)
+[holy2a05201:25416] Signal code:  (-6)
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25422] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25422] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25422] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25422] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25422] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25434] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25434] [ 6] Cannot open the input file: No such file or directory
+[holy2a05201:25408] *** Process received signal ***
+[holy2a05201:25408] Signal: Aborted (6)
+[holy2a05201:25408] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25410] *** Process received signal ***
+[holy2a05201:25410] Signal: Aborted (6)
+[holy2a05201:25410] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25418] *** Process received signal ***
+[holy2a05201:25418] Signal: Aborted (6)
+[holy2a05201:25418] Signal code:  (-6)
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25424] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25424] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25424] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25424] [ 6] [holy2a05201:25412] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25412] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25412] [ 2] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25428] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25428] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25428] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25428] [ 8] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25426] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25426] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25426] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25426] [ 7] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25432] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25432] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25432] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25432] [ 6] [holy2a05201:25436] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25436] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25436] [ 2] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25434] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25434] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25434] [ 9] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25430] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25430] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25430] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25430] *** End of error message ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25420] *** Process received signal ***
+[holy2a05201:25420] Signal: Aborted (6)
+[holy2a05201:25420] Signal code:  (-6)
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25424] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25424] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25424] [ 9] ./graph2tree[0x41ed15]
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25412] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25412] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25412] [ 5] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25426] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25426] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25426] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25432] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25432] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25432] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25432] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25422] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25422] *** End of error message ***
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25436] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25436] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25436] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25436] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25436] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25436] [ 8] [holy2a05201:25408] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25408] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25408] [holy2a05201:25407] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25407] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25407] [ 2] ./graph2tree[0x41ed15]
+[holy2a05201:25434] *** End of error message ***
+[holy2a05201:25414] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25414] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25414] [ 2] [holy2a05201:25410] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25410] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25410] [ 2] [holy2a05201:25418] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25418] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25418] [ 2] [holy2a05201:25416] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25416] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25416] [ 2] [holy2a05201:25420] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25420] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25420] [ 2] [holy2a05201:25424] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25428] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25428] *** End of error message ***
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25412] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25412] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25412] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25412] [ 9] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25418] [ 3] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25420] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25420] ./graph2tree[0x41ed15]
+[holy2a05201:25412] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25436] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25436] *** End of error message ***
+[ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25408] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25408] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25408] [ 5] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25407] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25407] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25407] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25407] [ 6] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25414] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25414] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25414] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25414] [ 6] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25410] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25410] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25410] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25410] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25410] [ 7] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25408] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25408] [ 7] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25407] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25407] [ 8] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25414] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25414] [ 8] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25420] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25420] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25420] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25420] [ 8] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25416] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25416] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25416] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25416] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25416] [ 7] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25418] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25418] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25418] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25418] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25410] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25408] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25416] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25418] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25418] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25418] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25416] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25416] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25410] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25410] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25407] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25407] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25414] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25414] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25420] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25420] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25408] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25408] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 16 with PID 25438 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994252678659598/uk-2007-05-nat': No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25488] *** Process received signal ***
+[holy2a05201:25488] Signal: Aborted (6)
+[holy2a05201:25488] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25489] *** Process received signal ***
+[holy2a05201:25489] Signal: Aborted (6)
+[holy2a05201:25489] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25495] *** Process received signal ***
+[holy2a05201:25495] Signal: Aborted (6)
+[holy2a05201:25495] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25497] *** Process received signal ***
+[holy2a05201:25497] Signal: Aborted (6)
+[holy2a05201:25497] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25517] *** Process received signal ***
+[holy2a05201:25517] Signal: Aborted (6)
+[holy2a05201:25517] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25491] *** Process received signal ***
+[holy2a05201:25491] Signal: Aborted (6)
+[holy2a05201:25491] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25499] *** Process received signal ***
+[holy2a05201:25499] Signal: Aborted (6)
+[holy2a05201:25499] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25501] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25509] *** Process received signal ***
+[holy2a05201:25509] Signal: Aborted (6)
+[holy2a05201:25509] Signal code:  (-6)
+[holy2a05201:25497] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25497] [ 1] [holy2a05201:25501] Signal: Aborted (6)
+[holy2a05201:25501] Signal code:  (-6)
+[holy2a05201:25488] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25488] [ 1] [holy2a05201:25489] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25489] [ 1] [holy2a05201:25495] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25495] [ 1] [holy2a05201:25517] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25517] [ 1] [holy2a05201:25491] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25491] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25491] [holy2a05201:25499] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25499] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25499] [ 2] Cannot open the input file: No such file or directory
+[holy2a05201:25503] *** Process received signal ***
+[holy2a05201:25503] Signal: Aborted (6)
+[holy2a05201:25503] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25505] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25511] *** Process received signal ***
+[holy2a05201:25511] Signal: Aborted (6)
+[holy2a05201:25511] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25513] *** Process received signal ***
+[holy2a05201:25513] Signal: Aborted (6)
+[holy2a05201:25513] Signal code:  (-6)
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25495] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25495] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25495] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25488] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25488] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25488] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25489] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25489] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25489] [ 4] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25517] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25517] [ 3] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25491] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25491] [ 4] Cannot open the input file: No such file or directory
+[holy2a05201:25507] *** Process received signal ***
+[holy2a05201:25507] Signal: Aborted (6)
+[holy2a05201:25507] Signal code:  (-6)
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25497] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25497] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25497] [ 4] [holy2a05201:25505] Signal: Aborted (6)
+[holy2a05201:25505] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25515] *** Process received signal ***
+[holy2a05201:25515] Signal: Aborted (6)
+[holy2a05201:25515] Signal code:  (-6)
+[holy2a05201:25501] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25501] [ 1] Cannot open the input file: No such file or directory
+[holy2a05201:25493] *** Process received signal ***
+[holy2a05201:25493] Signal: Aborted (6)
+[holy2a05201:25493] Signal code:  (-6)
+./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25495] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25495] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25495] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25488] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25488] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25488] [ 7] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25489] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25489] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25489] [ 7] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25517] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25517] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25517] [ 6] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25499] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25499] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25499] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25499] [ 6] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25491] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25491] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25497] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25497] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25497] [ 7] [holy2a05201:25509] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25509] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25509] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25509] [ 3] [holy2a05201:25491] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25491] [ 8] [holy2a05201:25511] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25511] [ 1] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25497] [ 8] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25509] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25509] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25509] [ 6] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25501] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25501] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25501] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25501] [ 5] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25495] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25495] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25495] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25488] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25488] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25488] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25489] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25489] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25489] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25517] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25517] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25517] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25517] *** End of error message ***
+[holy2a05201:25503] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25503] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25503] [ 2] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25499] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25499] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25499] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25499] *** End of error message ***
+[holy2a05201:25515] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25515] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25515] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25515] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25515] [holy2a05201:25513] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25513] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25513] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25513] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25513] [ 4] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25509] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25509] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25509] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25509] *** End of error message ***
+[holy2a05201:25493] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25493] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25493] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25493] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25493] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25493] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25501] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25501] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25501] [ 8] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25503] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25503] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25503] [ 5] [holy2a05201:25507] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25507] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25507] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25507] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25507] [ 4] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25497] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25497] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25491] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25491] *** End of error message ***
+[holy2a05201:25505] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25505] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25505] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25505] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25505] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25505] [ 5] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25511] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25511] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25511] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25511] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25511] [ 6] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25501] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25501] *** End of error message ***
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25503] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25503] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25503] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25507] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25507] [ 6] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25505] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25505] [ 7] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25515] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25515] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25515] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25515] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25513] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25513] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25513] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25513] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25513] [ 9] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25493] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25493] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25493] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25493] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25493] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25505] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25505] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25505] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25515] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25515] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25513] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25511] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25511] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25511] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25511] *** End of error message ***
+[ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25503] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25503] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25507] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25507] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25507] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25507] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 6 with PID 25499 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994254226581644/uk-2007-05-nat': No such file or directory
+Cannot open the input file: No such file or directory
+[holy2a05201:25600] *** Process received signal ***
+[holy2a05201:25600] Signal: Aborted (6)
+[holy2a05201:25600] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25602] *** Process received signal ***
+[holy2a05201:25602] Signal: Aborted (6)
+[holy2a05201:25602] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25574] *** Process received signal ***
+[holy2a05201:25574] Signal: Aborted (6)
+[holy2a05201:25574] Signal code:  (-6)
+[holy2a05201:25600] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25600] [ 1] [holy2a05201:25602] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25602] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25602] [ 2] Cannot open the input file: No such file or directory
+[holy2a05201:25590] *** Process received signal ***
+[holy2a05201:25590] Signal: Aborted (6)
+[holy2a05201:25590] Signal code:  (-6)
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25600] [ 2] [holy2a05201:25574] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25574] [ 1] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25602] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25602] [ 4] Cannot open the input file: No such file or directory
+[holy2a05201:25592] *** Process received signal ***
+[holy2a05201:25592] Signal: Aborted (6)
+[holy2a05201:25592] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25594] *** Process received signal ***
+[holy2a05201:25594] Signal: Aborted (6)
+[holy2a05201:25594] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25596] *** Process received signal ***
+[holy2a05201:25596] Signal: Aborted (6)
+[holy2a05201:25596] Signal code:  (-6)
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25600] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25600] [ 4] Cannot open the input file: No such file or directory
+[holy2a05201:25584] *** Process received signal ***
+[holy2a05201:25584] Signal: Aborted (6)
+[holy2a05201:25584] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25586] *** Process received signal ***
+[holy2a05201:25586] Signal: Aborted (6)
+[holy2a05201:25586] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25588] *** Process received signal ***
+[holy2a05201:25588] Signal: Aborted (6)
+[holy2a05201:25588] Signal code:  (-6)
+./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25600] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25600] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25600] [ 7] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25574] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25574] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25574] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25602] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25602] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25602] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25602] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25600] [ 8] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25574] [ 5] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25602] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25602] *** End of error message ***
+[holy2a05201:25590] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25590] [ 1] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25574] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25574] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25574] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25600] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25600] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25574] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25574] *** End of error message ***
+[holy2a05201:25592] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25592] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25592] [ 2] [holy2a05201:25594] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25594] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25594] [ 2] Cannot open the input file: No such file or directory
+[holy2a05201:25598] *** Process received signal ***
+[holy2a05201:25598] Signal: Aborted (6)
+[holy2a05201:25598] Signal code:  (-6)
+[holy2a05201:25596] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25596] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25596] [ 2] [holy2a05201:25588] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25588] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25588] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25588] [ 3] [holy2a05201:25584] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25584] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25584] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25584] [ 3] [holy2a05201:25586] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25586] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25586] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25586] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25590] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25590] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25590] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25590] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25590] [ 6] Cannot open the input file: No such file or directory
+[holy2a05201:25569] *** Process received signal ***
+[holy2a05201:25569] Signal: Aborted (6)
+[holy2a05201:25569] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25570] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a05201:25572] *** Process received signal ***
+[holy2a05201:25572] Signal: Aborted (6)
+[holy2a05201:25572] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25576] *** Process received signal ***
+[holy2a05201:25576] Signal: Aborted (6)
+[holy2a05201:25576] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25578] *** Process received signal ***
+[holy2a05201:25578] Signal: Aborted (6)
+[holy2a05201:25578] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a05201:25580] *** Process received signal ***
+[holy2a05201:25580] Signal: Aborted (6)
+[holy2a05201:25580] Signal code:  (-6)
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25596] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25596] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25596] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25588] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25588] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25588] [ 6] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25584] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25584] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25584] [ 6] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25586] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25586] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25586] [ 6] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25592] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25592] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25592] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25592] [ 6] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25594] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25594] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25594] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25594] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25594] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25594] [ 8] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25590] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25590] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25590] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25590] *** End of error message ***
+[holy2a05201:25570] Signal: Aborted (6)
+[holy2a05201:25570] Signal code:  (-6)
+[holy2a05201:25596] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25596] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25596] [ 8] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25584] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25584] [ 8] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25592] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25592] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25598] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25598] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25598] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25598] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25598] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25598] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25588] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25588] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25588] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25588] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25596] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25596] *** End of error message ***
+./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25586] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25586] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25586] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25586] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25584] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25584] *** End of error message ***
+[holy2a05201:25592] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25592] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25594] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25594] *** End of error message ***
+[holy2a05201:25569] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25569] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25569] [ 2] [holy2a05201:25572] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25572] [ 1] [holy2a05201:25576] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25576] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25576] [ 2] [holy2a05201:25578] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25578] [ 1] [holy2a05201:25580] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25580] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25580] [ 2] [holy2a05201:25570] [ 0] /lib64/libpthread.so.0[0x31f060f710]
+[holy2a05201:25570] [ 1] [holy2a05201:25598] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25598] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25598] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25598] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25598] *** End of error message ***
+/lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25572] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25572] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25578] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25578] [ 3] /lib64/libc.so.6(gsignal+0x35)[0x31efe32625]
+[holy2a05201:25570] [ 2] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25570] [ 3] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25569] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25569] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25569] [ 5] /lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25576] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25576] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25576] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25572] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+/lib64/libc.so.6(abort+0x175)[0x31efe33e05]
+[holy2a05201:25580] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25580] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25580] [ 5] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25578] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25578] [ 5] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a05201:25570] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a05201:25570] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25570] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25578] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25578] [ 7] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25569] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25569] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25569] [ 8] [holy2a05201:25576] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25576] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25576] [ 8] [holy2a05201:25572] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25572] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25572] [ 7] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a05201:25580] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a05201:25580] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25572] [ 8] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25580] [ 8] [holy2a05201:25570] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25570] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25570] [ 9] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25580] [ 9] ./graph2tree[0x41ed15]
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a05201:25578] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25578] [ 9] ./graph2tree[0x41ed15]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25569] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25569] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25576] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25576] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x31efe1ed5d]
+[holy2a05201:25572] [ 9] ./graph2tree[0x41ed15]
+[holy2a05201:25572] *** End of error message ***
+./graph2tree[0x41ed15]
+[holy2a05201:25570] *** End of error message ***
+[holy2a05201:25580] *** End of error message ***
+[holy2a05201:25578] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 17 with PID 25602 on node holy2a05201 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1424994255771852959/uk-2007-05-nat': No such file or directory

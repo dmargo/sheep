@@ -1,0 +1,399 @@
+dmargo@zod:~/jtree/src/jtree/data/time$ fexitmv screenlog.0 soc-lj.metis.raw[10Pvim soc-lj.metis.raw diff soc-lj.metis.raw screenlog.0ls[Kcat soc-lj.metis.rawls[Kcd data/timescreen -dR metiscd jtree/src/jtree/exit[Kfor p in $(seq 11); do gpmetis ~/data/soc-lj/soc-LiveJournal1.adj 2; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kfor p in $(seq 11); do gpmetis ~/data/soc-lj/soc-LiveJournal1.adj 2; done[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@o[1@r[1@k[1P[1P[1P[1@/[1@o[1@r[1@k[3@ut/[1@c[1@o[1@m[15@-orkut.ungraph.[1@a[1@d[1@j[C[1@ [1P[1P[1@j
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.800 sec
+  Partitioning: 		  56.146 sec   (METIS time)
+  Reporting:    		   7.008 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.870 sec
+  Partitioning: 		  55.142 sec   (METIS time)
+  Reporting:    		   7.011 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.887 sec
+  Partitioning: 		  55.322 sec   (METIS time)
+  Reporting:    		   6.995 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.888 sec
+  Partitioning: 		  55.304 sec   (METIS time)
+  Reporting:    		   6.959 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.865 sec
+  Partitioning: 		  55.172 sec   (METIS time)
+  Reporting:    		   6.975 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   9.464 sec
+  Partitioning: 		  55.172 sec   (METIS time)
+  Reporting:    		   6.932 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.880 sec
+  Partitioning: 		  54.919 sec   (METIS time)
+  Reporting:    		   7.262 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.868 sec
+  Partitioning: 		  54.783 sec   (METIS time)
+  Reporting:    		   7.206 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.869 sec
+  Partitioning: 		  55.466 sec   (METIS time)
+  Reporting:    		   6.958 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.892 sec
+  Partitioning: 		  54.835 sec   (METIS time)
+  Reporting:    		   7.154 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/orkut/com-orkut.ungraph.adj, #Vertices: 3072441, #Edges: 117185083, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 5616165, communication volume: 852321.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 120603733, desired: 117185080, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 1 non-contiguous partitions.
+   Total components after removing the cut edges: 10,
+   max components: 9 for pid: 0.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   8.862 sec
+  Partitioning: 		  55.115 sec   (METIS time)
+  Reporting:    		   7.025 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 9934.357 MB
+******************************************************************************
+dmargo@zod:~/jtree/src/jtree/data/time$ exit
+exit

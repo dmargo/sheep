@@ -1,0 +1,110 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 6 workers...
+s:0 a:1 i:0 r:0 c:6
+p: nodes:2 3(x2)
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33962028
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat
+sbcast: dest       = /scratch/uk-2007-05-nat.dat
+sbcast: -----------------------------
+sbcast: modes    = 100664
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Sat Feb 28 07:04:41 2015
+sbcast: mtime    = Mon Feb 23 05:56:08 2015
+sbcast: ctime    = Mon Feb 23 18:46:58 2015
+sbcast: size     = 44864803776
+sbcast: -----------------------------
+sbcast: jobid      = 33962028
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: node_cnt   = 2
+sbcast: node_list  = holy2a[01204,06104]
+sbcast: Sbcast_cred: Jobid   33962028
+sbcast: Sbcast_cred: Nodes   holy2a[01204,06104]
+sbcast: Sbcast_cred: ctime   Sat Feb 28 07:55:22 2015
+sbcast: Sbcast_cred: Expire  Sat Feb 28 10:55:20 2015
+sbcast: error: REQUEST_FILE_BCAST(holy2a01204): Invalid job credential
+sbcast: error: REQUEST_FILE_BCAST(holy2a06104): Invalid job credential
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33962028
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat.ini
+sbcast: dest       = /scratch/uk-2007-05-nat.dat.ini
+sbcast: -----------------------------
+sbcast: modes    = 100664
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Sat Feb 28 07:04:44 2015
+sbcast: mtime    = Mon Feb 23 05:56:08 2015
+sbcast: ctime    = Tue Feb 24 02:52:49 2015
+sbcast: size     = 75
+sbcast: -----------------------------
+sbcast: jobid      = 33962028
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: node_cnt   = 2
+sbcast: node_list  = holy2a[01204,06104]
+sbcast: Sbcast_cred: Jobid   33962028
+sbcast: Sbcast_cred: Nodes   holy2a[01204,06104]
+sbcast: Sbcast_cred: ctime   Sat Feb 28 08:17:27 2015
+sbcast: Sbcast_cred: Expire  Sat Feb 28 10:55:20 2015
+Loaded graph in: 255.678000 seconds
+Sorted in: 241.368000 seconds
+Mapped in: 22.808000 seconds
+Reduced in: 28.349000 seconds
+Loaded graph in: 257.544000 seconds
+Sorted in: 154.961000 seconds
+Mapped in: 22.639000 seconds
+Reduced in: 28.720000 seconds
+Loaded graph in: 256.917000 seconds
+Sorted in: 156.974000 seconds
+Mapped in: 22.883000 seconds
+Reduced in: 28.455000 seconds
+Loaded graph in: 254.790000 seconds
+Sorted in: 157.793000 seconds
+Mapped in: 22.857000 seconds
+Reduced in: 28.396000 seconds
+Loaded graph in: 254.599000 seconds
+Sorted in: 157.513000 seconds
+Mapped in: 22.622000 seconds
+Reduced in: 28.618000 seconds
+Loaded graph in: 254.552000 seconds
+Sorted in: 157.849000 seconds
+Mapped in: 22.843000 seconds
+Reduced in: 28.438000 seconds
+Loaded graph in: 254.704000 seconds
+Sorted in: 157.235000 seconds
+Mapped in: 22.917000 seconds
+Reduced in: 28.416000 seconds
+Loaded graph in: 255.956000 seconds
+Sorted in: 157.469000 seconds
+Mapped in: 22.834000 seconds
+Reduced in: 29.052000 seconds
+--------------------------------------------------------------------------
+An ORTE daemon has unexpectedly failed after launch and before
+communicating back to mpirun. This could be caused by a number
+of factors, including an inability to create a connection back
+to mpirun due to a lack of common network interfaces and/or no
+route found between them. Please check network connectivity
+(including firewalls and network routing requirements).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/uk-2007/1425133361281501615/uk-2007-05-nat': No such file or directory
+Loaded graph in: 254.313000 seconds
+Sorted in: 158.672000 seconds
+Mapped in: 23.220000 seconds
+Reduced in: 28.071000 seconds
+Loaded graph in: 254.620000 seconds
+Sorted in: 157.881000 seconds
+Mapped in: 22.864000 seconds
+Reduced in: 28.397000 seconds

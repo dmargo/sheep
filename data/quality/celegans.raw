@@ -1,0 +1,321 @@
+Mapped in .15263686 seconds.
+Loaded in: 0ms
+TREEFAQS: width:17	roots:1
+	vheight:155	eheight:1239
+	verts:297	edges:2148
+	halo:19	core:0
+	fill:0
+Actually created 2 partitions.
+First two partition sizes: 148 and 149
+Partitioning took: 0ms
+edges cut: 836 (0.389199%)
+Vcom. vol: 255 (0.118715%)
+ECV(rand): 241 (0.112197%)
+ECV(down): 108 (0.050279%)
+ECV(up)  : 147 (0.068436%)
+Actually created 4 partitions.
+First two partition sizes: 87 and 93
+Partitioning took: 0ms
+edges cut: 1308 (0.608939%)
+Vcom. vol: 606 (0.282123%)
+ECV(rand): 489 (0.227654%)
+ECV(down): 183 (0.085196%)
+ECV(up)  : 422 (0.196462%)
+Actually created 4 partitions.
+First two partition sizes: 76 and 71
+Partitioning took: 0ms
+edges cut: 1308 (0.608939%)
+Vcom. vol: 588 (0.273743%)
+ECV(rand): 486 (0.226257%)
+ECV(down): 247 (0.114991%)
+ECV(up)  : 340 (0.158287%)
+Actually created 5 partitions.
+First two partition sizes: 66 and 59
+Partitioning took: 0ms
+edges cut: 1393 (0.648510%)
+Vcom. vol: 691 (0.321695%)
+ECV(rand): 562 (0.261639%)
+ECV(down): 287 (0.133613%)
+ECV(up)  : 401 (0.186685%)
+Actually created 7 partitions.
+First two partition sizes: 54 and 49
+Partitioning took: 0ms
+edges cut: 1612 (0.750466%)
+Vcom. vol: 1008 (0.469274%)
+ECV(rand): 778 (0.362197%)
+ECV(down): 379 (0.176443%)
+ECV(up)  : 626 (0.291434%)
+Actually created 7 partitions.
+First two partition sizes: 45 and 41
+Partitioning took: 0ms
+edges cut: 1543 (0.718343%)
+Vcom. vol: 946 (0.440410%)
+ECV(rand): 720 (0.335196%)
+ECV(down): 418 (0.194600%)
+ECV(up)  : 525 (0.244413%)
+Actually created 8 partitions.
+First two partition sizes: 40 and 39
+Partitioning took: 0ms
+edges cut: 1621 (0.754655%)
+Vcom. vol: 1077 (0.501397%)
+ECV(rand): 796 (0.370577%)
+ECV(down): 466 (0.216946%)
+ECV(up)  : 607 (0.282588%)
+Actually created 9 partitions.
+First two partition sizes: 37 and 38
+Partitioning took: 0ms
+edges cut: 1620 (0.754190%)
+Vcom. vol: 1112 (0.517691%)
+ECV(rand): 817 (0.380354%)
+ECV(down): 515 (0.239758%)
+ECV(up)  : 585 (0.272346%)
+Actually created 10 partitions.
+First two partition sizes: 32 and 31
+Partitioning took: 0ms
+edges cut: 1679 (0.781657%)
+Vcom. vol: 1250 (0.581937%)
+ECV(rand): 903 (0.420391%)
+ECV(down): 566 (0.263501%)
+ECV(up)  : 681 (0.317039%)
+Actually created 11 partitions.
+First two partition sizes: 29 and 30
+Partitioning took: 0ms
+edges cut: 1708 (0.795158%)
+Vcom. vol: 1352 (0.629423%)
+ECV(rand): 958 (0.445996%)
+ECV(down): 623 (0.290037%)
+ECV(up)  : 723 (0.336592%)
+Actually created 13 partitions.
+First two partition sizes: 27 and 27
+Partitioning took: 0ms
+edges cut: 1780 (0.828678%)
+Vcom. vol: 1538 (0.716015%)
+ECV(rand): 1066 (0.496276%)
+ECV(down): 654 (0.304469%)
+ECV(up)  : 881 (0.410149%)
+Actually created 13 partitions.
+First two partition sizes: 25 and 23
+Partitioning took: 0ms
+edges cut: 1751 (0.815177%)
+Vcom. vol: 1491 (0.694134%)
+ECV(rand): 1032 (0.480447%)
+ECV(down): 698 (0.324953%)
+ECV(up)  : 787 (0.366387%)
+Actually created 14 partitions.
+First two partition sizes: 24 and 21
+Partitioning took: 0ms
+edges cut: 1758 (0.818436%)
+Vcom. vol: 1519 (0.707169%)
+ECV(rand): 1041 (0.484637%)
+ECV(down): 703 (0.327281%)
+ECV(up)  : 811 (0.377561%)
+Actually created 16 partitions.
+First two partition sizes: 24 and 19
+Partitioning took: 0ms
+edges cut: 1792 (0.834264%)
+Vcom. vol: 1734 (0.807263%)
+ECV(rand): 1162 (0.540968%)
+ECV(down): 763 (0.355214%)
+ECV(up)  : 965 (0.449255%)
+Actually created 16 partitions.
+First two partition sizes: 25 and 19
+Partitioning took: 0ms
+edges cut: 1767 (0.822626%)
+Vcom. vol: 1617 (0.752793%)
+ECV(rand): 1088 (0.506518%)
+ECV(down): 773 (0.359870%)
+ECV(up)  : 838 (0.390130%)
+Actually created 18 partitions.
+First two partition sizes: 21 and 17
+Partitioning took: 0ms
+edges cut: 1832 (0.852886%)
+Vcom. vol: 1828 (0.851024%)
+ECV(rand): 1213 (0.564711%)
+ECV(down): 824 (0.383613%)
+ECV(up)  : 997 (0.464153%)
+Actually created 19 partitions.
+First two partition sizes: 20 and 16
+Partitioning took: 0ms
+edges cut: 1842 (0.857542%)
+Vcom. vol: 1838 (0.855680%)
+ECV(rand): 1207 (0.561918%)
+ECV(down): 868 (0.404097%)
+ECV(up)  : 963 (0.448324%)
+Actually created 20 partitions.
+First two partition sizes: 18 and 16
+Partitioning took: 0ms
+edges cut: 1846 (0.859404%)
+Vcom. vol: 1935 (0.900838%)
+ECV(rand): 1264 (0.588454%)
+ECV(down): 878 (0.408752%)
+ECV(up)  : 1051 (0.489292%)
+Actually created 21 partitions.
+First two partition sizes: 17 and 15
+Partitioning took: 0ms
+edges cut: 1857 (0.864525%)
+Vcom. vol: 1962 (0.913408%)
+ECV(rand): 1279 (0.595438%)
+ECV(down): 915 (0.425978%)
+ECV(up)  : 1041 (0.484637%)
+Actually created 21 partitions.
+First two partition sizes: 19 and 14
+Partitioning took: 0ms
+edges cut: 1843 (0.858007%)
+Vcom. vol: 1913 (0.890596%)
+ECV(rand): 1230 (0.572626%)
+ECV(down): 932 (0.433892%)
+ECV(up)  : 970 (0.451583%)
+Actually created 23 partitions.
+First two partition sizes: 17 and 13
+Partitioning took: 0ms
+edges cut: 1882 (0.876164%)
+Vcom. vol: 2104 (0.979516%)
+ECV(rand): 1334 (0.621043%)
+ECV(down): 975 (0.453911%)
+ECV(up)  : 1118 (0.520484%)
+Actually created 24 partitions.
+First two partition sizes: 15 and 13
+Partitioning took: 0ms
+edges cut: 1880 (0.875233%)
+Vcom. vol: 2099 (0.977188%)
+ECV(rand): 1344 (0.625698%)
+ECV(down): 990 (0.460894%)
+ECV(up)  : 1102 (0.513035%)
+Actually created 25 partitions.
+First two partition sizes: 13 and 14
+Partitioning took: 0ms
+edges cut: 1868 (0.869646%)
+Vcom. vol: 2084 (0.970205%)
+ECV(rand): 1326 (0.617318%)
+ECV(down): 1006 (0.468343%)
+ECV(up)  : 1070 (0.498138%)
+Actually created 26 partitions.
+First two partition sizes: 14 and 14
+Partitioning took: 0ms
+edges cut: 1875 (0.872905%)
+Vcom. vol: 2073 (0.965084%)
+ECV(rand): 1290 (0.600559%)
+ECV(down): 1040 (0.484171%)
+ECV(up)  : 1018 (0.473929%)
+Actually created 27 partitions.
+First two partition sizes: 12 and 14
+Partitioning took: 0ms
+edges cut: 1895 (0.882216%)
+Vcom. vol: 2208 (1.027933%)
+ECV(rand): 1373 (0.639199%)
+ECV(down): 1057 (0.492086%)
+ECV(up)  : 1139 (0.530261%)
+Actually created 28 partitions.
+First two partition sizes: 13 and 14
+Partitioning took: 0ms
+edges cut: 1885 (0.877561%)
+Vcom. vol: 2150 (1.000931%)
+ECV(rand): 1348 (0.627561%)
+ECV(down): 1087 (0.506052%)
+ECV(up)  : 1051 (0.489292%)
+Actually created 29 partitions.
+First two partition sizes: 12 and 12
+Partitioning took: 0ms
+edges cut: 1895 (0.882216%)
+Vcom. vol: 2204 (1.026071%)
+ECV(rand): 1373 (0.639199%)
+ECV(down): 1062 (0.494413%)
+ECV(up)  : 1137 (0.529330%)
+Actually created 31 partitions.
+First two partition sizes: 11 and 12
+Partitioning took: 0ms
+edges cut: 1919 (0.893389%)
+Vcom. vol: 2298 (1.069832%)
+ECV(rand): 1432 (0.666667%)
+ECV(down): 1107 (0.515363%)
+ECV(up)  : 1187 (0.552607%)
+Actually created 31 partitions.
+First two partition sizes: 11 and 12
+Partitioning took: 0ms
+edges cut: 1911 (0.889665%)
+Vcom. vol: 2281 (1.061918%)
+ECV(rand): 1415 (0.658752%)
+ECV(down): 1122 (0.522346%)
+ECV(up)  : 1155 (0.537709%)
+Actually created 32 partitions.
+First two partition sizes: 11 and 10
+Partitioning took: 0ms
+edges cut: 1915 (0.891527%)
+Vcom. vol: 2326 (1.082868%)
+ECV(rand): 1435 (0.668063%)
+ECV(down): 1134 (0.527933%)
+ECV(up)  : 1181 (0.549814%)
+Actually created 33 partitions.
+First two partition sizes: 13 and 11
+Partitioning took: 0ms
+edges cut: 1914 (0.891061%)
+Vcom. vol: 2395 (1.114991%)
+ECV(rand): 1466 (0.682495%)
+ECV(down): 1160 (0.540037%)
+ECV(up)  : 1219 (0.567505%)
+Actually created 34 partitions.
+First two partition sizes: 11 and 11
+Partitioning took: 0ms
+edges cut: 1912 (0.890130%)
+Vcom. vol: 2244 (1.044693%)
+ECV(rand): 1384 (0.644320%)
+ECV(down): 1151 (0.535847%)
+ECV(up)  : 1072 (0.499069%)
+Actually created 36 partitions.
+First two partition sizes: 9 and 12
+Partitioning took: 0ms
+edges cut: 1925 (0.896182%)
+Vcom. vol: 2400 (1.117318%)
+ECV(rand): 1472 (0.685289%)
+ECV(down): 1176 (0.547486%)
+ECV(up)  : 1212 (0.564246%)
+Actually created 36 partitions.
+First two partition sizes: 9 and 12
+Partitioning took: 0ms
+edges cut: 1910 (0.889199%)
+Vcom. vol: 2306 (1.073557%)
+ECV(rand): 1404 (0.653631%)
+ECV(down): 1195 (0.556331%)
+ECV(up)  : 1094 (0.509311%)
+Actually created 37 partitions.
+First two partition sizes: 9 and 12
+Partitioning took: 0ms
+edges cut: 1928 (0.897579%)
+Vcom. vol: 2388 (1.111732%)
+ECV(rand): 1434 (0.667598%)
+ECV(down): 1253 (0.583333%)
+ECV(up)  : 1110 (0.516760%)
+Actually created 39 partitions.
+First two partition sizes: 8 and 12
+Partitioning took: 0ms
+edges cut: 1920 (0.893855%)
+Vcom. vol: 2458 (1.144320%)
+ECV(rand): 1469 (0.683892%)
+ECV(down): 1254 (0.583799%)
+ECV(up)  : 1198 (0.557728%)
+Actually created 40 partitions.
+First two partition sizes: 11 and 10
+Partitioning took: 0ms
+edges cut: 1950 (0.907821%)
+Vcom. vol: 2563 (1.193203%)
+ECV(rand): 1540 (0.716946%)
+ECV(down): 1267 (0.589851%)
+ECV(up)  : 1283 (0.597300%)
+Actually created 41 partitions.
+First two partition sizes: 9 and 11
+Partitioning took: 0ms
+edges cut: 1927 (0.897114%)
+Vcom. vol: 2483 (1.155959%)
+ECV(rand): 1485 (0.691341%)
+ECV(down): 1273 (0.592644%)
+ECV(up)  : 1194 (0.555866%)
+Actually created 42 partitions.
+First two partition sizes: 9 and 10
+Partitioning took: 0ms
+edges cut: 1943 (0.904562%)
+Vcom. vol: 2557 (1.190410%)
+ECV(rand): 1529 (0.711825%)
+ECV(down): 1266 (0.589385%)
+ECV(up)  : 1271 (0.591713%)
+Finished in: 175ms
+Partitioned in .17913606 seconds.

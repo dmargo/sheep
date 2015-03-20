@@ -1,0 +1,30 @@
+Starting with 2 workers...
+Sorted in 99.49359642 seconds.
+Mapped in 1505.84069150 seconds.
+Reduced in 12.86274159 seconds.
+
+Starting with 4 workers...
+Sorted in 99.22534130 seconds.
+Mapped in 499.19052131 seconds.
+Reduced in 32.63721079 seconds.
+
+Starting with 6 workers...
+Sorted in 98.69400587 seconds.
+Mapped in 427.22373555 seconds.
+Reduced in 50.91222587 seconds.
+
+Starting with 8 workers...
+Sorted in 98.65665723 seconds.
+Mapped in 433.36384316 seconds.
+Reduced in 64.54735592 seconds.
+
+Starting with 10 workers...
+Sorted in 98.98306048 seconds.
+Mapped in 343.71878398 seconds.
+Reduced in 78.21070009 seconds.
+
+Starting with 12 workers...
+Sorted in 98.96437908 seconds.
+Mapped in 355.27370471 seconds.
+Reduced in 90.83521703 seconds.
+

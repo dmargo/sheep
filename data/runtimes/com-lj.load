@@ -1,0 +1,67 @@
+
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.464000 seconds
+Sorted in: 0.181000 seconds
+Mapped in: 2.755000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.189000 seconds
+Sorted in: 0.180000 seconds
+Mapped in: 2.710000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.212000 seconds
+Sorted in: 0.183000 seconds
+Mapped in: 2.743000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.194000 seconds
+Sorted in: 0.181000 seconds
+Mapped in: 2.724000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.308000 seconds
+Sorted in: 0.181000 seconds
+Mapped in: 2.797000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.148000 seconds
+Sorted in: 0.182000 seconds
+Mapped in: 2.787000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.212000 seconds
+Sorted in: 0.181000 seconds
+Mapped in: 2.729000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.326000 seconds
+Sorted in: 0.180000 seconds
+Mapped in: 2.757000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.304000 seconds
+Sorted in: 0.180000 seconds
+Mapped in: 2.783000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.483000 seconds
+Sorted in: 0.189000 seconds
+Mapped in: 2.782000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 3.465000 seconds
+Sorted in: 0.181000 seconds
+Mapped in: 2.775000 seconds
+Reduced in 0.0 seconds.

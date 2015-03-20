@@ -1,0 +1,150 @@
+Loaded in: 15403ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 2 partitions.
+First two partition sizes: 28380640 and 13271590
+Partitioning took: 4223ms
+edges cut: 529058923 (0.439961%)
+Vcom. vol: 28482807 (0.023686%)
+ECV(rand): 26786296 (0.022275%)
+ECV(down): 1876673 (0.001561%)
+ECV(up)  : 26606134 (0.022125%)
+Finished in: 1920358ms
+Loaded in: 10577ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 3 partitions.
+First two partition sizes: 23169694 and 10100810
+Partitioning took: 4590ms
+edges cut: 719555270 (0.598376%)
+Vcom. vol: 50421347 (0.041930%)
+ECV(rand): 44907950 (0.037345%)
+ECV(down): 4120122 (0.003426%)
+ECV(up)  : 46301222 (0.038504%)
+Finished in: 3329603ms
+Loaded in: 17442ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 5 partitions.
+First two partition sizes: 17889533 and 7462290
+Partitioning took: 4378ms
+edges cut: 873903710 (0.726731%)
+Vcom. vol: 91970321 (0.076482%)
+ECV(rand): 77355752 (0.064328%)
+ECV(down): 9106874 (0.007573%)
+ECV(up)  : 82863435 (0.068909%)
+Finished in: 3393560ms
+Loaded in: 28867ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 10 partitions.
+First two partition sizes: 12230153 and 5659383
+Partitioning took: 16448ms
+edges cut: 1009794272 (0.839737%)
+Vcom. vol: 163611137 (0.136058%)
+ECV(rand): 128251365 (0.106653%)
+ECV(down): 21198578 (0.017629%)
+ECV(up)  : 142412522 (0.118429%)
+Finished in: 2356651ms
+Loaded in: 8218ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 15 partitions.
+First two partition sizes: 9527411 and 4847325
+Partitioning took: 15539ms
+edges cut: 1062277716 (0.883381%)
+Vcom. vol: 218899042 (0.182035%)
+ECV(rand): 162981836 (0.135534%)
+ECV(down): 31910805 (0.026537%)
+ECV(up)  : 186988191 (0.155498%)
+Finished in: 3470618ms
+Loaded in: 35901ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 20 partitions.
+First two partition sizes: 7799512 and 4430643
+Partitioning took: 18110ms
+edges cut: 1090434833 (0.906797%)
+Vcom. vol: 256657559 (0.213434%)
+ECV(rand): 186706673 (0.155264%)
+ECV(down): 41514673 (0.034523%)
+ECV(up)  : 215142797 (0.178911%)
+Finished in: 3743958ms
+Loaded in: 17635ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 25 partitions.
+First two partition sizes: 6600747 and 4101652
+Partitioning took: 12201ms
+edges cut: 1105739874 (0.919524%)
+Vcom. vol: 292662035 (0.243375%)
+ECV(rand): 208187563 (0.173127%)
+ECV(down): 50300780 (0.041830%)
+ECV(up)  : 242361136 (0.201546%)
+Finished in: 1947044ms
+Loaded in: 8722ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 30 partitions.
+First two partition sizes: 5720528 and 3806881
+Partitioning took: 13869ms
+edges cut: 1110959621 (0.923865%)
+Vcom. vol: 320581186 (0.266593%)
+ECV(rand): 225180966 (0.187259%)
+ECV(down): 58394602 (0.048560%)
+ECV(up)  : 262186380 (0.218032%)
+Finished in: 2909280ms
+Loaded in: 22905ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 34 partitions.
+First two partition sizes: 5048631 and 3530168
+Partitioning took: 21687ms
+edges cut: 1106534498 (0.920185%)
+Vcom. vol: 337900471 (0.280995%)
+ECV(rand): 233872282 (0.194486%)
+ECV(down): 65939754 (0.054835%)
+ECV(up)  : 271960588 (0.226160%)
+Finished in: 4993179ms
+Loaded in: 19617ms
+TREEFAQS: width:4103	roots:1
+	vheight:10283323	eheight:831919402
+	verts:41652230	edges:1202513046
+	halo:4161240	core:0
+	fill:0
+Actually created 39 partitions.
+First two partition sizes: 4515274 and 3284238
+Partitioning took: 16430ms
+edges cut: 1117135792 (0.929001%)
+Vcom. vol: 360377318 (0.299687%)
+ECV(rand): 247228935 (0.205594%)
+ECV(down): 73038513 (0.060738%)
+ECV(up)  : 287338585 (0.238948%)
+Finished in: 2614342ms

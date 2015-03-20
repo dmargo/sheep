@@ -1,0 +1,49 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 24 workers...
+s:0 a:1 i:0 r:0 c:24
+p: nodes:1 64
+`/n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat' -> `/scratch/uk-2007-05-nat.dat'
+`/n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat.ini' -> `/scratch/uk-2007-05-nat.dat.ini'
+Loaded graph in: 82.371000 seconds
+Sorted in: 340.013000 seconds
+Mapped in: 19.035000 seconds
+Reduced in: 147.623000 seconds
+Loaded graph in: 71.406000 seconds
+Sorted in: 400.172000 seconds
+Mapped in: 17.524000 seconds
+Reduced in: 150.240000 seconds
+Loaded graph in: 71.445000 seconds
+Sorted in: 391.211000 seconds
+Mapped in: 17.579000 seconds
+Reduced in: 153.108000 seconds
+Loaded graph in: 71.640000 seconds
+Sorted in: 391.538000 seconds
+Mapped in: 17.606000 seconds
+Reduced in: 150.267000 seconds
+Loaded graph in: 71.683000 seconds
+Sorted in: 384.670000 seconds
+Mapped in: 16.651000 seconds
+Reduced in: 151.460000 seconds
+Loaded graph in: 71.712000 seconds
+Sorted in: 389.546000 seconds
+Mapped in: 16.280000 seconds
+Reduced in: 151.051000 seconds
+Loaded graph in: 71.770000 seconds
+Sorted in: 385.481000 seconds
+Mapped in: 17.776000 seconds
+Reduced in: 151.281000 seconds
+Loaded graph in: 71.627000 seconds
+Sorted in: 385.516000 seconds
+Mapped in: 17.398000 seconds
+Reduced in: 150.968000 seconds
+Loaded graph in: 71.457000 seconds
+Sorted in: 381.379000 seconds
+Mapped in: 17.383000 seconds
+Reduced in: 151.358000 seconds
+Loaded graph in: 71.639000 seconds
+Sorted in: 382.466000 seconds
+Mapped in: 17.848000 seconds
+Reduced in: 152.888000 seconds
+Loaded graph in: 71.366000 seconds
+Sorted in: 385.216000 seconds
+Mapped in: 16.569000 seconds
+Reduced in: 157.038000 seconds

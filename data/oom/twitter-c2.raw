@@ -1,0 +1,88 @@
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 99.98100974 seconds.
+Loaded in 0.0 seconds.
+Mapped in 269.41374398 seconds.
+Reduced in 64.24765313 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 99.00611947 seconds.
+Loaded in 0.0 seconds.
+Mapped in 265.53718464 seconds.
+Reduced in 63.29059171 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 99.10035965 seconds.
+Loaded in 0.0 seconds.
+Mapped in 262.96062113 seconds.
+Reduced in 62.96290716 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 99.56117507 seconds.
+Loaded in 0.0 seconds.
+Mapped in 269.69000100 seconds.
+Reduced in 62.95439571 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 99.56719717 seconds.
+Loaded in 0.0 seconds.
+Mapped in 258.54343277 seconds.
+Reduced in 62.63019194 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 99.40628725 seconds.
+Loaded in 0.0 seconds.
+Mapped in 258.88713322 seconds.
+Reduced in 63.16135527 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 100.06675110 seconds.
+Loaded in 0.0 seconds.
+Mapped in 263.65630761 seconds.
+Reduced in 62.32337273 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 100.55522645 seconds.
+Loaded in 0.0 seconds.
+Mapped in 262.56028613 seconds.
+Reduced in 63.29888592 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 100.65958701 seconds.
+Loaded in 0.0 seconds.
+Mapped in 257.94628518 seconds.
+Reduced in 61.92612966 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 100.30014690 seconds.
+Loaded in 0.0 seconds.
+Mapped in 275.71274595 seconds.
+Reduced in 63.04632643 seconds.
+
+Starting with 10 workers...
+Starting dist-partition on /home/dmargo/data/twitter/twitter_rv.dat with 10 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 98.96646993 seconds.
+Loaded in 0.0 seconds.
+Mapped in 274.57800096 seconds.
+Reduced in 62.96391399 seconds.
+

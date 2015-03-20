@@ -1,0 +1,217 @@
+Loaded in: 66ms
+Nodes:7610 Edges:15751
+edges cut: 578 (0.036696%)
+Vcom. vol: 732 (0.046473%)
+ECV(rand): 429 (0.027236%)
+ECV(hash): 406 (0.025776%)
+Finished in: 71ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 956 (0.060695%)
+Vcom. vol: 1167 (0.074091%)
+ECV(rand): 706 (0.044823%)
+ECV(hash): 662 (0.042029%)
+Finished in: 68ms
+Loaded in: 63ms
+Nodes:7610 Edges:15751
+edges cut: 1181 (0.074979%)
+Vcom. vol: 1446 (0.091804%)
+ECV(rand): 870 (0.055235%)
+ECV(hash): 821 (0.052124%)
+Finished in: 68ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 1292 (0.082027%)
+Vcom. vol: 1627 (0.103295%)
+ECV(rand): 976 (0.061964%)
+ECV(hash): 935 (0.059361%)
+Finished in: 68ms
+Loaded in: 63ms
+Nodes:7610 Edges:15751
+edges cut: 1474 (0.093581%)
+Vcom. vol: 1845 (0.117135%)
+ECV(rand): 1076 (0.068313%)
+ECV(hash): 1023 (0.064948%)
+Finished in: 68ms
+Loaded in: 65ms
+Nodes:7610 Edges:15751
+edges cut: 1552 (0.098533%)
+Vcom. vol: 1975 (0.125389%)
+ECV(rand): 1162 (0.073773%)
+ECV(hash): 1115 (0.070789%)
+Finished in: 70ms
+Loaded in: 65ms
+Nodes:7610 Edges:15751
+edges cut: 1622 (0.102978%)
+Vcom. vol: 2113 (0.134150%)
+ECV(rand): 1301 (0.082598%)
+ECV(hash): 1174 (0.074535%)
+Finished in: 70ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 1695 (0.107612%)
+Vcom. vol: 2219 (0.140880%)
+ECV(rand): 1362 (0.086471%)
+ECV(hash): 1252 (0.079487%)
+Finished in: 69ms
+Loaded in: 63ms
+Nodes:7610 Edges:15751
+edges cut: 1717 (0.109009%)
+Vcom. vol: 2235 (0.141896%)
+ECV(rand): 1366 (0.086725%)
+ECV(hash): 1250 (0.079360%)
+Finished in: 68ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 1769 (0.112310%)
+Vcom. vol: 2349 (0.149133%)
+ECV(rand): 1400 (0.088883%)
+ECV(hash): 1315 (0.083487%)
+Finished in: 69ms
+Loaded in: 65ms
+Nodes:7610 Edges:15751
+edges cut: 1869 (0.118659%)
+Vcom. vol: 2475 (0.157133%)
+ECV(rand): 1504 (0.095486%)
+ECV(hash): 1386 (0.087994%)
+Finished in: 70ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 1876 (0.119104%)
+Vcom. vol: 2527 (0.160434%)
+ECV(rand): 1489 (0.094534%)
+ECV(hash): 1410 (0.089518%)
+Finished in: 68ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 1904 (0.120881%)
+Vcom. vol: 2577 (0.163609%)
+ECV(rand): 1549 (0.098343%)
+ECV(hash): 1410 (0.089518%)
+Finished in: 69ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 1953 (0.123992%)
+Vcom. vol: 2629 (0.166910%)
+ECV(rand): 1577 (0.100121%)
+ECV(hash): 1450 (0.092058%)
+Finished in: 69ms
+Loaded in: 66ms
+Nodes:7610 Edges:15751
+edges cut: 1996 (0.126722%)
+Vcom. vol: 2693 (0.170973%)
+ECV(rand): 1612 (0.102343%)
+ECV(hash): 1507 (0.095676%)
+Finished in: 71ms
+Loaded in: 61ms
+Nodes:7610 Edges:15751
+edges cut: 1976 (0.125452%)
+Vcom. vol: 2729 (0.173259%)
+ECV(rand): 1638 (0.103993%)
+ECV(hash): 1514 (0.096121%)
+Finished in: 66ms
+Loaded in: 61ms
+Nodes:7610 Edges:15751
+edges cut: 2058 (0.130658%)
+Vcom. vol: 2811 (0.178465%)
+ECV(rand): 1681 (0.106723%)
+ECV(hash): 1538 (0.097645%)
+Finished in: 66ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 2060 (0.130785%)
+Vcom. vol: 2838 (0.180179%)
+ECV(rand): 1682 (0.106787%)
+ECV(hash): 1575 (0.099994%)
+Finished in: 69ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 2157 (0.136944%)
+Vcom. vol: 2942 (0.186782%)
+ECV(rand): 1788 (0.113517%)
+ECV(hash): 1615 (0.102533%)
+Finished in: 69ms
+Loaded in: 65ms
+Nodes:7610 Edges:15751
+edges cut: 2098 (0.133198%)
+Vcom. vol: 2875 (0.182528%)
+ECV(rand): 1677 (0.106469%)
+ECV(hash): 1585 (0.100629%)
+Finished in: 70ms
+Loaded in: 65ms
+Nodes:7610 Edges:15751
+edges cut: 2149 (0.136436%)
+Vcom. vol: 2955 (0.187607%)
+ECV(rand): 1728 (0.109707%)
+ECV(hash): 1629 (0.103422%)
+Finished in: 70ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 2164 (0.137388%)
+Vcom. vol: 2979 (0.189131%)
+ECV(rand): 1741 (0.110533%)
+ECV(hash): 1643 (0.104311%)
+Finished in: 69ms
+Loaded in: 63ms
+Nodes:7610 Edges:15751
+edges cut: 2162 (0.137261%)
+Vcom. vol: 3015 (0.191416%)
+ECV(rand): 1741 (0.110533%)
+ECV(hash): 1679 (0.106596%)
+Finished in: 68ms
+Loaded in: 63ms
+Nodes:7610 Edges:15751
+edges cut: 2256 (0.143229%)
+Vcom. vol: 3128 (0.198591%)
+ECV(rand): 1822 (0.115675%)
+ECV(hash): 1716 (0.108945%)
+Finished in: 68ms
+Loaded in: 63ms
+Nodes:7610 Edges:15751
+edges cut: 2251 (0.142912%)
+Vcom. vol: 3167 (0.201067%)
+ECV(rand): 1823 (0.115739%)
+ECV(hash): 1734 (0.110088%)
+Finished in: 68ms
+Loaded in: 65ms
+Nodes:7610 Edges:15751
+edges cut: 2242 (0.142340%)
+Vcom. vol: 3117 (0.197892%)
+ECV(rand): 1858 (0.117961%)
+ECV(hash): 1676 (0.106406%)
+Finished in: 70ms
+Loaded in: 65ms
+Nodes:7610 Edges:15751
+edges cut: 2256 (0.143229%)
+Vcom. vol: 3148 (0.199860%)
+ECV(rand): 1847 (0.117262%)
+ECV(hash): 1733 (0.110025%)
+Finished in: 70ms
+Loaded in: 63ms
+Nodes:7610 Edges:15751
+edges cut: 2282 (0.144880%)
+Vcom. vol: 3175 (0.201575%)
+ECV(rand): 1872 (0.118850%)
+ECV(hash): 1747 (0.110914%)
+Finished in: 69ms
+Loaded in: 63ms
+Nodes:7610 Edges:15751
+edges cut: 2323 (0.147483%)
+Vcom. vol: 3236 (0.205447%)
+ECV(rand): 1877 (0.119167%)
+ECV(hash): 1796 (0.114025%)
+Finished in: 69ms
+Loaded in: 65ms
+Nodes:7610 Edges:15751
+edges cut: 2309 (0.146594%)
+Vcom. vol: 3275 (0.207923%)
+ECV(rand): 1888 (0.119865%)
+ECV(hash): 1786 (0.113390%)
+Finished in: 70ms
+Loaded in: 64ms
+Nodes:7610 Edges:15751
+edges cut: 2353 (0.149387%)
+Vcom. vol: 3334 (0.211669%)
+ECV(rand): 1912 (0.121389%)
+ECV(hash): 1848 (0.117326%)
+Finished in: 69ms

@@ -1,0 +1,63 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/twitter/twitter_rv.dat with 1 workers...
+s:0 a:1 i:0 r:0 c:1
+p: nodes:1 25
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33278401
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/twitter/twitter_rv.dat
+sbcast: dest       = /scratch/twitter_rv.dat
+sbcast: -----------------------------
+sbcast: modes    = 100644
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Sat Feb 21 06:19:31 2015
+sbcast: mtime    = Sat Jan 24 01:57:26 2015
+sbcast: ctime    = Sat Jan 24 01:57:26 2015
+sbcast: size     = 17620382184
+sbcast: -----------------------------
+sbcast: jobid      = 33278401
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: node_cnt   = 1
+sbcast: node_list  = holy2a07201
+sbcast: Sbcast_cred: Jobid   33278401
+sbcast: Sbcast_cred: Nodes   holy2a07201
+sbcast: Sbcast_cred: ctime   Sun Feb 22 09:01:11 2015
+sbcast: Sbcast_cred: Expire  Sun Feb 22 11:59:48 2015
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33278401
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/twitter/twitter_rv.dat.ini
+sbcast: dest       = /scratch/twitter_rv.dat.ini
+sbcast: -----------------------------
+sbcast: modes    = 100644
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Sun Feb 22 09:11:08 2015
+sbcast: mtime    = Sat Jan 24 01:57:26 2015
+sbcast: ctime    = Sat Jan 24 01:57:26 2015
+sbcast: size     = 70
+sbcast: -----------------------------
+sbcast: jobid      = 33278401
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: error: slurm_receive_msg: Socket timed out on send/recv operation
+sbcast: error: Slurm jobid 33278401 lookup error: Socket timed out on send/recv operation
+[WARN ] ll_loader_xs1::xs1_loader_base X-Stream Type 1 INI file not found: /scratch/twitter_rv.dat.ini
+Loaded graph in: 1070.551000 seconds
+Sorted in: 36.354000 seconds
+Mapped in: 6267.955000 seconds
+Reduced in 0.0 seconds.
+[WARN ] ll_loader_xs1::xs1_loader_base X-Stream Type 1 INI file not found: /scratch/twitter_rv.dat.ini
+slurmstepd: error: *** JOB 33278401 CANCELLED AT 2015-02-22T12:00:01 DUE TO TIME LIMIT on holy2a07201 ***
+slurmstepd: error: _slurm_cgroup_destroy: problem deleting step cgroup path /cgroup/freezer/slurm/uid_555650/job_33278401/step_batch: Device or resource busy

@@ -1,0 +1,149 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007-05-nat.dat with 6 workers...
+s:0 a:1 i:0 r:0 c:6
+p: nodes:1 6
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33392296
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/uk-2007-05-nat.dat
+sbcast: dest       = /scratch/uk-2007-05-nat.dat
+sbcast: -----------------------------
+sbcast: modes    = 100664
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Mon Feb 23 06:21:15 2015
+sbcast: mtime    = Mon Feb 23 05:56:08 2015
+sbcast: ctime    = Mon Feb 23 06:21:15 2015
+sbcast: size     = 44864803776
+sbcast: -----------------------------
+sbcast: jobid      = 33392296
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: error: slurm_receive_msg: Socket timed out on send/recv operation
+sbcast: error: Slurm jobid 33392296 lookup error: Socket timed out on send/recv operation
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33392296
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/uk-2007-05-nat.dat.ini
+sbcast: dest       = /scratch/uk-2007-05-nat.dat.ini
+sbcast: -----------------------------
+sbcast: modes    = 100664
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Mon Feb 23 06:21:15 2015
+sbcast: mtime    = Mon Feb 23 05:56:08 2015
+sbcast: ctime    = Mon Feb 23 06:21:15 2015
+sbcast: size     = 75
+sbcast: -----------------------------
+sbcast: jobid      = 33392296
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: node_cnt   = 1
+sbcast: node_list  = holy2a06103
+sbcast: Sbcast_cred: Jobid   33392296
+sbcast: Sbcast_cred: Nodes   holy2a06103
+sbcast: Sbcast_cred: ctime   Mon Feb 23 15:42:47 2015
+sbcast: Sbcast_cred: Expire  Mon Feb 23 20:40:22 2015
+Cannot open the input file: No such file or directory
+[holy2a06103:17770] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a06103:17771] *** Process received signal ***
+[holy2a06103:17771] Signal: Aborted (6)
+[holy2a06103:17771] Signal code:  (-6)
+[holy2a06103:17770] Signal: Aborted (6)
+[holy2a06103:17770] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a06103:17769] *** Process received signal ***
+Cannot open the input file: No such file or directory
+[holy2a06103:17773] *** Process received signal ***
+[holy2a06103:17773] Signal: Aborted (6)
+[holy2a06103:17773] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a06103:17769] Signal: Aborted (6)
+[holy2a06103:17769] Signal code:  (-6)
+Cannot open the input file: No such file or directory
+[holy2a06103:17768] *** Process received signal ***
+[holy2a06103:17768] Signal: Aborted (6)
+[holy2a06103:17768] Signal code:  (-6)
+[holy2a06103:17772] *** Process received signal ***
+[holy2a06103:17772] Signal: Aborted (6)
+[holy2a06103:17772] Signal code:  (-6)
+[holy2a06103:17770] [ 0] /lib64/libpthread.so.0[0x3b0020f710]
+[holy2a06103:17770] [ 1] [holy2a06103:17771] [ 0] /lib64/libpthread.so.0[0x3b0020f710]
+[holy2a06103:17771] [ 1] [holy2a06103:17773] [ 0] [holy2a06103:17769] [ 0] /lib64/libpthread.so.0[0x3b0020f710]
+[holy2a06103:17769] [ 1] /lib64/libpthread.so.0[0x3b0020f710]
+[holy2a06103:17773] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x3affa32625]
+[holy2a06103:17770] [ 2] /lib64/libc.so.6(gsignal+0x35)[0x3affa32625]
+[holy2a06103:17771] [ 2] [holy2a06103:17768] [ 0] [holy2a06103:17772] [ 0] /lib64/libpthread.so.0[0x3b0020f710]
+[holy2a06103:17772] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x3affa32625]
+[holy2a06103:17769] [ 2] /lib64/libpthread.so.0[0x3b0020f710]
+[holy2a06103:17768] [ 1] /lib64/libc.so.6(gsignal+0x35)[0x3affa32625]
+[holy2a06103:17773] [ 2] /lib64/libc.so.6(abort+0x175)[0x3affa33e05]
+[holy2a06103:17770] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+/lib64/libc.so.6(abort+0x175)[0x3affa33e05]
+[holy2a06103:17771] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a06103:17771] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a06103:17771] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a06103:17771] [ 6] /lib64/libc.so.6(abort+0x175)[0x3affa33e05]
+[holy2a06103:17769] [ 3] /lib64/libc.so.6(abort+0x175)[0x3affa33e05]
+[holy2a06103:17773] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a06103:17770] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a06103:17770] [ 5] /lib64/libc.so.6(gsignal+0x35)[0x3affa32625]
+[holy2a06103:17772] [ 2] /lib64/libc.so.6(gsignal+0x35)[0x3affa32625]
+[holy2a06103:17768] [ 2] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a06103:17769] [ 4] [holy2a06103:17773] [ 4] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a06103:17770] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a06103:17770] [ 7] /lib64/libc.so.6(abort+0x175)[0x3affa33e05]
+[holy2a06103:17772] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a06103:17772] /lib64/libc.so.6(abort+0x175)[0x3affa33e05]
+[holy2a06103:17768] [ 3] ./graph2tree(_ZN13ll_loader_xs115xs1_loader_baseC1EPKcPK16ll_loader_config+0x5e1)[0x437811]
+[holy2a06103:17768] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a06103:17769] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a06103:17773] [ 5] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a06103:17773] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a06103:17771] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a06103:17771] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x3affa1ed5d]
+[holy2a06103:17771] [ 9] [holy2a06103:17769] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a06103:17769] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a06103:17773] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a06103:17770] [ 8] [ 4] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a06103:17772] [ 5] ./graph2tree(_ZN13ll_loader_xs111load_directEP17ll_mlcsr_ro_graphPKcPK16ll_loader_config+0x102)[0x45f712]
+[holy2a06103:17768] [ 5] ./graph2tree[0x41ed15]
+[holy2a06103:17771] *** End of error message ***
+./graph2tree(main+0x270)[0x46bd00]
+[holy2a06103:17773] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x3affa1ed5d]
+[holy2a06103:17773] [ 9] ./graph2tree[0x41ed15]
+[holy2a06103:17773] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x3affa1ed5d]
+[holy2a06103:17770] [ 9] ./graph2tree[0x41ed15]
+[holy2a06103:17770] *** End of error message ***
+./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a06103:17772] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a06103:17772] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a06103:17772] [ 8] ./graph2tree(_ZN14ll_file_loader11load_directEP17ll_writable_graphPKcPK16ll_loader_config+0x43a)[0x4517ba]
+[holy2a06103:17768] [ 6] ./graph2tree(_ZN10LLAMAGraphC2EPKcmmb+0x308)[0x446e08]
+[holy2a06103:17768] [ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a06103:17768] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x3affa1ed5d]
+[holy2a06103:17768] [ 9] ./graph2tree[0x41ed15]
+[ 7] ./graph2tree(main+0x270)[0x46bd00]
+[holy2a06103:17769] [ 8] /lib64/libc.so.6(__libc_start_main+0xfd)[0x3affa1ed5d]
+[holy2a06103:17769] [ 9] ./graph2tree[0x41ed15]
+[holy2a06103:17769] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x3affa1ed5d]
+[holy2a06103:17772] [ 9] ./graph2tree[0x41ed15]
+[holy2a06103:17772] *** End of error message ***
+[holy2a06103:17768] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 3 with PID 17771 on node holy2a06103 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+mv: cannot stat `/n/regal/seltzer_lab/data/1424724167544411367/uk-2007-05-nat': No such file or directory

@@ -1,0 +1,528 @@
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.321000 seconds
+Sorted in: 0.030000 seconds
+Mapped in: 0.224000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.333000 seconds
+Sorted in: 0.035000 seconds
+Mapped in: 0.229000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.328000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.232000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.304000 seconds
+Sorted in: 0.030000 seconds
+Mapped in: 0.232000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.318000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.235000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.311000 seconds
+Sorted in: 0.031000 seconds
+Mapped in: 0.228000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.303000 seconds
+Sorted in: 0.041000 seconds
+Mapped in: 0.225000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.320000 seconds
+Sorted in: 0.031000 seconds
+Mapped in: 0.234000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.309000 seconds
+Sorted in: 0.030000 seconds
+Mapped in: 0.233000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.324000 seconds
+Sorted in: 0.039000 seconds
+Mapped in: 0.231000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:0 c:1
+Loaded graph in: 0.318000 seconds
+Sorted in: 0.032000 seconds
+Mapped in: 0.233000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .14099270 seconds.
+Loaded graph in: 0.524000 seconds
+Mapped in: 0.126000 seconds
+Reduced in: 0.142000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .12837419 seconds.
+Loaded graph in: 0.525000 seconds
+Mapped in: 0.128000 seconds
+Reduced in: 0.138000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .13966972 seconds.
+Loaded graph in: 0.532000 seconds
+Mapped in: 0.126000 seconds
+Reduced in: 0.138000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .13083710 seconds.
+Loaded graph in: 0.531000 seconds
+Mapped in: 0.126000 seconds
+Reduced in: 0.139000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .13152167 seconds.
+Loaded graph in: 0.528000 seconds
+Mapped in: 0.128000 seconds
+Reduced in: 0.138000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .12956808 seconds.
+Loaded graph in: 0.526000 seconds
+Mapped in: 0.126000 seconds
+Reduced in: 0.148000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .14034511 seconds.
+Loaded graph in: 0.531000 seconds
+Mapped in: 0.128000 seconds
+Reduced in: 0.137000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .13190319 seconds.
+Loaded graph in: 0.531000 seconds
+Mapped in: 0.126000 seconds
+Reduced in: 0.139000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .13287595 seconds.
+Loaded graph in: 0.527000 seconds
+Mapped in: 0.126000 seconds
+Reduced in: 0.140000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .12638657 seconds.
+Loaded graph in: 0.528000 seconds
+Mapped in: 0.125000 seconds
+Reduced in: 0.144000 seconds
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:0 c:2
+Sorted in .12795595 seconds.
+Loaded graph in: 0.531000 seconds
+Mapped in: 0.127000 seconds
+Reduced in: 0.139000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13255581 seconds.
+Loaded graph in: 0.444000 seconds
+Mapped in: 0.104000 seconds
+Reduced in: 0.218000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13574970 seconds.
+Loaded graph in: 0.442000 seconds
+Mapped in: 0.103000 seconds
+Reduced in: 0.218000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13277695 seconds.
+Loaded graph in: 0.440000 seconds
+Mapped in: 0.103000 seconds
+Reduced in: 0.219000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13792191 seconds.
+Loaded graph in: 0.433000 seconds
+Mapped in: 0.103000 seconds
+Reduced in: 0.218000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13111851 seconds.
+Loaded graph in: 0.445000 seconds
+Mapped in: 0.103000 seconds
+Reduced in: 0.219000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13220145 seconds.
+Loaded graph in: 0.443000 seconds
+Mapped in: 0.103000 seconds
+Reduced in: 0.220000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13873462 seconds.
+Loaded graph in: 0.445000 seconds
+Mapped in: 0.104000 seconds
+Reduced in: 0.221000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .12666125 seconds.
+Loaded graph in: 0.443000 seconds
+Mapped in: 0.104000 seconds
+Reduced in: 0.221000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13238370 seconds.
+Loaded graph in: 0.443000 seconds
+Mapped in: 0.104000 seconds
+Reduced in: 0.220000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13394185 seconds.
+Loaded graph in: 0.445000 seconds
+Mapped in: 0.105000 seconds
+Reduced in: 0.219000 seconds
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:0 c:3
+Sorted in .13212458 seconds.
+Loaded graph in: 0.446000 seconds
+Mapped in: 0.104000 seconds
+Reduced in: 0.217000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .13114541 seconds.
+Loaded graph in: 0.404000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.222000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .13716925 seconds.
+Loaded graph in: 0.403000 seconds
+Mapped in: 0.099000 seconds
+Reduced in: 0.222000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .12933228 seconds.
+Loaded graph in: 0.396000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.219000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .12870599 seconds.
+Loaded graph in: 0.397000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.222000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .13465685 seconds.
+Loaded graph in: 0.404000 seconds
+Mapped in: 0.099000 seconds
+Reduced in: 0.222000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .13166563 seconds.
+Loaded graph in: 0.405000 seconds
+Mapped in: 0.099000 seconds
+Reduced in: 0.222000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .12752368 seconds.
+Loaded graph in: 0.405000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.220000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .13496244 seconds.
+Loaded graph in: 0.405000 seconds
+Mapped in: 0.099000 seconds
+Reduced in: 0.220000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .14360722 seconds.
+Loaded graph in: 0.404000 seconds
+Mapped in: 0.099000 seconds
+Reduced in: 0.220000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .13478536 seconds.
+Loaded graph in: 0.397000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.219000 seconds
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:0 c:4
+Sorted in .12842872 seconds.
+Loaded graph in: 0.405000 seconds
+Mapped in: 0.099000 seconds
+Reduced in: 0.222000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .12895863 seconds.
+Loaded graph in: 0.392000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.278000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .13084537 seconds.
+Loaded graph in: 0.397000 seconds
+Mapped in: 0.097000 seconds
+Reduced in: 0.270000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .12746345 seconds.
+Loaded graph in: 0.390000 seconds
+Mapped in: 0.101000 seconds
+Reduced in: 0.275000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .14392778 seconds.
+Loaded graph in: 0.383000 seconds
+Mapped in: 0.101000 seconds
+Reduced in: 0.277000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .13007178 seconds.
+Loaded graph in: 0.385000 seconds
+Mapped in: 0.099000 seconds
+Reduced in: 0.277000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .13279564 seconds.
+Loaded graph in: 0.387000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.280000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .12913607 seconds.
+Loaded graph in: 0.383000 seconds
+Mapped in: 0.101000 seconds
+Reduced in: 0.274000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .13307673 seconds.
+Loaded graph in: 0.394000 seconds
+Mapped in: 0.099000 seconds
+Reduced in: 0.278000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .13438740 seconds.
+Loaded graph in: 0.385000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.281000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .13908377 seconds.
+Loaded graph in: 0.384000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.276000 seconds
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:0 c:5
+Sorted in .13146750 seconds.
+Loaded graph in: 0.388000 seconds
+Mapped in: 0.100000 seconds
+Reduced in: 0.278000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .12887892 seconds.
+Loaded graph in: 0.368000 seconds
+Mapped in: 0.108000 seconds
+Reduced in: 0.291000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .12482736 seconds.
+Loaded graph in: 0.367000 seconds
+Mapped in: 0.109000 seconds
+Reduced in: 0.289000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .13661116 seconds.
+Loaded graph in: 0.374000 seconds
+Mapped in: 0.109000 seconds
+Reduced in: 0.286000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .13927782 seconds.
+Loaded graph in: 0.368000 seconds
+Mapped in: 0.111000 seconds
+Reduced in: 0.289000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .13021593 seconds.
+Loaded graph in: 0.377000 seconds
+Mapped in: 0.110000 seconds
+Reduced in: 0.290000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .12540922 seconds.
+Loaded graph in: 0.371000 seconds
+Mapped in: 0.108000 seconds
+Reduced in: 0.294000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .13100638 seconds.
+Loaded graph in: 0.369000 seconds
+Mapped in: 0.109000 seconds
+Reduced in: 0.288000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .13268509 seconds.
+Loaded graph in: 0.372000 seconds
+Mapped in: 0.109000 seconds
+Reduced in: 0.291000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .13284880 seconds.
+Loaded graph in: 0.372000 seconds
+Mapped in: 0.110000 seconds
+Reduced in: 0.291000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .14308882 seconds.
+Loaded graph in: 0.375000 seconds
+Mapped in: 0.108000 seconds
+Reduced in: 0.291000 seconds
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/youtube/com-youtube.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:0 c:6
+Sorted in .13825513 seconds.
+Loaded graph in: 0.367000 seconds
+Mapped in: 0.109000 seconds
+Reduced in: 0.293000 seconds
+

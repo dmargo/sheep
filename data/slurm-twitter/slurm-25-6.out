@@ -1,0 +1,103 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/twitter/twitter_rv.dat with 6 workers...
+s:0 a:1 i:0 r:0 c:6
+p: nodes:1 25
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33022450
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/twitter/twitter_rv.dat
+sbcast: dest       = /scratch/twitter_rv.dat
+sbcast: -----------------------------
+sbcast: modes    = 100644
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Thu Feb 19 12:19:39 2015
+sbcast: mtime    = Sat Jan 24 01:57:26 2015
+sbcast: ctime    = Sat Jan 24 01:57:26 2015
+sbcast: size     = 17620382184
+sbcast: -----------------------------
+sbcast: jobid      = 33022450
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: node_cnt   = 1
+sbcast: node_list  = holy2a07203
+sbcast: Sbcast_cred: Jobid   33022450
+sbcast: Sbcast_cred: Nodes   holy2a07203
+sbcast: Sbcast_cred: ctime   Thu Feb 19 12:20:19 2015
+sbcast: Sbcast_cred: Expire  Thu Feb 19 14:19:38 2015
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33022450
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/twitter/twitter_rv.dat.ini
+sbcast: dest       = /scratch/twitter_rv.dat.ini
+sbcast: -----------------------------
+sbcast: modes    = 100644
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Thu Feb 19 12:27:50 2015
+sbcast: mtime    = Sat Jan 24 01:57:26 2015
+sbcast: ctime    = Sat Jan 24 01:57:26 2015
+sbcast: size     = 70
+sbcast: -----------------------------
+sbcast: jobid      = 33022450
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: node_cnt   = 1
+sbcast: node_list  = holy2a07203
+sbcast: Sbcast_cred: Jobid   33022450
+sbcast: Sbcast_cred: Nodes   holy2a07203
+sbcast: Sbcast_cred: ctime   Thu Feb 19 12:30:35 2015
+sbcast: Sbcast_cred: Expire  Thu Feb 19 14:19:38 2015
+Loaded graph in: 119.364000 seconds
+Sorted in: 22.720000 seconds
+Mapped in: 38.325000 seconds
+Reduced in: 36.489000 seconds
+Loaded graph in: 117.632000 seconds
+Sorted in: 26.581000 seconds
+Mapped in: 34.634000 seconds
+Reduced in: 37.324000 seconds
+Loaded graph in: 118.970000 seconds
+Sorted in: 25.577000 seconds
+Mapped in: 37.312000 seconds
+Reduced in: 36.647000 seconds
+Loaded graph in: 118.812000 seconds
+Sorted in: 27.440000 seconds
+Mapped in: 38.345000 seconds
+Reduced in: 38.318000 seconds
+Loaded graph in: 116.382000 seconds
+Sorted in: 24.725000 seconds
+Mapped in: 34.540000 seconds
+Reduced in: 36.778000 seconds
+Loaded graph in: 116.958000 seconds
+Sorted in: 25.948000 seconds
+Mapped in: 35.548000 seconds
+Reduced in: 36.858000 seconds
+Loaded graph in: 117.246000 seconds
+Sorted in: 27.762000 seconds
+Mapped in: 35.095000 seconds
+Reduced in: 42.555000 seconds
+Loaded graph in: 117.845000 seconds
+Sorted in: 27.206000 seconds
+Mapped in: 34.403000 seconds
+Reduced in: 37.967000 seconds
+Loaded graph in: 117.325000 seconds
+Sorted in: 27.439000 seconds
+Mapped in: 35.127000 seconds
+Reduced in: 40.868000 seconds
+Loaded graph in: 117.742000 seconds
+Sorted in: 26.714000 seconds
+Mapped in: 34.376000 seconds
+Reduced in: 43.727000 seconds
+Loaded graph in: 117.241000 seconds
+Sorted in: 25.889000 seconds
+Mapped in: 35.336000 seconds
+Reduced in: 38.181000 seconds

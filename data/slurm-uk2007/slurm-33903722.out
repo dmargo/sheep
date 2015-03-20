@@ -1,0 +1,106 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 18 workers...
+s:0 a:1 i:0 r:0 c:18
+p: nodes:3 6(x3)
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33903722
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat
+sbcast: dest       = /scratch/uk-2007-05-nat.dat
+sbcast: -----------------------------
+sbcast: modes    = 100664
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Sat Feb 28 02:16:00 2015
+sbcast: mtime    = Mon Feb 23 05:56:08 2015
+sbcast: ctime    = Mon Feb 23 18:46:58 2015
+sbcast: size     = 44864803776
+sbcast: -----------------------------
+sbcast: jobid      = 33903722
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: node_cnt   = 3
+sbcast: node_list  = holy2a[01204,06104,08107]
+sbcast: Sbcast_cred: Jobid   33903722
+sbcast: Sbcast_cred: Nodes   holy2a[01204,06104,08107]
+sbcast: Sbcast_cred: ctime   Sat Feb 28 06:41:35 2015
+sbcast: Sbcast_cred: Expire  Sat Feb 28 10:41:31 2015
+sbcast: error: REQUEST_FILE_BCAST(holy2a01204): Invalid job credential
+sbcast: error: REQUEST_FILE_BCAST(holy2a08107): Invalid job credential
+sbcast: error: REQUEST_FILE_BCAST(holy2a06104): Invalid job credential
+sbcast: -----------------------------
+sbcast: block_size = 0
+sbcast: compress   = false
+sbcast: force      = true
+sbcast: fanout     = 0
+sbcast: jobid      = 33903722
+sbcast: preserve   = false
+sbcast: timeout    = 0
+sbcast: verbose    = 1
+sbcast: source     = /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat.ini
+sbcast: dest       = /scratch/uk-2007-05-nat.dat.ini
+sbcast: -----------------------------
+sbcast: modes    = 100664
+sbcast: uid      = 555650
+sbcast: gid      = 35019
+sbcast: atime    = Sat Feb 28 02:16:00 2015
+sbcast: mtime    = Mon Feb 23 05:56:08 2015
+sbcast: ctime    = Tue Feb 24 02:52:49 2015
+sbcast: size     = 75
+sbcast: -----------------------------
+sbcast: jobid      = 33903722
+sbcast: auth plugin for Munge (http://code.google.com/p/munge/) loaded
+sbcast: node_cnt   = 3
+sbcast: node_list  = holy2a[01204,06104,08107]
+sbcast: Sbcast_cred: Jobid   33903722
+sbcast: Sbcast_cred: Nodes   holy2a[01204,06104,08107]
+sbcast: Sbcast_cred: ctime   Sat Feb 28 07:04:44 2015
+sbcast: Sbcast_cred: Expire  Sat Feb 28 10:41:31 2015
+Loaded graph in: 106.129000 seconds
+Sorted in: 56.497000 seconds
+Mapped in: 13.189000 seconds
+Reduced in: 51.246000 seconds
+Loaded graph in: 93.149000 seconds
+Sorted in: 67.319000 seconds
+Mapped in: 13.180000 seconds
+Reduced in: 43.915000 seconds
+Loaded graph in: 93.073000 seconds
+Sorted in: 67.669000 seconds
+Mapped in: 13.216000 seconds
+Reduced in: 43.821000 seconds
+Loaded graph in: 93.519000 seconds
+Sorted in: 67.100000 seconds
+Mapped in: 13.212000 seconds
+Reduced in: 43.756000 seconds
+Loaded graph in: 93.468000 seconds
+Sorted in: 67.208000 seconds
+Mapped in: 13.133000 seconds
+Reduced in: 43.862000 seconds
+Loaded graph in: 92.904000 seconds
+Sorted in: 67.388000 seconds
+Mapped in: 13.159000 seconds
+Reduced in: 44.124000 seconds
+Loaded graph in: 93.189000 seconds
+Sorted in: 67.091000 seconds
+Mapped in: 13.141000 seconds
+Reduced in: 43.922000 seconds
+Loaded graph in: 93.395000 seconds
+Sorted in: 66.998000 seconds
+Mapped in: 13.190000 seconds
+Reduced in: 43.869000 seconds
+Loaded graph in: 93.293000 seconds
+Sorted in: 67.259000 seconds
+Mapped in: 13.161000 seconds
+Reduced in: 44.880000 seconds
+Loaded graph in: 93.416000 seconds
+Sorted in: 68.008000 seconds
+Mapped in: 13.134000 seconds
+Reduced in: 43.951000 seconds
+Loaded graph in: 93.457000 seconds
+Sorted in: 66.871000 seconds
+Mapped in: 13.147000 seconds
+Reduced in: 43.952000 seconds

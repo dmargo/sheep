@@ -1,0 +1,47 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 4 workers...
+s:0 a:1 i:0 r:0 c:4
+p: nodes:1 64
+Loaded graph in: 739.222000 seconds
+Sorted in: 172.032000 seconds
+Mapped in: 32.333000 seconds
+Reduced in: 25.916000 seconds
+Loaded graph in: 735.878000 seconds
+Sorted in: 219.888000 seconds
+Mapped in: 32.190000 seconds
+Reduced in: 25.926000 seconds
+Loaded graph in: 748.001000 seconds
+Sorted in: 222.552000 seconds
+Mapped in: 31.770000 seconds
+Reduced in: 26.255000 seconds
+Loaded graph in: 775.518000 seconds
+Sorted in: 201.323000 seconds
+Mapped in: 32.215000 seconds
+Reduced in: 25.889000 seconds
+Loaded graph in: 776.772000 seconds
+Sorted in: 205.457000 seconds
+Mapped in: 32.183000 seconds
+Reduced in: 25.895000 seconds
+Loaded graph in: 720.685000 seconds
+Sorted in: 261.319000 seconds
+Mapped in: 31.679000 seconds
+Reduced in: 26.381000 seconds
+Loaded graph in: 800.157000 seconds
+Sorted in: 95.738000 seconds
+Mapped in: 32.186000 seconds
+Reduced in: 25.902000 seconds
+Loaded graph in: 769.249000 seconds
+Sorted in: 131.431000 seconds
+Mapped in: 31.738000 seconds
+Reduced in: 26.296000 seconds
+Loaded graph in: 804.425000 seconds
+Sorted in: 143.532000 seconds
+Mapped in: 32.200000 seconds
+Reduced in: 25.875000 seconds
+Loaded graph in: 748.875000 seconds
+Sorted in: 148.985000 seconds
+Mapped in: 31.683000 seconds
+Reduced in: 26.282000 seconds
+Loaded graph in: 807.468000 seconds
+Sorted in: 116.526000 seconds
+slurmstepd: error: *** JOB 33818567 CANCELLED AT 2015-02-27T17:11:00 DUE TO TIME LIMIT on holy2a05201 ***
+slurmstepd: error: _slurm_cgroup_destroy: problem deleting step cgroup path /cgroup/freezer/slurm/uid_555650/job_33818567/step_batch: Device or resource busy

@@ -1,0 +1,93 @@
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17778 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17779 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17780 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17781 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17782 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17783 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17784 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17785 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17786 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17787 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17788 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17789 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17790 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17791 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17792 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17793 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17794 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17795 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17796 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17797 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17798 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17799 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17800 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17801 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17802 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17803 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17804 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17805 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17806 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17807 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/var/slurmd/spool/slurmd/job34017117/slurm_script: line 4: 17808 Aborted                 ./partition_tree -f "${PREFIX}.seq" "${PREFIX}.tre" $PARTITION

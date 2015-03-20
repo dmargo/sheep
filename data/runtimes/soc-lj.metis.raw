@@ -1,0 +1,377 @@
+dmargo@zod:~/jtree/src/jtree/data/time$ exitfor p in $(seq 11); do gpmetis ~/data/cit-patents/cit-Patents.adj 2; done[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@/[1@s[1@o[5@c-lj/[1@s[1@o[15@c-LiveJournal1.[1@a[1@d[1@j
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.732 sec
+  Partitioning: 		  27.850 sec   (METIS time)
+  Reporting:    		   6.057 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.239 sec
+  Partitioning: 		  27.392 sec   (METIS time)
+  Reporting:    		   5.987 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.230 sec
+  Partitioning: 		  27.293 sec   (METIS time)
+  Reporting:    		   5.947 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.230 sec
+  Partitioning: 		  27.181 sec   (METIS time)
+  Reporting:    		   5.944 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.240 sec
+  Partitioning: 		  27.413 sec   (METIS time)
+  Reporting:    		   5.981 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.212 sec
+  Partitioning: 		  27.372 sec   (METIS time)
+  Reporting:    		   5.963 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.212 sec
+  Partitioning: 		  27.384 sec   (METIS time)
+  Reporting:    		   5.918 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.223 sec
+  Partitioning: 		  27.346 sec   (METIS time)
+  Reporting:    		   5.935 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.219 sec
+  Partitioning: 		  27.108 sec   (METIS time)
+  Reporting:    		   5.966 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.223 sec
+  Partitioning: 		  27.446 sec   (METIS time)
+  Reporting:    		   5.971 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/soc-lj/soc-LiveJournal1.adj, #Vertices: 4847571, #Edges: 68475391, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 4348564, communication volume: 1084022.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 70739595, desired: 68734584, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 1876 connected components and the resulting
+   partitioning after removing the cut edges has 2615 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   5.210 sec
+  Partitioning: 		  27.488 sec   (METIS time)
+  Reporting:    		   5.935 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 3823.453 MB
+******************************************************************************
+dmargo@zod:~/jtree/src/jtree/data/time$ exit
+exit

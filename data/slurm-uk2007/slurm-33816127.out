@@ -1,0 +1,48 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 11 workers...
+s:0 a:1 i:0 r:0 c:11
+p: nodes:1 64
+Loaded graph in: 462.731000 seconds
+Sorted in: 120.717000 seconds
+Mapped in: 20.223000 seconds
+Reduced in: 115.648000 seconds
+Loaded graph in: 627.959000 seconds
+Sorted in: 93.999000 seconds
+Mapped in: 20.114000 seconds
+Reduced in: 119.176000 seconds
+Loaded graph in: 492.874000 seconds
+Sorted in: 96.293000 seconds
+Mapped in: 20.086000 seconds
+Reduced in: 116.610000 seconds
+Loaded graph in: 488.931000 seconds
+Sorted in: 100.360000 seconds
+Mapped in: 20.116000 seconds
+Reduced in: 113.904000 seconds
+Loaded graph in: 485.411000 seconds
+Sorted in: 109.220000 seconds
+Mapped in: 19.866000 seconds
+Reduced in: 119.947000 seconds
+Loaded graph in: 482.103000 seconds
+Sorted in: 109.088000 seconds
+Mapped in: 19.892000 seconds
+Reduced in: 119.144000 seconds
+Loaded graph in: 480.650000 seconds
+Sorted in: 109.777000 seconds
+Mapped in: 19.928000 seconds
+Reduced in: 103.704000 seconds
+Loaded graph in: 486.147000 seconds
+Sorted in: 101.943000 seconds
+Mapped in: 20.162000 seconds
+Reduced in: 104.685000 seconds
+Loaded graph in: 475.934000 seconds
+Sorted in: 110.219000 seconds
+Mapped in: 19.941000 seconds
+Reduced in: 99.420000 seconds
+Loaded graph in: 490.501000 seconds
+Sorted in: 99.365000 seconds
+Mapped in: 20.133000 seconds
+Reduced in: 104.401000 seconds
+Loaded graph in: 476.433000 seconds
+Sorted in: 111.133000 seconds
+Mapped in: 19.868000 seconds
+Reduced in: 98.622000 seconds
+slurmstepd: error: slurm_receive_msg: Socket timed out on send/recv operation

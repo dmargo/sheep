@@ -1,0 +1,9 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 3 workers...
+s:0 a:1 i:0 r:0 c:3
+p: nodes:1 64
+Loaded graph in: 709.220000 seconds
+Sorted in: 67.711000 seconds
+Mapped in: 41.344000 seconds
+Reduced in: 26.590000 seconds
+slurmstepd: error: *** JOB 33818586 CANCELLED AT 2015-02-27T19:38:23 *** on holy2a05201
+slurmstepd: error: _slurm_cgroup_destroy: problem deleting step cgroup path /cgroup/freezer/slurm/uid_555650/job_33818586/step_batch: Device or resource busy

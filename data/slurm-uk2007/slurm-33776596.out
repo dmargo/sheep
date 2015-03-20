@@ -1,0 +1,62 @@
+Loaded in: 1073180ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 155526ms
+Finished in: 1229318ms
+Loaded in: 1489186ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 155408ms
+Finished in: 1645211ms
+Loaded in: 1003052ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 155519ms
+Finished in: 1159176ms
+Loaded in: 1160198ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 155635ms
+Finished in: 1316454ms
+Loaded in: 1165542ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 155347ms
+Finished in: 1321547ms
+Loaded in: 1310677ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 155988ms
+Finished in: 1467320ms
+Loaded in: 1128346ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 132404ms
+Finished in: 1261356ms
+Loaded in: 1372983ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 155128ms
+Finished in: 1528736ms
+Loaded in: 1337311ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 155326ms
+Finished in: 1493242ms
+Loaded in: 1349844ms
+Nodes:41652230 Edges:1468365033
+Actually created 6 partitions.
+First two partition sizes: 15825435 and 1222615
+Partitioning took: 154610ms
+Finished in: 1505060ms
+slurmstepd: error: *** JOB 33776596 CANCELLED AT 2015-02-27T00:50:33 DUE TO TIME LIMIT on holy2a05201 ***
+slurmstepd: error: _slurm_cgroup_destroy: problem deleting step cgroup path /cgroup/freezer/slurm/uid_555650/job_33776596/step_batch: Device or resource busy

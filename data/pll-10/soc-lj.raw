@@ -1,0 +1,528 @@
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.511000 seconds
+Sorted in: 0.235000 seconds
+Mapped in: 4.686000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.808000 seconds
+Sorted in: 0.234000 seconds
+Mapped in: 4.693000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.698000 seconds
+Sorted in: 0.233000 seconds
+Mapped in: 4.651000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.816000 seconds
+Sorted in: 0.242000 seconds
+Mapped in: 4.663000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.874000 seconds
+Sorted in: 0.235000 seconds
+Mapped in: 4.649000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.583000 seconds
+Sorted in: 0.233000 seconds
+Mapped in: 4.669000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.717000 seconds
+Sorted in: 0.238000 seconds
+Mapped in: 4.675000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.555000 seconds
+Sorted in: 0.240000 seconds
+Mapped in: 4.603000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 7.273000 seconds
+Sorted in: 0.237000 seconds
+Mapped in: 4.675000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.607000 seconds
+Sorted in: 0.239000 seconds
+Mapped in: 4.652000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 6.785000 seconds
+Sorted in: 0.235000 seconds
+Mapped in: 4.663000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.49617194 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.57424160 seconds.
+Reduced in .86295346 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.46275689 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.06927474 seconds.
+Reduced in .87265970 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.51405068 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.76002167 seconds.
+Reduced in .86210146 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.48808081 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.58062973 seconds.
+Reduced in .87262312 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.47106168 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.82672972 seconds.
+Reduced in .86688029 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.47000427 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.27341490 seconds.
+Reduced in .86285874 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.49884412 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.59023396 seconds.
+Reduced in .86126765 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.53780131 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.73606405 seconds.
+Reduced in .86314831 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.46181955 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.79434480 seconds.
+Reduced in .85840198 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.45152753 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.78770150 seconds.
+Reduced in .87308482 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 2.48136300 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.77522798 seconds.
+Reduced in .88550303 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.47660908 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.42858373 seconds.
+Reduced in 1.69685408 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.44822287 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.51058803 seconds.
+Reduced in 1.69268498 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.46501080 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.54294915 seconds.
+Reduced in 1.68604386 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.52714322 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.45285043 seconds.
+Reduced in 1.68007504 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.48868818 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.30332295 seconds.
+Reduced in 1.68523869 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.52490107 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.90801760 seconds.
+Reduced in 1.68710873 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.46923491 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.00189023 seconds.
+Reduced in 1.69421041 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.46000105 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.34751811 seconds.
+Reduced in 1.69744709 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.47222577 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.25547047 seconds.
+Reduced in 1.68395039 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.50473586 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.44688613 seconds.
+Reduced in 1.67843273 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 2.55371365 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.03995777 seconds.
+Reduced in 1.68674881 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.48374287 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.23530106 seconds.
+Reduced in 1.79997054 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.47747742 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.30730436 seconds.
+Reduced in 1.80265711 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.48945595 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.13333195 seconds.
+Reduced in 1.79795003 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.45937971 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.26230617 seconds.
+Reduced in 1.81546078 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.51127421 seconds.
+Loaded in 0.0 seconds.
+Mapped in 6.14015771 seconds.
+Reduced in 1.81686048 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.47393370 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.80318237 seconds.
+Reduced in 1.81539593 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.52849096 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.80489663 seconds.
+Reduced in 1.81436589 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.48306231 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.91676859 seconds.
+Reduced in 1.79181445 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.47546215 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.79897512 seconds.
+Reduced in 1.81450230 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.52192656 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.79784658 seconds.
+Reduced in 1.79901392 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 2.46685535 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.90813244 seconds.
+Reduced in 1.80153481 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.53537374 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.53400080 seconds.
+Reduced in 2.43892858 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.49685388 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.55308074 seconds.
+Reduced in 2.45005038 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.43939275 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.38978524 seconds.
+Reduced in 2.44188466 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.50294262 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.79053541 seconds.
+Reduced in 2.42808689 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.49668628 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.84571819 seconds.
+Reduced in 2.43643289 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.43522693 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.88535715 seconds.
+Reduced in 2.44677526 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.48017810 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.67582490 seconds.
+Reduced in 2.45299270 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.48576012 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.95081902 seconds.
+Reduced in 2.43995990 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.45174345 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.39028191 seconds.
+Reduced in 2.44385093 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.46932893 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.46868492 seconds.
+Reduced in 2.64508481 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 2.47995735 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.46998933 seconds.
+Reduced in 2.44251960 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.43230239 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.50215186 seconds.
+Reduced in 2.63250378 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.51452661 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.46093437 seconds.
+Reduced in 2.63672115 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.47624659 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.22334080 seconds.
+Reduced in 2.64475500 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.48934268 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.55205819 seconds.
+Reduced in 2.63576820 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.48725779 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.50964935 seconds.
+Reduced in 2.63403535 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.45607136 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.31403317 seconds.
+Reduced in 2.64179506 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.44521091 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.43510983 seconds.
+Reduced in 2.64252652 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.44636788 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.35471860 seconds.
+Reduced in 2.61833614 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.46628220 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.29341301 seconds.
+Reduced in 2.63699072 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.50493004 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.52944354 seconds.
+Reduced in 2.64143505 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/soc-lj/soc-LiveJournal1.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 2.46284351 seconds.
+Loaded in 0.0 seconds.
+Mapped in 5.49740886 seconds.
+Reduced in 2.62721167 seconds.
+

@@ -1,0 +1,381 @@
+dmargo@zod:~/jtree/src/jtree/data/time$ exitfor p in $(seq 11); do gpmetis ~/data/youtube/com-youtube.ungraph.adj 2; done[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@i[1@t[1@-[1@p[7@atents/[1@c[1@i[2@t-[1@P[7@atents.[1@a[1@d[1@j[1P[1P[1P
+cit-Patents.dat      cit-Patents.dat.ini  cit-Patents.net      
+dmargo@zod:~/jtree/src/jtree/data/time$ for p in $(seq 11); do gpmetis ~/data/cit-patents/cit-Patents. 2; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[K[K[K[Kexit
+exit
+dmargo@zod:~/jtree/src/jtree/data/time$ ./[K[Kexitfor p in $(seq 11); do gpmetis ~/data/youtube/com-youtube.ungraph.adj 2; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kfor p in $(seq 11); do gpmetis ~/data/youtube/com-youtube.ungraph.adj 2; done[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@i[1@t[1@-[1@p[7@atents/[1@c[1@i[1@t[1@-[1@P[7@atents.[1@a[1@d[1@j
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.899 sec
+  Partitioning: 		  12.040 sec   (METIS time)
+  Reporting:    		   3.502 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.870 sec
+  Partitioning: 		  12.130 sec   (METIS time)
+  Reporting:    		   3.463 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.797 sec
+  Partitioning: 		  12.081 sec   (METIS time)
+  Reporting:    		   3.507 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.808 sec
+  Partitioning: 		  12.108 sec   (METIS time)
+  Reporting:    		   3.449 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.797 sec
+  Partitioning: 		  11.944 sec   (METIS time)
+  Reporting:    		   3.463 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.808 sec
+  Partitioning: 		  11.991 sec   (METIS time)
+  Reporting:    		   3.450 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.803 sec
+  Partitioning: 		  12.141 sec   (METIS time)
+  Reporting:    		   3.478 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.795 sec
+  Partitioning: 		  11.968 sec   (METIS time)
+  Reporting:    		   3.440 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.804 sec
+  Partitioning: 		  11.978 sec   (METIS time)
+  Reporting:    		   3.509 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.798 sec
+  Partitioning: 		  11.929 sec   (METIS time)
+  Reporting:    		   3.447 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/cit-patents/cit-Patents.adj, #Vertices: 3774768, #Edges: 16518947, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 595918, communication volume: 583736.
+
+ - Balance:
+     constraint #0:  1.005 out of 0.000
+
+ - Most overweight partition:
+     pid: 1, actual: 16600977, desired: 16518948, ratio: 1.00.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - The original graph had 3627 connected components and the resulting
+   partitioning after removing the cut edges has 3699 components.
+Timing Information ----------------------------------------------------------
+  I/O:          		   1.871 sec
+  Partitioning: 		  12.015 sec   (METIS time)
+  Reporting:    		   3.431 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 1250.397 MB
+******************************************************************************
+dmargo@zod:~/jtree/src/jtree/data/time$ exit
+exit

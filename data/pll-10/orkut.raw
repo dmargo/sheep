@@ -1,0 +1,528 @@
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 12.156000 seconds
+Sorted in: 0.144000 seconds
+Mapped in: 7.778000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 12.399000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.685000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.612000 seconds
+Sorted in: 0.145000 seconds
+Mapped in: 7.624000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.491000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.496000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.495000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.827000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.518000 seconds
+Sorted in: 0.141000 seconds
+Mapped in: 7.751000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.504000 seconds
+Sorted in: 0.142000 seconds
+Mapped in: 7.637000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.551000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.793000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.472000 seconds
+Sorted in: 0.142000 seconds
+Mapped in: 7.647000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.600000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.612000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.720000 seconds
+Sorted in: 0.142000 seconds
+Mapped in: 7.643000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.76417989 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.50236338 seconds.
+Reduced in .38017352 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.60314730 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.19359522 seconds.
+Reduced in .37807660 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.59729068 seconds.
+Loaded in 0.0 seconds.
+Mapped in 14.48160133 seconds.
+Reduced in .37872217 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.59787135 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.16711584 seconds.
+Reduced in .37843181 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.64634375 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.28007553 seconds.
+Reduced in .37736506 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.64614606 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.22688089 seconds.
+Reduced in .37633085 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.60643170 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.27689289 seconds.
+Reduced in .37755408 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.64472635 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.98393078 seconds.
+Reduced in .37903183 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.59374003 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.57350632 seconds.
+Reduced in .37790100 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.66879815 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.51912917 seconds.
+Reduced in .38076105 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in 3.67780850 seconds.
+Loaded in 0.0 seconds.
+Mapped in 12.31778059 seconds.
+Reduced in .37162847 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.72917058 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.60979187 seconds.
+Reduced in .78280686 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.74694686 seconds.
+Loaded in 0.0 seconds.
+Mapped in 11.25400989 seconds.
+Reduced in .78742967 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.67311477 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.86268270 seconds.
+Reduced in .80555595 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.72758122 seconds.
+Loaded in 0.0 seconds.
+Mapped in 11.18123059 seconds.
+Reduced in .78938691 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.72682653 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.91327783 seconds.
+Reduced in .78539435 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.74548318 seconds.
+Loaded in 0.0 seconds.
+Mapped in 11.05839175 seconds.
+Reduced in .78792101 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.68106423 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.69499237 seconds.
+Reduced in .80303939 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.63948756 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.84055409 seconds.
+Reduced in .78505792 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.64426627 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.89258310 seconds.
+Reduced in .79411336 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.60087535 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.95598197 seconds.
+Reduced in .78766311 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in 3.73320380 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.92331257 seconds.
+Reduced in .79284941 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.71501884 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.43940628 seconds.
+Reduced in .84822216 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.74254649 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.66404140 seconds.
+Reduced in .84802546 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.70568580 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.72207931 seconds.
+Reduced in .84660938 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.68794884 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.63055002 seconds.
+Reduced in .84799203 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.78561350 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.67515468 seconds.
+Reduced in .84235990 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.78918382 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.23705041 seconds.
+Reduced in .84773002 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.68070209 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.59944772 seconds.
+Reduced in .84236171 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.68153451 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.64993721 seconds.
+Reduced in .85407178 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.68939485 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.70271437 seconds.
+Reduced in .84599983 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.73603685 seconds.
+Loaded in 0.0 seconds.
+Mapped in 9.25346378 seconds.
+Reduced in .84462522 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in 3.69789349 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.63742773 seconds.
+Reduced in .97889332 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.74275141 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.92578445 seconds.
+Reduced in 1.26735247 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.68598605 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.19812804 seconds.
+Reduced in 1.39607704 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.68881264 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.87727475 seconds.
+Reduced in 1.26869805 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.71600543 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.04530346 seconds.
+Reduced in 1.27667018 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.67369713 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.21767948 seconds.
+Reduced in 1.26650354 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.68864772 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.29549389 seconds.
+Reduced in 1.26568174 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.66958558 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.56091207 seconds.
+Reduced in 1.27131973 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.69530140 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.91629738 seconds.
+Reduced in 1.27135711 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.62419318 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.45688787 seconds.
+Reduced in 1.26219010 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.59130601 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.90570973 seconds.
+Reduced in 1.27250553 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in 3.62691168 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.01373956 seconds.
+Reduced in 1.26861080 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.59608254 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.30423584 seconds.
+Reduced in 1.33906009 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.68243960 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.50031223 seconds.
+Reduced in 1.32734847 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.60986876 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.07263070 seconds.
+Reduced in 1.32536615 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.68796020 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.18105331 seconds.
+Reduced in 1.33327142 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.68448766 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.02088682 seconds.
+Reduced in 1.34798157 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.72115872 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.42371815 seconds.
+Reduced in 1.32450778 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.74684466 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.03463226 seconds.
+Reduced in 1.34076878 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.67967520 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.28476234 seconds.
+Reduced in 1.33179050 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.61156927 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.94994743 seconds.
+Reduced in 1.34120243 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.60617439 seconds.
+Loaded in 0.0 seconds.
+Mapped in 8.36219209 seconds.
+Reduced in 1.33399582 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in 3.64389847 seconds.
+Loaded in 0.0 seconds.
+Mapped in 7.94756390 seconds.
+Reduced in 1.34517938 seconds.
+

@@ -1,0 +1,32 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 18 workers...
+s:0 a:1 i:0 r:0 c:18
+p: nodes:1 64
+`/n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat' -> `/scratch/uk-2007-05-nat.dat'
+`/n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat.ini' -> `/scratch/uk-2007-05-nat.dat.ini'
+Loaded graph in: 489.126000 seconds
+Sorted in: 62.422000 seconds
+Mapped in: 18.403000 seconds
+Reduced in: 219.345000 seconds
+Loaded tree in: 12.897000 seconds
+TREEFAQS: width:11329	roots:78950
+	vheight:10158364	eheight:925738511
+	verts:105218569	edges:3717169969
+	halo:17532713	core:0
+	fill:0
+Actually created 2 partitions.
+First two partition sizes: 71088408 and 34130161
+Partitioning took: 23.486000 seconds
+edges cut: 1356773530 (0.363946%)
+Vcom. vol: 55521587 (0.014893%)
+ECV(rand): 51457612 (0.013803%)
+ECV(hash): 48772334 (0.013083%)
+ECV(down): 953551 (0.000256%)
+ECV(up)  : 54564714 (0.014637%)
+Finished in: 4685.904000 seconds
+Partitioned in 4686.72704436 seconds.
+Loaded graph in: 424.751000 seconds
+Sorted in: 72.076000 seconds
+Mapped in: 18.153000 seconds
+Reduced in: 178.327000 seconds
+slurmstepd: error: *** JOB 33952881 CANCELLED AT 2015-02-28T04:25:36 *** on holy2a05201
+slurmstepd: error: _slurm_cgroup_destroy: problem deleting step cgroup path /cgroup/freezer/slurm/uid_555650/job_33952881/step_batch: Device or resource busy

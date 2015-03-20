@@ -1,0 +1,156 @@
+dmargo@zod:~/jtree/src/jtree$ ls ~/data/orkut/
+[0m[01;34m1421395906[0m                     com-orkut.ungraph.adj.part.2   com-orkut.ungraph.adj.part.30
+com-orkut.ungraph.adj          com-orkut.ungraph.adj.part.20  com-orkut.ungraph.adj.part.31
+com-orkut.ungraph.adj.part.10  com-orkut.ungraph.adj.part.21  com-orkut.ungraph.adj.part.32
+com-orkut.ungraph.adj.part.11  com-orkut.ungraph.adj.part.22  com-orkut.ungraph.adj.part.4
+com-orkut.ungraph.adj.part.12  com-orkut.ungraph.adj.part.23  com-orkut.ungraph.adj.part.5
+com-orkut.ungraph.adj.part.13  com-orkut.ungraph.adj.part.24  com-orkut.ungraph.adj.part.6
+com-orkut.ungraph.adj.part.14  com-orkut.ungraph.adj.part.25  com-orkut.ungraph.adj.part.7
+com-orkut.ungraph.adj.part.15  com-orkut.ungraph.adj.part.26  com-orkut.ungraph.adj.part.8
+com-orkut.ungraph.adj.part.16  com-orkut.ungraph.adj.part.27  com-orkut.ungraph.adj.part.9
+com-orkut.ungraph.adj.part.17  com-orkut.ungraph.adj.part.28  com-orkut.ungraph.dat
+com-orkut.ungraph.adj.part.18  com-orkut.ungraph.adj.part.29  com-orkut.ungraph.dat.ini
+com-orkut.ungraph.adj.part.19  com-orkut.ungraph.adj.part.3   com-orkut.ungraph.net
+dmargo@zod:~/jtree/src/jtree$ for i in [K[K[K[K[Kp in $(seq 2 32); do
+> argstring="a[K$argstring com-orkut.ungraph.adj.part.${p}"
+> done
+dmargo@zod:~/jtree/src/jtree$ echo $argstring
+com-orkut.ungraph.adj.part.2 com-orkut.ungraph.adj.part.3 com-orkut.ungraph.adj.part.4 com-orkut.ungraph.adj.part.5 com-orkut.ungraph.adj.part.6 com-orkut.ungraph.adj.part.7 com-orkut.ungraph.adj.part.8 com-orkut.ungraph.adj.part.9 com-orkut.ungraph.adj.part.10 com-orkut.ungraph.adj.part.11 com-orkut.ungraph.adj.part.12 com-orkut.ungraph.adj.part.13 com-orkut.ungraph.adj.part.14 com-orkut.ungraph.adj.part.15 com-orkut.ungraph.adj.part.16 com-orkut.ungraph.adj.part.17 com-orkut.ungraph.adj.part.18 com-orkut.ungraph.adj.part.19 com-orkut.ungraph.adj.part.20 com-orkut.ungraph.adj.part.21 com-orkut.ungraph.adj.part.22 com-orkut.ungraph.adj.part.23 com-orkut.ungraph.adj.part.24 com-orkut.ungraph.adj.part.25 com-orkut.ungraph.adj.part.26 com-orkut.ungraph.adj.part.27 com-orkut.ungraph.adj.part.28 com-orkut.ungraph.adj.part.29 com-orkut.ungraph.adj.part.30 com-orkut.ungraph.adj.part.31 com-orkut.ungraph.adj.part.32
+dmargo@zod:~/jtree/src/jtree$ ./read_partition ~/data/com-or[K[K[K[K[K[Korkut/com-orkut.ungraph.dat $argstring
+Loaded in: 12083ms
+Nodes:3072441 Edges:117185083
+Segmentation fault (core dumped)
+dmargo@zod:~/jtree/src/jtree$ ./read_partition ~/data/com[K[K[Korkut/com-orkut.ungraph.dat ~/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kargi[Kstring=''
+dmargo@zod:~/jtree/src/jtree$ argstring=''./read_partition ~/data/orkut/com-orkut.ungraph.dat $argstring[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $argstring[Kfor p in $(seq 2 32); do argstring="$argstring com-orkut.ungraph.adj.part.${p}"; done[1@i[1P[1@/[1@h[1@omcom-orkut.ungraph.adj.part.${p}"; done M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecom-orkut.ungraph.adj.part.${p}"; doneeM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/com-orkut.ungraph.adj.part.${p}"; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdcom-orkut.ungraph.adj.part.${p}"; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmcom-orkut.ungraph.adj.part.${p}"; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cacom-orkut.ungraph.adj.part.${p}"; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crcom-orkut.ungraph.adj.part.${p}"; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcom-orkut.ungraph.adj.part.${p}"; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocom-orkut.ungraph.adj.part.${p}[1@"M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/com-orkut.ungraph.adj.part.${p[1@}M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdcom-orkut.ungraph.adj.part.${[1@pM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cacom-orkut.ungraph.adj.part.$[1@{M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctcom-orkut.ungraph.adj.part.[1@$M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cacom-orkut.ungraph.adj.part[1@.M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/com-orkut.ungraph.adj.par[1@tM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocom-orkut.ungraph.adj.pa[1@rM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crcom-orkut.ungraph.adj.p[1@aM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckcom-orkut.ungraph.adj.[1@pM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cucom-orkut.ungraph.adj[1@.M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctcom-orkut.ungraph.ad[1@jM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/com-orkut.ungraph.a[1@dM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+dmargo@zod:~/jtree/src/jtree$ for p in $(seq 2 32); do argstring="$argstring /home/dmargo/data/orkut/com-orkut.ungraph.aadj.part.${p}"; doneM[C[C[C[C[C[C[C[C[C[Cargstring=''[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./read_partition ~/data/orkut/com-orkut.ungraph.dat $argstring
+Loaded in: 12468ms
+Nodes:3072441 Edges:117185083
+edges cut: 5616165 (0.047926%)
+Vcom. vol: 852321 (0.007273%)
+ECV(rand): 638203 (0.005446%)
+ECV(hash): 592167 (0.005053%)
+edges cut: 12942745 (0.110447%)
+Vcom. vol: 1980024 (0.016897%)
+ECV(rand): 1620500 (0.013829%)
+ECV(hash): 1491146 (0.012725%)
+edges cut: 21551076 (0.183906%)
+Vcom. vol: 3551587 (0.030308%)
+ECV(rand): 2947833 (0.025155%)
+ECV(hash): 2699886 (0.023040%)
+edges cut: 19222084 (0.164032%)
+Vcom. vol: 3844169 (0.032804%)
+ECV(rand): 3133937 (0.026743%)
+ECV(hash): 2873235 (0.024519%)
+edges cut: 24020801 (0.204982%)
+Vcom. vol: 5194973 (0.044331%)
+ECV(rand): 4169727 (0.035582%)
+ECV(hash): 3810421 (0.032516%)
+edges cut: 25319661 (0.216066%)
+Vcom. vol: 6017249 (0.051348%)
+ECV(rand): 4756176 (0.040587%)
+ECV(hash): 4356570 (0.037177%)
+edges cut: 27182654 (0.231963%)
+Vcom. vol: 6878257 (0.058696%)
+ECV(rand): 5423788 (0.046284%)
+ECV(hash): 4960472 (0.042330%)
+edges cut: 27791561 (0.237160%)
+Vcom. vol: 7453562 (0.063605%)
+ECV(rand): 5845667 (0.049884%)
+ECV(hash): 5350229 (0.045656%)
+edges cut: 28507138 (0.243266%)
+Vcom. vol: 7925941 (0.067636%)
+ECV(rand): 6177320 (0.052714%)
+ECV(hash): 5653512 (0.048244%)
+edges cut: 30240871 (0.258061%)
+Vcom. vol: 8867960 (0.075675%)
+ECV(rand): 6836514 (0.058339%)
+ECV(hash): 6260286 (0.053422%)
+edges cut: 31112851 (0.265502%)
+Vcom. vol: 9563192 (0.081608%)
+ECV(rand): 7334484 (0.062589%)
+ECV(hash): 6707918 (0.057242%)
+edges cut: 32439507 (0.276823%)
+Vcom. vol: 10411475 (0.088846%)
+ECV(rand): 7883095 (0.067270%)
+ECV(hash): 7228815 (0.061687%)
+edges cut: 35671116 (0.304400%)
+Vcom. vol: 11210423 (0.095664%)
+ECV(rand): 8552218 (0.072980%)
+ECV(hash): 7829730 (0.066815%)
+edges cut: 34913666 (0.297936%)
+Vcom. vol: 11484327 (0.098002%)
+ECV(rand): 8674056 (0.074020%)
+ECV(hash): 7957241 (0.067903%)
+edges cut: 34711371 (0.296210%)
+Vcom. vol: 12028212 (0.102643%)
+ECV(rand): 9003940 (0.076835%)
+ECV(hash): 8257758 (0.070468%)
+edges cut: 34939712 (0.298158%)
+Vcom. vol: 12117002 (0.103401%)
+ECV(rand): 9095219 (0.077614%)
+ECV(hash): 8339718 (0.071167%)
+edges cut: 36912403 (0.314992%)
+Vcom. vol: 13520173 (0.115375%)
+ECV(rand): 10024684 (0.085546%)
+ECV(hash): 9207041 (0.078568%)
+edges cut: 36022396 (0.307397%)
+Vcom. vol: 13161667 (0.112315%)
+ECV(rand): 9754258 (0.083238%)
+ECV(hash): 8961376 (0.076472%)
+edges cut: 37006949 (0.315799%)
+Vcom. vol: 13720444 (0.117084%)
+ECV(rand): 10180191 (0.086873%)
+ECV(hash): 9336220 (0.079671%)
+edges cut: 37319513 (0.318466%)
+Vcom. vol: 14256329 (0.121657%)
+ECV(rand): 10480075 (0.089432%)
+ECV(hash): 9636515 (0.082233%)
+edges cut: 37624459 (0.321069%)
+Vcom. vol: 14547626 (0.124142%)
+ECV(rand): 10676757 (0.091110%)
+ECV(hash): 9814279 (0.083750%)
+edges cut: 38124441 (0.325335%)
+Vcom. vol: 14960434 (0.127665%)
+ECV(rand): 10963444 (0.093557%)
+ECV(hash): 10074945 (0.085975%)
+edges cut: 38456742 (0.328171%)
+Vcom. vol: 15726972 (0.134206%)
+ECV(rand): 11433837 (0.097571%)
+ECV(hash): 10514449 (0.089725%)
+edges cut: 39742849 (0.339146%)
+Vcom. vol: 16069596 (0.137130%)
+ECV(rand): 11681551 (0.099685%)
+ECV(hash): 10748678 (0.091724%)
+edges cut: 40005703 (0.341389%)
+Vcom. vol: 16534247 (0.141095%)
+ECV(rand): 11996398 (0.102371%)
+ECV(hash): 11033361 (0.094153%)
+edges cut: 39438006 (0.336545%)
+Vcom. vol: 16499400 (0.140798%)
+ECV(rand): 11938344 (0.101876%)
+ECV(hash): 10989399 (0.093778%)
+edges cut: 40659737 (0.346970%)
+Vcom. vol: 17145772 (0.146314%)
+ECV(rand): 12385230 (0.105689%)
+ECV(hash): 11399055 (0.097274%)
+edges cut: 40835989 (0.348474%)
+Vcom. vol: 17600867 (0.150197%)
+ECV(rand): 12648570 (0.107937%)
+ECV(hash): 11654212 (0.099451%)
+edges cut: 41671961 (0.355608%)
+Vcom. vol: 17997751 (0.153584%)
+ECV(rand): 12953636 (0.110540%)
+ECV(hash): 11924486 (0.101758%)
+edges cut: 42151487 (0.359700%)
+Vcom. vol: 18214041 (0.155430%)
+ECV(rand): 13089243 (0.111697%)
+ECV(hash): 12051823 (0.102844%)
+edges cut: 43291973 (0.369432%)
+Vcom. vol: 19049545 (0.162559%)
+ECV(rand): 13668977 (0.116644%)
+ECV(hash): 12582508 (0.107373%)
+Finished in: 531070ms
+dmargo@zod:~/jtree/src/jtree$ [Kdmargo@zod:~/jtree/src/jtree$ exit
+exit

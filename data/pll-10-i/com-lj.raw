@@ -1,0 +1,528 @@
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.153000 seconds
+Sorted in: 0.180000 seconds
+Mapped in: 2.771000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.516000 seconds
+Sorted in: 0.182000 seconds
+Mapped in: 2.774000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.201000 seconds
+Sorted in: 0.180000 seconds
+Mapped in: 2.799000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.310000 seconds
+Sorted in: 0.176000 seconds
+Mapped in: 2.732000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.201000 seconds
+Sorted in: 0.180000 seconds
+Mapped in: 2.750000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.189000 seconds
+Sorted in: 0.178000 seconds
+Mapped in: 2.787000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.240000 seconds
+Sorted in: 0.177000 seconds
+Mapped in: 2.730000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.474000 seconds
+Sorted in: 0.179000 seconds
+Mapped in: 2.760000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.160000 seconds
+Sorted in: 0.184000 seconds
+Mapped in: 2.756000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.347000 seconds
+Sorted in: 0.188000 seconds
+Mapped in: 2.795000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 1 workers...
+s:1 a:1 i:0 r:1 c:1
+Loaded graph in: 3.333000 seconds
+Sorted in: 0.182000 seconds
+Mapped in: 2.802000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.477000 seconds
+Sorted in: 0.518000 seconds
+Mapped in: 1.810000 seconds
+Reduced in .61404324 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.486000 seconds
+Sorted in: 0.522000 seconds
+Mapped in: 1.794000 seconds
+Reduced in .61778551 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.486000 seconds
+Sorted in: 0.520000 seconds
+Mapped in: 1.895000 seconds
+Reduced in .62066838 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.480000 seconds
+Sorted in: 0.516000 seconds
+Mapped in: 1.896000 seconds
+Reduced in .61563126 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.488000 seconds
+Sorted in: 0.520000 seconds
+Mapped in: 1.882000 seconds
+Reduced in .62054167 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.468000 seconds
+Sorted in: 0.525000 seconds
+Mapped in: 1.708000 seconds
+Reduced in .61802699 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.483000 seconds
+Sorted in: 0.511000 seconds
+Mapped in: 1.836000 seconds
+Reduced in .62944166 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.482000 seconds
+Sorted in: 0.515000 seconds
+Mapped in: 1.846000 seconds
+Reduced in .62664346 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.478000 seconds
+Sorted in: 0.519000 seconds
+Mapped in: 1.905000 seconds
+Reduced in .62350469 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.473000 seconds
+Sorted in: 0.522000 seconds
+Mapped in: 1.822000 seconds
+Reduced in .62505850 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 2 workers...
+s:1 a:1 i:0 r:1 c:2
+Loaded graph in: 3.482000 seconds
+Sorted in: 0.520000 seconds
+Mapped in: 1.889000 seconds
+Reduced in .62804585 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.513000 seconds
+Sorted in: 0.561000 seconds
+Mapped in: 1.408000 seconds
+Reduced in 1.20450271 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.518000 seconds
+Sorted in: 0.577000 seconds
+Mapped in: 1.436000 seconds
+Reduced in 1.21238614 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.514000 seconds
+Sorted in: 0.563000 seconds
+Mapped in: 1.262000 seconds
+Reduced in 1.20734232 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.512000 seconds
+Sorted in: 0.569000 seconds
+Mapped in: 1.439000 seconds
+Reduced in 1.20219871 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.515000 seconds
+Sorted in: 0.570000 seconds
+Mapped in: 1.432000 seconds
+Reduced in 1.20923385 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.479000 seconds
+Sorted in: 0.803000 seconds
+Mapped in: 1.393000 seconds
+Reduced in 1.20715472 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.516000 seconds
+Sorted in: 0.561000 seconds
+Mapped in: 1.427000 seconds
+Reduced in 1.21034011 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.507000 seconds
+Sorted in: 0.565000 seconds
+Mapped in: 1.415000 seconds
+Reduced in 1.21490423 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.507000 seconds
+Sorted in: 0.567000 seconds
+Mapped in: 1.354000 seconds
+Reduced in 1.20375819 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.477000 seconds
+Sorted in: 0.632000 seconds
+Mapped in: 1.268000 seconds
+Reduced in 1.20712561 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 3 workers...
+s:1 a:1 i:0 r:1 c:3
+Loaded graph in: 2.506000 seconds
+Sorted in: 0.572000 seconds
+Mapped in: 1.429000 seconds
+Reduced in 1.20619177 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.012000 seconds
+Sorted in: 0.689000 seconds
+Mapped in: 1.169000 seconds
+Reduced in 1.31399088 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.020000 seconds
+Sorted in: 0.675000 seconds
+Mapped in: 1.190000 seconds
+Reduced in 1.32578651 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.024000 seconds
+Sorted in: 0.674000 seconds
+Mapped in: 1.149000 seconds
+Reduced in 1.32174534 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.024000 seconds
+Sorted in: 0.672000 seconds
+Mapped in: 1.200000 seconds
+Reduced in 1.30983867 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.032000 seconds
+Sorted in: 0.669000 seconds
+Mapped in: 1.160000 seconds
+Reduced in 1.31039751 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.024000 seconds
+Sorted in: 0.676000 seconds
+Mapped in: 1.160000 seconds
+Reduced in 1.31302499 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.021000 seconds
+Sorted in: 0.668000 seconds
+Mapped in: 1.190000 seconds
+Reduced in 1.31329627 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.019000 seconds
+Sorted in: 0.671000 seconds
+Mapped in: 1.161000 seconds
+Reduced in 1.31394840 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.028000 seconds
+Sorted in: 0.670000 seconds
+Mapped in: 1.174000 seconds
+Reduced in 1.31004280 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.010000 seconds
+Sorted in: 0.692000 seconds
+Mapped in: 1.185000 seconds
+Reduced in 1.31558473 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 4 workers...
+s:1 a:1 i:0 r:1 c:4
+Loaded graph in: 2.020000 seconds
+Sorted in: 0.670000 seconds
+Mapped in: 1.188000 seconds
+Reduced in 1.31777134 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.764000 seconds
+Sorted in: 0.779000 seconds
+Mapped in: 1.102000 seconds
+Reduced in 1.90141847 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.767000 seconds
+Sorted in: 0.769000 seconds
+Mapped in: 1.099000 seconds
+Reduced in 1.77705698 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.763000 seconds
+Sorted in: 0.777000 seconds
+Mapped in: 1.104000 seconds
+Reduced in 1.75476372 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.772000 seconds
+Sorted in: 0.777000 seconds
+Mapped in: 1.092000 seconds
+Reduced in 1.76685404 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.761000 seconds
+Sorted in: 0.779000 seconds
+Mapped in: 1.101000 seconds
+Reduced in 1.77678386 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.775000 seconds
+Sorted in: 0.769000 seconds
+Mapped in: 1.060000 seconds
+Reduced in 1.77734574 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.764000 seconds
+Sorted in: 0.775000 seconds
+Mapped in: 1.108000 seconds
+Reduced in 1.77947168 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.766000 seconds
+Sorted in: 0.770000 seconds
+Mapped in: 1.109000 seconds
+Reduced in 1.77467299 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.768000 seconds
+Sorted in: 0.771000 seconds
+Mapped in: 1.100000 seconds
+Reduced in 1.77568475 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.757000 seconds
+Sorted in: 0.776000 seconds
+Mapped in: 1.087000 seconds
+Reduced in 1.76354669 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 5 workers...
+s:1 a:1 i:0 r:1 c:5
+Loaded graph in: 1.770000 seconds
+Sorted in: 0.774000 seconds
+Mapped in: 1.109000 seconds
+Reduced in 1.77412469 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.636000 seconds
+Sorted in: 0.885000 seconds
+Mapped in: 1.087000 seconds
+Reduced in 1.89449814 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.636000 seconds
+Sorted in: 0.882000 seconds
+Mapped in: 1.110000 seconds
+Reduced in 1.91132577 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.640000 seconds
+Sorted in: 0.879000 seconds
+Mapped in: 1.091000 seconds
+Reduced in 1.90723662 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.639000 seconds
+Sorted in: 0.883000 seconds
+Mapped in: 1.083000 seconds
+Reduced in 1.90655375 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.639000 seconds
+Sorted in: 0.878000 seconds
+Mapped in: 1.085000 seconds
+Reduced in 1.89404959 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.639000 seconds
+Sorted in: 0.877000 seconds
+Mapped in: 1.106000 seconds
+Reduced in 1.91008926 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.639000 seconds
+Sorted in: 0.893000 seconds
+Mapped in: 1.040000 seconds
+Reduced in 1.87804116 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.643000 seconds
+Sorted in: 0.879000 seconds
+Mapped in: 1.113000 seconds
+Reduced in 1.89928342 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.639000 seconds
+Sorted in: 0.871000 seconds
+Mapped in: 1.078000 seconds
+Reduced in 1.90849123 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.632000 seconds
+Sorted in: 0.888000 seconds
+Mapped in: 1.096000 seconds
+Reduced in 1.88819841 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/com-lj/com-lj.ungraph.dat with 6 workers...
+s:1 a:1 i:0 r:1 c:6
+Loaded graph in: 1.642000 seconds
+Sorted in: 0.878000 seconds
+Mapped in: 1.099000 seconds
+Reduced in 1.88139223 seconds.
+

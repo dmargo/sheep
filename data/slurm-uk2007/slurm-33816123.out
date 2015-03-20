@@ -1,0 +1,47 @@
+Starting dist-partition on /n/regal/seltzer_lab/data/uk-2007/uk-2007-05-nat.dat with 9 workers...
+s:0 a:1 i:0 r:0 c:9
+p: nodes:1 64
+Loaded graph in: 412.776000 seconds
+Sorted in: 106.268000 seconds
+Mapped in: 22.611000 seconds
+Reduced in: 54.950000 seconds
+Loaded graph in: 519.825000 seconds
+Sorted in: 67.639000 seconds
+Mapped in: 22.514000 seconds
+Reduced in: 89.138000 seconds
+Loaded graph in: 479.113000 seconds
+Sorted in: 78.838000 seconds
+Mapped in: 22.600000 seconds
+Reduced in: 79.896000 seconds
+Loaded graph in: 531.714000 seconds
+Sorted in: 79.465000 seconds
+Mapped in: 22.585000 seconds
+Reduced in: 85.209000 seconds
+Loaded graph in: 482.262000 seconds
+Sorted in: 83.781000 seconds
+Mapped in: 22.364000 seconds
+Reduced in: 83.552000 seconds
+Loaded graph in: 490.654000 seconds
+Sorted in: 81.080000 seconds
+Mapped in: 22.389000 seconds
+Reduced in: 78.429000 seconds
+Loaded graph in: 472.636000 seconds
+Sorted in: 82.421000 seconds
+Mapped in: 22.419000 seconds
+Reduced in: 82.598000 seconds
+Loaded graph in: 472.055000 seconds
+Sorted in: 79.463000 seconds
+Mapped in: 22.625000 seconds
+Reduced in: 84.631000 seconds
+Loaded graph in: 477.605000 seconds
+Sorted in: 83.823000 seconds
+Mapped in: 22.587000 seconds
+Reduced in: 87.048000 seconds
+Loaded graph in: 475.111000 seconds
+Sorted in: 83.351000 seconds
+Mapped in: 22.591000 seconds
+Reduced in: 89.102000 seconds
+Loaded graph in: 466.891000 seconds
+Sorted in: 84.262000 seconds
+Mapped in: 22.385000 seconds
+Reduced in: 79.315000 seconds

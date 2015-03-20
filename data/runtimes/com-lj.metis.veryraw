@@ -1,0 +1,399 @@
+dmargo@zod:~/jtree/src/jtree$ gpmetis ~/data/com-lj/com-lj.ungraph.dat[K[K[Kadj 2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@f[1@o[1@r[1@ [1@p[1@ [1@i[1@n[1@ [1@$[1@([1@e[1@s[1P[1P[1@s[1@e[1@q[1@ [1@2[1P[1@1[1@1[1@)[1@;[1@ [1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; done
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   3.126 sec
+  Partitioning: 		  21.345 sec   (METIS time)
+  Reporting:    		   3.008 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   2.975 sec
+  Partitioning: 		  21.075 sec   (METIS time)
+  Reporting:    		   2.940 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   2.968 sec
+  Partitioning: 		  20.960 sec   (METIS time)
+  Reporting:    		   2.933 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   3.142 sec
+  Partitioning: 		  21.051 sec   (METIS time)
+  Reporting:    		   2.899 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   3.140 sec
+  Partitioning: 		  20.982 sec   (METIS time)
+  Reporting:    		   2.891 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   2.975 sec
+  Partitioning: 		  21.003 sec   (METIS time)
+  Reporting:    		   2.879 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   2.971 sec
+  Partitioning: 		  20.944 sec   (METIS time)
+  Reporting:    		   2.940 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   2.980 sec
+  Partitioning: 		  21.102 sec   (METIS time)
+  Reporting:    		   2.898 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   2.965 sec
+  Partitioning: 		  21.006 sec   (METIS time)
+  Reporting:    		   2.886 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   3.142 sec
+  Partitioning: 		  20.969 sec   (METIS time)
+  Reporting:    		   2.919 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+******************************************************************************
+METIS 5.0 Copyright 1998-13, Regents of the University of Minnesota
+ (HEAD: , Built on: Jul 20 2013, 23:18:43)
+ size of idx_t: 32bits, real_t: 32bits, idx_t *: 64bits
+
+Graph Information -----------------------------------------------------------
+ Name: /home/dmargo/data/com-lj/com-lj.ungraph.adj, #Vertices: 3997962, #Edges: 34681189, #Parts: 2
+
+Options ---------------------------------------------------------------------
+ ptype=kway, objtype=cut, ctype=shem, rtype=greedy, iptype=metisrb
+ dbglvl=0, ufactor=1.030, no2hop=NO, minconn=NO, contig=NO, nooutput=NO
+ seed=-1, niter=10, ncuts=1
+
+Direct k-way Partitioning ---------------------------------------------------
+ - Edgecut: 2273536, communication volume: 961254.
+
+ - Balance:
+     constraint #0:  1.029 out of 0.000
+
+ - Most overweight partition:
+     pid: 0, actual: 35692780, desired: 34681188, ratio: 1.03.
+
+ - Subdomain connectivity: max: 1, min: 1, avg: 1.00
+
+ - There are 2 non-contiguous partitions.
+   Total components after removing the cut edges: 337,
+   max components: 182 for pid: 1.
+
+Timing Information ----------------------------------------------------------
+  I/O:          		   2.968 sec
+  Partitioning: 		  20.976 sec   (METIS time)
+  Reporting:    		   2.921 sec
+
+Memory Information ----------------------------------------------------------
+  Max memory used:		 2998.065 MB
+******************************************************************************
+dmargo@zod:~/jtree/src/jtree$ [Kdmargo@zod:~/jtree/src/jtree$ exit
+exit

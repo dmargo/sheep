@@ -1,0 +1,4 @@
+   Current memory used:           0 bytes
+   Maximum memory used:           0 bytes
+***Memory allocation failed for ReadGraph: adjncy. Requested size: 18446744068276601504 bytes
+/var/slurmd/spool/slurmd/job32937830/slurm_script: line 11: 54628 Aborted                 /n/seltzer_lab/dmargo/local/bin/gpmetis /scratch/twitter_rv.adj 2

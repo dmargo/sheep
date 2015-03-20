@@ -1,0 +1,528 @@
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.134000 seconds
+Sorted in: 0.009000 seconds
+Mapped in: 0.078000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.133000 seconds
+Sorted in: 0.011000 seconds
+Mapped in: 0.078000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.138000 seconds
+Sorted in: 0.010000 seconds
+Mapped in: 0.078000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.152000 seconds
+Sorted in: 0.013000 seconds
+Mapped in: 0.080000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.134000 seconds
+Sorted in: 0.009000 seconds
+Mapped in: 0.077000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.134000 seconds
+Sorted in: 0.019000 seconds
+Mapped in: 0.079000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.145000 seconds
+Sorted in: 0.008000 seconds
+Mapped in: 0.078000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.147000 seconds
+Sorted in: 0.009000 seconds
+Mapped in: 0.077000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.157000 seconds
+Sorted in: 0.010000 seconds
+Mapped in: 0.079000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.138000 seconds
+Sorted in: 0.009000 seconds
+Mapped in: 0.078000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 1 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 0.142000 seconds
+Sorted in: 0.009000 seconds
+Mapped in: 0.078000 seconds
+Reduced in 0.0 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .06584365 seconds.
+Loaded in 0.0 seconds.
+Mapped in .18778762 seconds.
+Reduced in .04824017 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .06438085 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15750644 seconds.
+Reduced in .04996544 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .07338568 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16150504 seconds.
+Reduced in .04919187 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .06444923 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15696786 seconds.
+Reduced in .05149248 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .07385993 seconds.
+Loaded in 0.0 seconds.
+Mapped in .19056589 seconds.
+Reduced in .05062532 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .06186064 seconds.
+Loaded in 0.0 seconds.
+Mapped in .19261932 seconds.
+Reduced in .04857937 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .06682076 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16185059 seconds.
+Reduced in .04901141 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .06379991 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16757981 seconds.
+Reduced in .05062775 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .07881888 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16464016 seconds.
+Reduced in .04911176 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .06244472 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15914121 seconds.
+Reduced in .04629837 seconds.
+
+Starting with 2 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 2 workers...
+s:1 a:1 i:1 r:1 c:2
+Sorted in .06761051 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16214191 seconds.
+Reduced in .05080275 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .06349342 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16948238 seconds.
+Reduced in .09166633 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .06807727 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15523828 seconds.
+Reduced in .09367341 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .05685984 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16134042 seconds.
+Reduced in .09767517 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .06455409 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16704711 seconds.
+Reduced in .08974455 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .05890057 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15436568 seconds.
+Reduced in .09188818 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .06754223 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15621467 seconds.
+Reduced in .09585135 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .06934205 seconds.
+Loaded in 0.0 seconds.
+Mapped in .14628558 seconds.
+Reduced in .09427409 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .06450521 seconds.
+Loaded in 0.0 seconds.
+Mapped in .14903600 seconds.
+Reduced in .09278030 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .07056941 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15069250 seconds.
+Reduced in .09595121 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .05819093 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15196593 seconds.
+Reduced in .09040956 seconds.
+
+Starting with 3 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 3 workers...
+s:1 a:1 i:1 r:1 c:3
+Sorted in .06545784 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15118587 seconds.
+Reduced in .08987920 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05521658 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15527984 seconds.
+Reduced in .08982234 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05535518 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16318104 seconds.
+Reduced in .09278504 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05502320 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16606851 seconds.
+Reduced in .09515144 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05783780 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15327903 seconds.
+Reduced in .09286008 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .06517175 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15771817 seconds.
+Reduced in .08582153 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05842231 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15446463 seconds.
+Reduced in .09264894 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05594036 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15670411 seconds.
+Reduced in .09220363 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05526349 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16032129 seconds.
+Reduced in .09355939 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05981235 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15482104 seconds.
+Reduced in .09000279 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .05685331 seconds.
+Loaded in 0.0 seconds.
+Mapped in .15748676 seconds.
+Reduced in .08983396 seconds.
+
+Starting with 4 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 4 workers...
+s:1 a:1 i:1 r:1 c:4
+Sorted in .07052382 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16193370 seconds.
+Reduced in .09290844 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .05965422 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16814085 seconds.
+Reduced in .13055659 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .07339158 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16162999 seconds.
+Reduced in .13565515 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .05479138 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16896911 seconds.
+Reduced in .13220232 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .05995580 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16471081 seconds.
+Reduced in .13221711 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .06482631 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16707064 seconds.
+Reduced in .13134231 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .06796160 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17069041 seconds.
+Reduced in .13006885 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .06386712 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16858429 seconds.
+Reduced in .13000981 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .05651050 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16947503 seconds.
+Reduced in .13950508 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .06712809 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16922109 seconds.
+Reduced in .13473513 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .06539180 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17290679 seconds.
+Reduced in .13506104 seconds.
+
+Starting with 5 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 5 workers...
+s:1 a:1 i:1 r:1 c:5
+Sorted in .05857463 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16726635 seconds.
+Reduced in .12779715 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .05822246 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17538541 seconds.
+Reduced in .13674568 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .06475256 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17653611 seconds.
+Reduced in .13215228 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .07024370 seconds.
+Loaded in 0.0 seconds.
+Mapped in .16879449 seconds.
+Reduced in .13298715 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .05970425 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17064067 seconds.
+Reduced in .13215913 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .06379513 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17363791 seconds.
+Reduced in .13632220 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .06173865 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17156944 seconds.
+Reduced in .13554823 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .06373766 seconds.
+Loaded in 0.0 seconds.
+Mapped in .18053371 seconds.
+Reduced in .13471249 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .06729079 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17341120 seconds.
+Reduced in .12822411 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .06254479 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17992619 seconds.
+Reduced in .12925622 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .06063570 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17907132 seconds.
+Reduced in .13235779 seconds.
+
+Starting with 6 workers...
+Starting dist-partition on /home/dmargo/data/dblp/com-dblp.ungraph.dat with 6 workers...
+s:1 a:1 i:1 r:1 c:6
+Sorted in .05997117 seconds.
+Loaded in 0.0 seconds.
+Mapped in .17558995 seconds.
+Reduced in .12893325 seconds.
+

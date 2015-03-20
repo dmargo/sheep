@@ -1,0 +1,66 @@
+Loaded in: 1296636ms
+Nodes:41652230 Edges:1468365033
+Actually created 2 partitions.
+First two partition sizes: 11253409 and 30398821
+Partitioning took: 97076ms
+edges cut: 524717583 (0.357348%)
+Vcom. vol: 31965118 (0.021769%)
+ECV(rand): 28143257 (0.019166%)
+ECV(hash): 25335466 (0.017254%)
+Actually created 3 partitions.
+First two partition sizes: 12444881 and 23640793
+Partitioning took: 104520ms
+edges cut: 669428743 (0.455901%)
+Vcom. vol: 58666033 (0.039953%)
+ECV(rand): 49913411 (0.033993%)
+ECV(hash): 43549784 (0.029659%)
+Actually created 4 partitions.
+First two partition sizes: 7786497 and 18797735
+Partitioning took: 122590ms
+edges cut: 684195541 (0.465957%)
+Vcom. vol: 76805400 (0.052307%)
+ECV(rand): 63628537 (0.043333%)
+ECV(hash): 56096073 (0.038203%)
+Actually created 5 partitions.
+First two partition sizes: 9057049 and 13829836
+Partitioning took: 132354ms
+edges cut: 766675121 (0.522128%)
+Vcom. vol: 92929834 (0.063288%)
+ECV(rand): 75757952 (0.051593%)
+ECV(hash): 67411792 (0.045909%)
+Actually created 10 partitions.
+First two partition sizes: 6196393 and 8220645
+Partitioning took: 234557ms
+edges cut: 896453466 (0.610511%)
+Vcom. vol: 160074625 (0.109016%)
+ECV(rand): 124288945 (0.084644%)
+ECV(hash): 110370853 (0.075166%)
+Actually created 15 partitions.
+First two partition sizes: 3346779 and 1430712
+Partitioning took: 338293ms
+edges cut: 958242319 (0.652591%)
+Vcom. vol: 205521658 (0.139966%)
+ECV(rand): 154566738 (0.105265%)
+ECV(hash): 137821274 (0.093860%)
+Actually created 20 partitions.
+First two partition sizes: 145387 and 2730964
+Partitioning took: 380668ms
+edges cut: 1004854032 (0.684335%)
+Vcom. vol: 259471886 (0.176708%)
+ECV(rand): 188829998 (0.128599%)
+ECV(hash): 168414868 (0.114696%)
+Actually created 25 partitions.
+First two partition sizes: 803288 and 1033206
+Partitioning took: 306532ms
+edges cut: 1048118252 (0.713800%)
+Vcom. vol: 306381779 (0.208655%)
+ECV(rand): 217094953 (0.147848%)
+ECV(hash): 194501242 (0.132461%)
+Actually created 30 partitions.
+First two partition sizes: 628670 and 1909506
+Partitioning took: 478181ms
+edges cut: 1061958567 (0.723225%)
+Vcom. vol: 339021110 (0.230883%)
+ECV(rand): 236417745 (0.161007%)
+ECV(hash): 212827458 (0.144942%)
+Finished in: 7825553ms

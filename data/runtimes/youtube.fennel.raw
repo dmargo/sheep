@@ -1,0 +1,115 @@
+dmargo@zod:~/jtree/src/jtree$ ./fennel ~/data[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor in [K[K[Ki [K[Kt in $seq[K[K[K(eq[K[Kseq 11); do
+> ./fennel ~/data/youtube/com-youtube.ungraph.dat 2
+> done
+Loaded in: 325ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 405ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134601 (0.045053%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1494ms
+Loaded in: 359ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 410ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134757 (0.045105%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1527ms
+Loaded in: 322ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 414ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134763 (0.045107%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1519ms
+Loaded in: 325ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 410ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134351 (0.044969%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1496ms
+Loaded in: 320ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 406ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134598 (0.045052%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1489ms
+Loaded in: 328ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 404ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134582 (0.045046%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1492ms
+Loaded in: 320ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 411ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134411 (0.044989%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1503ms
+Loaded in: 323ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 408ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 135014 (0.045191%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1486ms
+Loaded in: 317ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 404ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134137 (0.044898%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1478ms
+Loaded in: 323ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 408ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134815 (0.045124%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1497ms
+Loaded in: 317ms
+Nodes:1134890 Edges:2987624
+Actually created 2 partitions.
+First two partition sizes: 716217 and 418673
+Partitioning took: 405ms
+edges cut: 345791 (0.115741%)
+Vcom. vol: 206699 (0.069185%)
+ECV(rand): 134363 (0.044973%)
+ECV(hash): 127003 (0.042510%)
+Finished in: 1482ms
+dmargo@zod:~/jtree/src/jtree$ exit
+exit

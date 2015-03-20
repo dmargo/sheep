@@ -1,0 +1,100 @@
+THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
+
+0. DEPENDENCIES
+  cd ..
+  git clone https://github.com/goatdb/llama.git
+  # You also need MPI.
+
+1. QUICK START
+  make -j4
+  ./scripts/dist-partition.sh
+
+2. USAGE: ./scripts/dist-partition.sh [options...] $GRAPH $NUM_PARTITIONS
+  $GRAPH may be a .dat (XSS/Graph500 binary) or .net (SNAP) file.
+  If $NUM_PARTITIONS = 0, then we skip the partitioning phase.
+  By default, $GRAPH = test/hep-th.dat and $NUM_PARTITIONS = 2
+
+3. OPTIONS
+  -h (home)    sets the sheep directory. By default, this is your current working directory.
+  -w (workers) sets the number of distributed workers. By default, this is 2.
+  -t (trials)  sets the number of trials to run. By default, this is 1.
+  -k (keep)    retains the partitioner's intermediate data. This is useful for debugging.
+  -v (verbose) gives verbose messages.
+
+  -s (slurm) sets appropriate defaults for the Harvard Odyssey SLURM controller.
+  -i uses MPI to sort the graph. This is faster, but will not work with out-of-memory graphs or -c.
+  -r uses MPI to reduce the graph. This is faster, but will not work with OOM graphs or -c.
+  -c restricts the number of cores. This is useful for OOM graphs, but will not work with -ir.
+  -a uses an affinity-based work assignment scheme. This will not work with -irc.
+    This option is deprecated, but not yet retired.
+
+4. EXAMPLES:
+  To partition an in-memory graph using 6 cores:
+    ./scripts/dist-partition.sh -w 6 -ir $GRAPH $NUM_PARTITIONS
+
+  To partition an OOM graph in 10 parts using 2 cores:
+    ./scripts/dist-partition.sh -w 10 -c 2 $GRAPH $NUM_PARTITIONS
+
+  To partition a large graph using 16 cores on one Harvard Odyssey cluster machine:
+    sbatch -p general -t 60 -N 1 -n 16 -c 1 --mem-per-cpu 15000 \
+      ./scripts/dist-partition.sh -w 16 -sir $GRAPH $NUM_PARTITIONS
+
+  To partition a large graph using 4x16 cores on several cluster machines:
+    sbatch -p general -t 60 -N 4 -n 16 -c 1 --mem-per-cpu 15000 \
+      ./scripts-dist-partition.sh -w 64 -sir $GRAPH $NUM_PARTITIONS
+
+5. DETAILS: BASIC BINARY USAGE AND MPI
+  For normal users these details should be unnecessary. Just use scripts/dist-partition.sh
+
+  scripts/dist-partition.sh merely strings together a few binaries in the manner expected by MPI, SLURM, etc.
+  The important binaries are graph2tree and partition_tree,
+  and to a lesser extent degree_sequence and merge_trees.
+  These binaries merely string together a few Sheep library calls; all of the real code is in lib/.
+  However, the easiest way to understand lib/ is to see how the code is used in these binaries.
+
+  usage: graph2tree $GRAPH [-s $SEQUENCE] [-o $OUTPUT_TREE] [options...]
+    graph2tree converts a $GRAPH into a tree inorder $SEQUENCE and optionally writes the tree to $OUTPUT_TREE.
+    By default, $SEQUENCE is the degree sequence of $GRAPH.
+    The most useful option is -f. This will tell you many parameters of the output tree.
+
+    By default graph2tree is serial, but it supports MPI through the -ir flags.
+    Use -r for an MPI reduce. This is your bread-and-butter parallelism.
+    ***You must give an input sequence, or else the result of the tree reduce will be incoherent garbage.***
+    ***You can use the -i option or the degree_sequence binary to obtain a whole graph degree sequence.***
+    Example: mpiexec -np 6 ./graph2tree $GRAPH -s $INPUT_SEQUENCE -o $OUTPUT_TREE -r
+
+    Use -i for an MPI degree sort. If $SEQUENCE is also given, then $SEQUENCE becomes an output file.
+    This gives you a fast, distributed method to compute the graph's degree sequence.
+    Example: mpiexec -np 6 ./graph2tree $GRAPH -s $OUTPUT_SEQUENCE -o $OUTPUT_TREE -ir
+
+  usage: partition_tree $TREE $NUM_PARTITIONS [-g $GRAPH] [-s $SEQUENCE] [options...]
+    partition_tree partitions $TREE into $NUM_PARTITIONS parts.
+    If $GRAPH is given then these partitions are then evaluated on $GRAPH.
+    ***THIS TAKES TIME; THE EVALUATION CODE IS INTENDED TO BE EXHAUSTIVE, NOT EFFICIENT.***
+
+    Some of the evaluators require a $SEQUENCE; by default this is the degree sequence of $GRAPH.
+    If you used a different $SEQUENCE to create the tree, then make sure to give the same sequence here.
+    This is why ./graph2tree -i writes an output sequence; it's so you can reuse the same sequence here.
+
+5.1. DETAILS: OUT-OF-MEMORY GRAPHS
+  graph2tree also supports partial graph loading. This is used to process out-of-memory graphs.
+    -l n/k will load the n-th partial of k total partials (n is 1-indexed).
+    ***You must give an input sequence, or else if you later merge_trees it will be incoherent garbage.
+    ***You can use the degree_sequence binary to obtain a whole graph degree sequence.***
+    Example:
+      for PARTIAL in $(seq 6); do
+        ./graph2tree $GRAPH -s $SEQUENCE -o "${OUTPUT_TREE}.${PARTIAL}" -l "${PARTIAL}/6"
+      done
+    See degree_sequence and merge_trees for more details.
+
+  usage: degree_sequence $INPUT_GRAPH $OUTPUT_SEQUENCE
+    This produces a degree sequence for $INPUT_GRAPH and writes it to $OUTPUT_SEQUENCE.
+    This is generally unnecessary; for in-memory graphs either let graph2tree compute its own sequence
+    or use the -i option, described above. This is for out-of-memory graphs.
+
+  usage: merge_trees [options...] [-o $OUTPUT_TREE] $FIRST_TREE $SECOND_TREE
+    Merges $FIRST_TREE and $SECOND_TREE, and optionally writes the result to $OUTPUT_TREE
+    $FIRST_TREE and $SECOND_TREE must be produces of the same sequence, or the result is garbage.
+    If you want to merge more than 2 trees you will need to call ./merge_trees repeatedly.
+    Obviously this is annoying, which is why scripts/dist-partition.sh exists to do it for you.
+

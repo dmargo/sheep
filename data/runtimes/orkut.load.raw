@@ -1,0 +1,68 @@
+
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.554000 seconds
+Sorted in: 0.145000 seconds
+Mapped in: 7.848000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.665000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.663000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.509000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.847000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.887000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.807000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 12.603000 seconds
+Sorted in: 0.144000 seconds
+Mapped in: 7.776000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.449000 seconds
+Sorted in: 0.149000 seconds
+Mapped in: 7.666000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 12.131000 seconds
+Sorted in: 0.142000 seconds
+Mapped in: 7.923000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 12.156000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.658000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.517000 seconds
+Sorted in: 0.142000 seconds
+Mapped in: 7.519000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.602000 seconds
+Sorted in: 0.143000 seconds
+Mapped in: 7.793000 seconds
+Reduced in 0.0 seconds.
+Starting dist-partition on /home/dmargo/data/orkut/com-orkut.ungraph.dat with 1 workers...
+s:1 a:1 i:1 r:1 c:1
+Loaded graph in: 11.671000 seconds
+Sorted in: 0.145000 seconds
+Mapped in: 7.670000 seconds
+Reduced in 0.0 seconds.
+
