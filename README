@@ -41,9 +41,25 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
 
   To partition a large graph using 4x16 cores on several cluster machines:
     sbatch -p general -t 60 -N 4 -n 16 -c 1 --mem-per-cpu 15000 \
-      ./scripts-dist-partition.sh -w 64 -sir $GRAPH $NUM_PARTITIONS
+      ./scripts/dist-partition.sh -w 64 -sir $GRAPH $NUM_PARTITIONS
 
-5. DETAILS: BASIC BINARY USAGE AND MPI
+5. READING THE OUTPUT:
+  By default, the evaluator reports ~EVERY POSSIBLE EVALUATION METRIC.~
+  This includes metrics that are irrelevant to your particular partitioning problem.
+  If you are running scripts/dist-partition.sh, then the metrics you care about are ECV(down) and its balance.
+
+  The evaluator reports vertex-balanced partitioning metrics, edge-balanced partitioning metrics via hashing,
+  and edge-balanced partitioning metrics via downward elimination tree assignment.
+  However, if the partitioner was not trying to solve e.g. the vertex-balanced partitioning ~PROBLEM~,
+  then of course the evaluator will report a bad vertex-balanced partitioning result.
+  By default the partitioner solves the downward assignment problem (as described in our paper)
+  because this consistently produces the best partition quality.
+  If you want to solve a different partitioning problem, then you're going to need to pass the correct
+  flags to partition_tree, which means you won't be able to use scripts/dist-partition.sh
+
+  If there's interest then I'll add more flags to let you do this via dist-partitions.sh
+
+6. DETAILS: BASIC BINARY USAGE AND MPI
   For normal users these details should be unnecessary. Just use scripts/dist-partition.sh
 
   scripts/dist-partition.sh merely strings together a few binaries in the manner expected by MPI, SLURM, etc.
@@ -55,6 +71,7 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
   usage: graph2tree $GRAPH [-s $SEQUENCE] [-o $OUTPUT_TREE] [options...]
     graph2tree converts a $GRAPH into a tree inorder $SEQUENCE and optionally writes the tree to $OUTPUT_TREE.
     By default, $SEQUENCE is the degree sequence of $GRAPH.
+    If given, then $SEQUENCE must be an ascii file with one vertex identity per line.
     The most useful option is -f. This will tell you many parameters of the output tree.
 
     By default graph2tree is serial, but it supports MPI through the -ir flags.
@@ -77,7 +94,7 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
     If you used a different $SEQUENCE to create the tree, then make sure to give the same sequence here.
     This is why ./graph2tree -i writes an output sequence; it's so you can reuse the same sequence here.
 
-5.1. DETAILS: OUT-OF-MEMORY GRAPHS
+6.1. DETAILS: OUT-OF-MEMORY GRAPHS
   graph2tree also supports partial graph loading. This is used to process out-of-memory graphs.
     -l n/k will load the n-th partial of k total partials (n is 1-indexed).
     ***You must give an input sequence, or else if you later merge_trees it will be incoherent garbage.
