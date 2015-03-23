@@ -148,11 +148,11 @@ std::vector<vid_t> readTextSequence(char const *const filename) {
 }
 
 void writeSequence(std::vector<vid_t> const &seq, char const *const filename) {
-  writeBinarySequence(seq, filename);
+  writeTextSequence(seq, filename);
 }
 
 std::vector<vid_t> readSequence(char const *const filename) {
-  return readBinarySequence(filename);
+  return readTextSequence(filename);
 }
 
 
