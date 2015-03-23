@@ -16,6 +16,10 @@
 #include "jtree.h"
 #include "stdafx.h"
 
+uint32_t simple_hash(uint32_t k) {
+  return k % 2;
+}
+
 uint32_t knuth_hash(uint32_t k) {
   uint32_t prime = 2654435761;
   return k * prime;
@@ -303,20 +307,21 @@ public:
 
   template <typename GraphType>
   inline void evaluate(GraphType const &graph) const {
-    srand(time(nullptr));
-
     size_t edges_cut = 0;
     size_t Vcom_vol = 0;
-    size_t ECV_rand = 0;
     size_t ECV_hash = 0;
+
+    short max_part = *std::max_element(parts.cbegin(), parts.cend());
+    std::vector<size_t> vertex_balance(max_part + 1, 0);
+    std::vector<size_t> hash_balance(max_part + 1, 0);
 
     for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
       vid_t const X = *nitr;
       short const X_part = parts.at(X);
       assert(X_part != INVALID_PART);
+      vertex_balance.at(X_part) += 1;
 
       std::unordered_set<short> Vcom_vol_nbrs = {X_part};
-      std::unordered_set<short> ECV_rand_nbrs = {};
       std::unordered_set<short> ECV_hash_nbrs = {};
 
       for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
@@ -326,20 +331,25 @@ public:
 
         if (X < Y && X_part != Y_part) ++edges_cut;
         Vcom_vol_nbrs.insert(Y_part);
-        ECV_rand_nbrs.insert((rand() % 2) ? X_part : Y_part);
-        ECV_hash_nbrs.insert(knuth_hash(X) < knuth_hash(Y) ? X_part : Y_part);
+
+        short hash_part = cormen_hash(X) < cormen_hash(Y) ? X_part : Y_part;
+        ECV_hash_nbrs.insert(hash_part);
+        if (X < Y) hash_balance.at(hash_part) += 1;
 
       }
       Vcom_vol += Vcom_vol_nbrs.size() - 1;
-      ECV_rand += ECV_rand_nbrs.size() - 1;
       ECV_hash += ECV_hash_nbrs.size() - 1;
     }
+
+    size_t max_vertex_bal = *std::max_element(vertex_balance.cbegin(), vertex_balance.cend());
+    size_t max_hash_bal = *std::max_element(hash_balance.cbegin(), hash_balance.cend());
 
     //XXX Remember graph.getEdges includes self-edges for some graphs.
     printf("edges cut: %zu (%f%%)\n", edges_cut, (double) edges_cut / graph.getEdges());
     printf("Vcom. vol: %zu (%f%%)\n", Vcom_vol, (double) Vcom_vol / graph.getEdges());
-    printf("ECV(rand): %zu (%f%%)\n", ECV_rand, (double) ECV_rand / graph.getEdges());
+    printf("  balance: %zu (%f%%)\n", max_vertex_bal, (double) max_vertex_bal / (graph.getNodes() / num_parts));
     printf("ECV(hash): %zu (%f%%)\n", ECV_hash, (double) ECV_hash / graph.getEdges());
+    printf("  balance: %zu (%f%%)\n", max_hash_bal, (double) max_hash_bal / (graph.getEdges() / num_parts));
   }
 
   template <typename GraphType>
@@ -350,9 +360,9 @@ public:
     for (size_t i = 0; i != seq.size(); ++i)
       pos[seq[i]] = i;
 
+    //size_t ECV_up = 0;
     size_t ECV_down = 0;
-    size_t ECV_up = 0;
-    //std::vector<size_t> part_count(*std::max_element(parts.cbegin(), parts.cend()) + 1);
+    std::vector<size_t> down_balance(*std::max_element(parts.cbegin(), parts.cend()) + 1, 0);
 
     for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
       vid_t const X = *nitr;
@@ -369,18 +379,20 @@ public:
         short const Y_part = parts.at(Y);
         assert(Y_part != INVALID_PART);
 
+        //ECV_up_nbrs.insert((X_pos > Y_pos) ? X_part : Y_part);
         ECV_down_nbrs.insert((X_pos < Y_pos) ? X_part : Y_part);
-        ECV_up_nbrs.insert((X_pos > Y_pos) ? X_part : Y_part);
-        //part_count.at(X_pos < Y_pos ? X_part : Y_part)++;
+        if (X_pos < Y_pos) down_balance.at(X_part) += 1;
+
       }
+      //ECV_up += ECV_up_nbrs.size() - 1;
       ECV_down += ECV_down_nbrs.size() - 1;
-      ECV_up += ECV_up_nbrs.size() - 1;
     }
 
+    size_t max_down_bal = *std::max_element(down_balance.cbegin(), down_balance.cend());
+
+    //printf("ECV(up)  : %zu (%f%%)\n", ECV_up, (double) ECV_up / graph.getEdges());
     printf("ECV(down): %zu (%f%%)\n", ECV_down, (double) ECV_down / graph.getEdges());
-    printf("ECV(up)  : %zu (%f%%)\n", ECV_up, (double) ECV_up / graph.getEdges());
-    //for (size_t count : part_count)
-      //printf("part: %zu\n", count);
+    printf("  balance: %zu (%f%%)\n", max_down_bal, (double) max_down_bal / (graph.getEdges() / num_parts));
   }
 
   template <typename GraphType>
@@ -475,6 +487,10 @@ public:
   void fennel(char const *const filename) {
     assert(edge_balanced == true);
 
+    // I tried to privilege edge-partitioned fennel but hardcoding |V| and |E|
+    // so that only one scan of the graph file would be necessary.
+    // This is obviously cheesy, but it was a prototype, and even with this
+    // privilege it proves too slow.
     vid_t max_vid = 4036529;
     size_t edge_count = 34681189;
 
@@ -485,7 +501,6 @@ public:
     };
     xs1 buf;
     /*
-    {
     std::ifstream stream(filename, std::ios::binary);
     while (!stream.eof()) {
       stream.read((char*)&buf, sizeof(xs1));
@@ -501,7 +516,7 @@ public:
     parts.assign(edge_count + 1, INVALID_PART);
     max_component = (edge_count/num_parts)*balance_factor;
 
-    double const n = 3997962;
+    double const n = 3997962; // # of actual vertices.
     double const m = 2 * edge_count; // # of DIRECTED edges; getEdges() returns UNDIRECTED#.
     double const k = num_parts;
 
