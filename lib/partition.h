@@ -37,17 +37,9 @@ public:
   std::vector<short> parts;
   #define INVALID_PART (short)-1
 
-  // OPTIONS
-  bool const edge_balanced;
-  double const balance_factor;
-
-  // DERIVED PARAMETERS
-  size_t max_component;
-
   inline Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, short np,
-      bool eb = true, double bf = 1.03) :
-    num_parts(np), parts(jnodes.size(), INVALID_PART),
-    edge_balanced(eb), balance_factor(bf), max_component()
+      bool edge_balanced = true, double balance_factor = 1.03) :
+    num_parts(np), parts(jnodes.size(), INVALID_PART)
   {
     size_t count = 0;
     if (!edge_balanced)
@@ -55,11 +47,11 @@ public:
     else
       for (jnid_t id = 0; id != jnodes.size(); ++id)
         count += jnodes.pst_weight(id);
-    max_component = (count / num_parts) * balance_factor;
+    size_t max_component = (count / num_parts) * balance_factor;
 
     // For each jnid_t, assign a part.
-    //backwardPartition(jnodes);
-    forwardPartition(jnodes);
+    forwardPartition(jnodes, max_component, edge_balanced);
+    //backwardPartition(jnodes, max_component, edge_balanced);
 
     // Convert jnid_t-indexed parts to vid_t indexed parts.
     std::vector<short> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
@@ -68,8 +60,7 @@ public:
     parts = std::move(tmp);
   }
 
-  inline Partition(std::vector<jnid_t> const &seq, char const *filename) :
-    num_parts(), parts(), edge_balanced(), balance_factor(), max_component()
+  inline Partition(std::vector<jnid_t> const &seq, char const *filename) : num_parts(), parts()
   {
     readPartition(filename);
     num_parts = *std::max_element(parts.cbegin(), parts.cend());
@@ -83,60 +74,24 @@ public:
 
   template <typename GraphType>
   inline Partition(GraphType const &graph, std::vector<vid_t> const &seq, short np, 
-      bool eb = true, double bf = 1.03) :
-    num_parts(np), parts(graph.getMaxVid() + 1, INVALID_PART),
-    edge_balanced(eb), balance_factor(bf), max_component()
+      bool edge_balanced = true, double balance_factor = 1.03) :
+    num_parts(np), parts(graph.getMaxVid() + 1, INVALID_PART)
   {
     size_t count = edge_balanced ? 2 * graph.getEdges() : graph.getNodes();
-    max_component = (count / num_parts) * balance_factor;
-    fennel(graph, seq);
+    size_t max_component = (count / num_parts) * balance_factor;
+    fennel(graph, seq, max_component, edge_balanced);
   }
 
   inline Partition(char const *filename, short np) :
-    num_parts(np), parts(), edge_balanced(true), balance_factor(1.03), max_component()
+    num_parts(np), parts()
   {
     fennel(filename);
   }
 
   // PARTITIONING ALGORITHMS
-  inline void backwardPartition(JNodeTable const &jnodes) {
-    std::vector<size_t> component_below(jnodes.size(), 0);
-    for (jnid_t id = 0; id != jnodes.size(); ++id) {
-      component_below.at(id) += edge_balanced ? jnodes.pst_weight(id) : 1;
-      if (jnodes.parent(id) != INVALID_JNID)
-        component_below.at(jnodes.parent(id)) += component_below.at(id);
-    }
-
-    jnid_t critical = std::distance(
-      component_below.cbegin(),
-      std::max_element(component_below.cbegin(), component_below.cend()));
-    while (jnodes.kids(critical).size() != 0) {
-      critical = *std::max_element(jnodes.kids(critical).cbegin(), jnodes.kids(critical).cend(),
-        [&component_below](jnid_t const lhs, jnid_t const rhs) {
-        return component_below.at(lhs) < component_below.at(rhs); });
-      component_below.at(jnodes.parent(critical)) -= component_below.at(critical);
-    }
-
-    short cur_part = 0;
-    size_t part_size = 0;
-    while (critical != INVALID_JNID) {
-      if (part_size + component_below.at(critical) < max_component) {
-        parts.at(critical) = cur_part;
-        part_size += component_below.at(critical);
-      } else {
-        parts.at(critical) = ++cur_part;
-        part_size = component_below.at(critical);
-      }
-      critical = jnodes.parent(critical);
-    }
-
-    for (jnid_t id = jnodes.size() - 1; id != (jnid_t)-1; --id) {
-      if (parts.at(id) == INVALID_PART)
-        parts.at(id) = jnodes.parent(id) != INVALID_JNID ? parts.at(jnodes.parent(id)) : cur_part;
-    }
-  }
-
-  inline void forwardPartition(JNodeTable &jnodes) {
+  inline void forwardPartition(JNodeTable &jnodes,
+      size_t const max_component, bool const edge_balanced)
+  {
     std::vector<size_t> part_size;
 
     // Classic algorithm modified for FFD binpacking.
@@ -206,8 +161,49 @@ public:
     }
   }
 
+  inline void backwardPartition(JNodeTable const &jnodes,
+      size_t const max_component, bool const edge_balanced)
+  {
+    std::vector<size_t> component_below(jnodes.size(), 0);
+    for (jnid_t id = 0; id != jnodes.size(); ++id) {
+      component_below.at(id) += edge_balanced ? jnodes.pst_weight(id) : 1;
+      if (jnodes.parent(id) != INVALID_JNID)
+        component_below.at(jnodes.parent(id)) += component_below.at(id);
+    }
+
+    jnid_t critical = std::distance(
+      component_below.cbegin(),
+      std::max_element(component_below.cbegin(), component_below.cend()));
+    while (jnodes.kids(critical).size() != 0) {
+      critical = *std::max_element(jnodes.kids(critical).cbegin(), jnodes.kids(critical).cend(),
+        [&component_below](jnid_t const lhs, jnid_t const rhs) {
+        return component_below.at(lhs) < component_below.at(rhs); });
+      component_below.at(jnodes.parent(critical)) -= component_below.at(critical);
+    }
+
+    short cur_part = 0;
+    size_t part_size = 0;
+    while (critical != INVALID_JNID) {
+      if (part_size + component_below.at(critical) < max_component) {
+        parts.at(critical) = cur_part;
+        part_size += component_below.at(critical);
+      } else {
+        parts.at(critical) = ++cur_part;
+        part_size = component_below.at(critical);
+      }
+      critical = jnodes.parent(critical);
+    }
+
+    for (jnid_t id = jnodes.size() - 1; id != (jnid_t)-1; --id) {
+      if (parts.at(id) == INVALID_PART)
+        parts.at(id) = jnodes.parent(id) != INVALID_JNID ? parts.at(jnodes.parent(id)) : cur_part;
+    }
+  }
+
   //XXX This has been somewhat compelling for reducing CV; consider why.
-  inline void depthPartition(JNodeTable const &jnodes) {
+  inline void depthPartition(JNodeTable const &jnodes,
+      size_t const max_component, bool const edge_balanced)
+  {
     std::vector<size_t> depth(jnodes.size(), 0);
     for (jnid_t id = jnodes.size() - 1; id != (jnid_t)-1; --id)
       if (jnodes.parent(id) != INVALID_JNID)
@@ -231,7 +227,9 @@ public:
   }
 
   //XXX This is practically anti-optimal...why?
-  inline void heightPartition(JNodeTable const &jnodes) {
+  inline void heightPartition(JNodeTable const &jnodes,
+      size_t const max_component, bool const edge_balanced)
+  {
     std::vector<size_t> height(jnodes.size(), 0);
     for (jnid_t id = 0; id != jnodes.size(); ++id)
       if (jnodes.parent(id) != INVALID_JNID)
@@ -254,7 +252,9 @@ public:
     }
   }
 
-  inline void naivePartition(JNodeTable const &jnodes) {
+  inline void naivePartition(JNodeTable const &jnodes,
+      size_t const max_component, bool const edge_balanced)
+  {
     short cur_part = 0;
     size_t cur_size = 0;
     for (jnid_t id = 0; id != jnodes.size(); ++id) {
@@ -396,7 +396,10 @@ public:
   }
 
   template <typename GraphType>
-  inline void writePartitionedGraph(GraphType const &graph, std::vector<vid_t> const &seq, char const *const output_prefix) const {
+  inline void writePartitionedGraph(
+      GraphType const &graph, std::vector<vid_t> const &seq,
+      char const *const output_prefix) const
+  {
     short const max_part = *std::max_element(parts.cbegin(), parts.cend());
     assert(max_part < 100);
     std::vector<std::ofstream*> output_streams;
@@ -438,7 +441,9 @@ public:
 
 
   template <typename GraphType>
-  void fennel(GraphType const &graph, std::vector<vid_t> const &seq) {
+  void fennel(GraphType const &graph, std::vector<vid_t> const &seq,
+      size_t const max_component, bool const edge_balanced)
+  {
     double const n = graph.getNodes();
     double const m = 2 * graph.getEdges(); // # of DIRECTED edges; getEdges() returns UNDIRECTED#.
     double const k = num_parts;
@@ -485,14 +490,17 @@ public:
   }
 
   void fennel(char const *const filename) {
-    assert(edge_balanced == true);
-
     // I tried to privilege edge-partitioned fennel but hardcoding |V| and |E|
     // so that only one scan of the graph file would be necessary.
     // This is obviously cheesy, but it was a prototype, and even with this
     // privilege it proves too slow.
     vid_t max_vid = 4036529;
+    vid_t vertex_count = 3997962;
     size_t edge_count = 34681189;
+    double balance_factor = 1.03;
+
+    size_t max_component = (edge_count/num_parts)*balance_factor;
+    parts.assign(edge_count + 1, INVALID_PART);
 
     struct xs1 {
 	    unsigned tail;
@@ -510,13 +518,9 @@ public:
         max_vid = buf.head;
       ++edge_count;
     }
-    }
     */
 
-    parts.assign(edge_count + 1, INVALID_PART);
-    max_component = (edge_count/num_parts)*balance_factor;
-
-    double const n = 3997962; // # of actual vertices.
+    double const n = vertex_count;
     double const m = 2 * edge_count; // # of DIRECTED edges; getEdges() returns UNDIRECTED#.
     double const k = num_parts;
 
