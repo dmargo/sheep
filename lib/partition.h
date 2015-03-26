@@ -410,15 +410,26 @@ public:
     for (size_t i = 0; i != seq.size(); ++i)
       pos[seq[i]] = i;
 
-    std::ofstream stream(output_filename, std::ios::trunc);
+    struct xs1 {
+	    unsigned tail;
+	    unsigned head;
+	    float weight;
+    };
+    xs1 buf;
+    buf.weight = 0.0;
+    std::ofstream stream(output_filename, std::ios::binary | std::ios::trunc);
+
     for (size_t i = 0; i < seq.size(); ++i) {
       vid_t const X = seq[i];
       for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
         vid_t const Y = *eitr;
         size_t const j = pos.at(Y);
 
-        if (i <= j)
-          stream << i << " " << j << std::endl;
+        if (i <= j) {
+          buf.tail = i;
+          buf.head = j;
+          stream.write((char*)&buf, sizeof(xs1));
+        }
       }
     }
   }
