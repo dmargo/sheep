@@ -411,12 +411,14 @@ public:
       pos[seq[i]] = i;
 
     std::ofstream stream(output_filename, std::ios::trunc);
-    for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
-      vid_t const X = *nitr;
+    for (size_t i = 0; i < seq.size(); ++i) {
+      vid_t const X = seq[i];
       for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
         vid_t const Y = *eitr;
+        size_t const j = pos.at(Y);
 
-        stream << pos.at(X) << " " << pos.at(Y) << std::endl;
+        if (i <= j)
+          stream << i << " " << j << std::endl;
       }
     }
   }
