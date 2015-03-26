@@ -31,6 +31,8 @@ uint32_t cormen_hash(uint32_t k) {
   return k * s;
 }
 
+
+
 class Partition {
 public:
   short num_parts;
@@ -88,6 +90,8 @@ public:
     fennel(filename);
   }
 
+
+
   // PARTITIONING ALGORITHMS
   inline void forwardPartition(JNodeTable &jnodes,
       size_t const max_component, bool const edge_balanced)
@@ -105,13 +109,10 @@ public:
     std::vector<size_t> component_below(jnodes.size(), 0);
     for (jnid_t id = 0; id != jnodes.size(); ++id) {
       component_below.at(id) += edge_balanced ? jnodes.pst_weight(id) : 1;
-      ////XXX Edge-balanced partitioning in one line? Unconfident; seemed bugged; check it.
 
       if (component_below.at(id) > max_component) {
         std::sort(jnodes.kids(id).begin(), jnodes.kids(id).end(), [&](jnid_t const lhs, jnid_t const rhs)
           { return component_below.at(lhs) > component_below.at(rhs); });
-        //XXX A more sophisticated algorithm would backtrack and consider all cuts below id, not just kids.
-        //It turns out in the trees we look at that there's very few options in direct children.
 
         do {
           // Try to pack kids.
@@ -393,6 +394,31 @@ public:
     //printf("ECV(up)  : %zu (%f%%)\n", ECV_up, (double) ECV_up / graph.getEdges());
     printf("ECV(down): %zu (%f%%)\n", ECV_down, (double) ECV_down / graph.getEdges());
     printf("  balance: %zu (%f%%)\n", max_down_bal, (double) max_down_bal / (graph.getEdges() / num_parts));
+  }
+
+
+
+  template <typename GraphType>
+  inline void writeIsomorphicGraph(
+      GraphType const &graph, std::vector<vid_t> seq,
+      char const *const output_filename) const
+  {
+    std::stable_sort(seq.begin(), seq.end(), [&](vid_t const lhs, vid_t const rhs)
+        { return parts.at(lhs) < parts.at(rhs); });
+
+    std::vector<jnid_t> pos(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_JNID);
+    for (size_t i = 0; i != seq.size(); ++i)
+      pos[seq[i]] = i;
+
+    std::ofstream stream(output_filename, std::ios::trunc);
+    for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
+      vid_t const X = *nitr;
+      for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
+        vid_t const Y = *eitr;
+
+        stream << pos.at(X) << " " << pos.at(Y) << std::endl;
+      }
+    }
   }
 
   template <typename GraphType>
