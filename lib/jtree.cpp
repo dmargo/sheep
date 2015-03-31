@@ -102,7 +102,7 @@ void JTree::insertSequence(GraphType const &graph, std::vector<vid_t> const &seq
     if (opts.find_max_width) {
       if (current != INVALID_JNID)
         current_width = std::max(current_width, jnodes.width(current));
-      if (current_width >= wide_seq.size() + std::distance(seq_itr, seq.cend()));
+      if (current_width >= wide_seq.size() + std::distance(seq_itr, seq.cend()))
         return;
     }
 
