@@ -426,7 +426,7 @@ public:
 	    float weight;
     };
     xs1 buf;
-    buf.weight = 0.0;
+    buf.weight = 1.0;
     std::ofstream stream(output_filename, std::ios::binary | std::ios::trunc);
 
     for (size_t i = 0; i < seq.size(); ++i) {
