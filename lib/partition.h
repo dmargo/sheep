@@ -31,6 +31,18 @@ uint32_t cormen_hash(uint32_t k) {
   return k * s;
 }
 
+inline size_t get_weight(JNodeTable const &jnodes, jnid_t id,
+    bool const vtx_weight, bool const pst_weight, bool const pre_weight)
+{
+  size_t result = 0;
+  if (vtx_weight) result += 1;
+  if (pst_weight) result += jnodes.pst_weight(id);
+  if (pre_weight)
+    for (jnid_t kid : jnodes.kids(id))
+      result += jnodes.pre_weight(kid);
+  return result;
+}
+
 
 
 class Partition {
@@ -44,11 +56,8 @@ public:
     num_parts(np), parts(jnodes.size(), INVALID_PART)
   {
     size_t total_weight = 0;
-    for (jnid_t id = 0; id != jnodes.size(); ++id) {
-      if (vtx_weight) total_weight += 1;
-      if (pst_weight) total_weight += jnodes.pst_weight(id);
-      if (pre_weight) total_weight += jnodes.pre_weight(id);
-    }
+    for (jnid_t id = 0; id != jnodes.size(); ++id)
+      total_weight += get_weight(jnodes, id, vtx_weight, pst_weight, pre_weight);
     size_t max_component = (total_weight / num_parts) * balance_factor;
 
     // For each jnid_t, assign a part.
@@ -93,6 +102,7 @@ public:
 
 
   // PARTITIONING ALGORITHMS
+
   inline void forwardPartition(JNodeTable &jnodes, size_t const max_component,
       bool const vtx_weight, bool const pst_weight, bool const pre_weight)
   {
@@ -106,17 +116,17 @@ public:
     // 4. Spend more time reasoning about optimization criteria for communication volume.
     std::vector<size_t> part_size;
     std::vector<size_t> component_below(jnodes.size(), 0);
-    for (jnid_t id = 0; id != jnodes.size(); ++id) {
-      if (vtx_weight) component_below.at(id) += 1;
-      if (pst_weight) component_below.at(id) += jnodes.pst_weight(id);
-      if (pre_weight) component_below.at(id) += jnodes.pre_weight(id);
+    for (jnid_t id = 0; id != jnodes.size(); ++id)
+    {
+      component_below.at(id) += get_weight(jnodes, id, vtx_weight, pst_weight, pre_weight);
+      if (component_below.at(id) > max_component)
+      {
+        std::sort(jnodes.kids(id).begin(), jnodes.kids(id).end(),
+        [&component_below](jnid_t const lhs, jnid_t const rhs) {
+          return component_below.at(lhs) > component_below.at(rhs); });
 
-      if (component_below.at(id) > max_component) {
-        std::sort(jnodes.kids(id).begin(), jnodes.kids(id).end(), [&](jnid_t const lhs, jnid_t const rhs)
-          { return component_below.at(lhs) > component_below.at(rhs); });
-
+        // Try to pack kids
         do {
-          // Try to pack kids.
           for (auto itr = jnodes.kids(id).cbegin(); component_below.at(id) > max_component &&
                     itr!= jnodes.kids(id).cend(); ++itr)
           {
@@ -149,6 +159,7 @@ public:
       if (parts.at(id) == INVALID_PART && jnodes.parent(id) != INVALID_JNID)
         parts.at(id) = parts.at(jnodes.parent(id));
 
+      // Pack floating components
       while (parts.at(id) == INVALID_PART) {
         for (short cur_part = part_size.size() - 1; cur_part != -1; --cur_part) {
           if (part_size.at(cur_part) + component_below.at(id) <= max_component) {
@@ -168,24 +179,23 @@ public:
   {
     std::vector<size_t> component_below(jnodes.size(), 0);
     for (jnid_t id = 0; id != jnodes.size(); ++id) {
-      if (vtx_weight) component_below.at(id) += 1;
-      if (pst_weight) component_below.at(id) += jnodes.pst_weight(id);
-      if (pre_weight) component_below.at(id) += jnodes.pre_weight(id);
-
+      component_below.at(id) += get_weight(jnodes, id, vtx_weight, pst_weight, pre_weight);
       if (jnodes.parent(id) != INVALID_JNID)
         component_below.at(jnodes.parent(id)) += component_below.at(id);
     }
 
+    // Find the critical path
     jnid_t critical = std::distance(
       component_below.cbegin(),
       std::max_element(component_below.cbegin(), component_below.cend()));
     while (jnodes.kids(critical).size() != 0) {
       critical = *std::max_element(jnodes.kids(critical).cbegin(), jnodes.kids(critical).cend(),
-        [&component_below](jnid_t const lhs, jnid_t const rhs) {
+      [&component_below](jnid_t const lhs, jnid_t const rhs) {
         return component_below.at(lhs) < component_below.at(rhs); });
       component_below.at(jnodes.parent(critical)) -= component_below.at(critical);
     }
 
+    // Pack parts along the critical path
     short cur_part = 0;
     size_t part_size = 0;
     while (critical != INVALID_JNID) {
@@ -199,6 +209,7 @@ public:
       critical = jnodes.parent(critical);
     }
 
+    // Pack any unpacked parts, but this method is fundamentally broken for multiple components ATM.
     for (jnid_t id = jnodes.size() - 1; id != (jnid_t)-1; --id) {
       if (parts.at(id) == INVALID_PART)
         parts.at(id) = jnodes.parent(id) != INVALID_JNID ? parts.at(jnodes.parent(id)) : cur_part;
@@ -223,9 +234,7 @@ public:
     size_t cur_size = 0;
     for (size_t idx = 0; idx != jnids.size(); ++idx) {
       parts.at(jnids.at(idx)) = cur_part;
-      if (vtx_weight) cur_size += 1;
-      if (pst_weight) cur_size += jnodes.pst_weight(jnids.at(idx));
-      if (pre_weight) cur_size += jnodes.pre_weight(jnids.at(idx));
+      cur_size += get_weight(jnodes, jnids.at(idx), vtx_weight, pst_weight, pre_weight);
       if (cur_size >= max_component) {
         ++cur_part;
         cur_size = 0;
@@ -251,9 +260,7 @@ public:
     size_t cur_size = 0;
     for (size_t idx = 0; idx != jnids.size(); ++idx) {
       parts.at(jnids.at(idx)) = cur_part;
-      if (vtx_weight) cur_size += 1;
-      if (pst_weight) cur_size += jnodes.pst_weight(jnids.at(idx));
-      if (pre_weight) cur_size += jnodes.pre_weight(jnids.at(idx));
+      cur_size += get_weight(jnodes, jnids.at(idx), vtx_weight, pst_weight, pre_weight);
       if (++cur_size == max_component) {
         ++cur_part;
         cur_size = 0;
@@ -268,9 +275,7 @@ public:
     size_t cur_size = 0;
     for (jnid_t id = 0; id != jnodes.size(); ++id) {
       parts.at(id) = cur_part;
-      if (vtx_weight) cur_size += 1;
-      if (pst_weight) cur_size += jnodes.pst_weight(id);
-      if (pre_weight) cur_size += jnodes.pre_weight(id);
+      cur_size += get_weight(jnodes, id, vtx_weight, pst_weight, pre_weight);
       if (++cur_size == max_component) {
         ++cur_part;
         cur_size = 0;
@@ -300,19 +305,11 @@ public:
 
   inline void print() const
   {
-    short max_part = 0;
-    size_t first_part = 0;
-    size_t second_part = 0;
+    short max_part = *std::max_element(parts.cbegin(), parts.cend()) + 1;
+    size_t first_part = std::count(parts.cbegin(), parts.cend(), 0);
+    size_t second_part = std::count(parts.cbegin(), parts.cend(), 1);
 
-    for (short part : parts) {
-      max_part = std::max(max_part, part);
-      if (part == 0)
-        first_part += 1;
-      else if (part == 1)
-        second_part += 1;
-    }
-
-    printf("Actually created %d partitions.\n", max_part + 1);
+    printf("Actually created %d partitions.\n", max_part);
     printf("First two partition sizes: %zu and %zu\n", first_part, second_part);
   }
 
@@ -371,9 +368,12 @@ public:
     for (size_t i = 0; i != seq.size(); ++i)
       pos[seq[i]] = i;
 
-    //size_t ECV_up = 0;
     size_t ECV_down = 0;
-    std::vector<size_t> down_balance(*std::max_element(parts.cbegin(), parts.cend()) + 1, 0);
+    size_t ECV_up = 0;
+
+    short max_part = *std::max_element(parts.cbegin(), parts.cend()) + 1;
+    std::vector<size_t> down_balance(max_part, 0);
+    std::vector<size_t> up_balance(max_part, 0);
 
     for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
       vid_t const X = *nitr;
@@ -390,20 +390,23 @@ public:
         short const Y_part = parts.at(Y);
         assert(Y_part != INVALID_PART);
 
-        //ECV_up_nbrs.insert((X_pos > Y_pos) ? X_part : Y_part);
         ECV_down_nbrs.insert((X_pos < Y_pos) ? X_part : Y_part);
+        ECV_up_nbrs.insert((X_pos > Y_pos) ? X_part : Y_part);
         if (X_pos < Y_pos) down_balance.at(X_part) += 1;
-
+        if (X_pos > Y_pos) up_balance.at(X_part) += 1;
       }
-      //ECV_up += ECV_up_nbrs.size() - 1;
       ECV_down += ECV_down_nbrs.size() - 1;
+      ECV_up += ECV_up_nbrs.size() - 1;
     }
 
     size_t max_down_bal = *std::max_element(down_balance.cbegin(), down_balance.cend());
+    size_t max_up_bal = *std::max_element(up_balance.cbegin(), up_balance.cend());
 
-    //printf("ECV(up)  : %zu (%f%%)\n", ECV_up, (double) ECV_up / graph.getEdges());
     printf("ECV(down): %zu (%f%%)\n", ECV_down, (double) ECV_down / graph.getEdges());
     printf("  balance: %zu (%f%%)\n", max_down_bal, (double) max_down_bal / (graph.getEdges() / num_parts));
+    printf("ECV(up)  : %zu (%f%%)\n", ECV_up, (double) ECV_up / graph.getEdges());
+    printf("  balance: %zu (%f%%)\n", max_up_bal, (double) max_up_bal / (graph.getEdges() / num_parts));
+
   }
 
 
