@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
 
     auto partition_start = std::chrono::steady_clock::now();
 
-    Partition part(graph, seq, num_parts, true);
+    Partition part(graph, seq, num_parts);
     part.print();
 
     auto partition_duration = std::chrono::duration_cast<std::chrono::milliseconds>(

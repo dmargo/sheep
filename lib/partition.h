@@ -40,20 +40,20 @@ public:
   #define INVALID_PART (short)-1
 
   inline Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, short np,
-      bool edge_balanced = true, double balance_factor = 1.03) :
+      double balance_factor = 1.03, bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false) :
     num_parts(np), parts(jnodes.size(), INVALID_PART)
   {
-    size_t count = 0;
-    if (!edge_balanced)
-      count = jnodes.size();
-    else
-      for (jnid_t id = 0; id != jnodes.size(); ++id)
-        count += jnodes.pst_weight(id);
-    size_t max_component = (count / num_parts) * balance_factor;
+    size_t total_weight = 0;
+    for (jnid_t id = 0; id != jnodes.size(); ++id) {
+      if (vtx_weight) total_weight += 1;
+      if (pst_weight) total_weight += jnodes.pst_weight(id);
+      if (pre_weight) total_weight += jnodes.pre_weight(id);
+    }
+    size_t max_component = (total_weight / num_parts) * balance_factor;
 
     // For each jnid_t, assign a part.
-    forwardPartition(jnodes, max_component, edge_balanced);
-    //backwardPartition(jnodes, max_component, edge_balanced);
+    forwardPartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
+    //backwardPartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
 
     // Convert jnid_t-indexed parts to vid_t indexed parts.
     std::vector<short> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
@@ -76,11 +76,11 @@ public:
 
   template <typename GraphType>
   inline Partition(GraphType const &graph, std::vector<vid_t> const &seq, short np, 
-      bool edge_balanced = true, double balance_factor = 1.03) :
+      double balance_factor = 1.03, bool edge_balanced = true) :
     num_parts(np), parts(graph.getMaxVid() + 1, INVALID_PART)
   {
-    size_t count = edge_balanced ? 2 * graph.getEdges() : graph.getNodes();
-    size_t max_component = (count / num_parts) * balance_factor;
+    size_t total_weight = edge_balanced ? 2 * graph.getEdges() : graph.getNodes();
+    size_t max_component = (total_weight / num_parts) * balance_factor;
     fennel(graph, seq, max_component, edge_balanced);
   }
 
@@ -93,11 +93,9 @@ public:
 
 
   // PARTITIONING ALGORITHMS
-  inline void forwardPartition(JNodeTable &jnodes,
-      size_t const max_component, bool const edge_balanced)
+  inline void forwardPartition(JNodeTable &jnodes, size_t const max_component,
+      bool const vtx_weight, bool const pst_weight, bool const pre_weight)
   {
-    std::vector<size_t> part_size;
-
     // Classic algorithm modified for FFD binpacking.
     // 1. Count the uncut component below X.
     // 2. If component_below(X) > max_component, pack bins.
@@ -106,9 +104,12 @@ public:
     // 2. Try packing half-size components since this is ideal for bin packing.
     // 3. Move to edge-weighted stuff if you want to minimize edge cuts. This is probably the best idea.
     // 4. Spend more time reasoning about optimization criteria for communication volume.
+    std::vector<size_t> part_size;
     std::vector<size_t> component_below(jnodes.size(), 0);
     for (jnid_t id = 0; id != jnodes.size(); ++id) {
-      component_below.at(id) += edge_balanced ? jnodes.pst_weight(id) : 1;
+      if (vtx_weight) component_below.at(id) += 1;
+      if (pst_weight) component_below.at(id) += jnodes.pst_weight(id);
+      if (pre_weight) component_below.at(id) += jnodes.pre_weight(id);
 
       if (component_below.at(id) > max_component) {
         std::sort(jnodes.kids(id).begin(), jnodes.kids(id).end(), [&](jnid_t const lhs, jnid_t const rhs)
@@ -162,12 +163,15 @@ public:
     }
   }
 
-  inline void backwardPartition(JNodeTable const &jnodes,
-      size_t const max_component, bool const edge_balanced)
+  inline void backwardPartition(JNodeTable const &jnodes, size_t const max_component,
+      bool const vtx_weight, bool const pst_weight, bool const pre_weight)
   {
     std::vector<size_t> component_below(jnodes.size(), 0);
     for (jnid_t id = 0; id != jnodes.size(); ++id) {
-      component_below.at(id) += edge_balanced ? jnodes.pst_weight(id) : 1;
+      if (vtx_weight) component_below.at(id) += 1;
+      if (pst_weight) component_below.at(id) += jnodes.pst_weight(id);
+      if (pre_weight) component_below.at(id) += jnodes.pre_weight(id);
+
       if (jnodes.parent(id) != INVALID_JNID)
         component_below.at(jnodes.parent(id)) += component_below.at(id);
     }
@@ -202,8 +206,8 @@ public:
   }
 
   //XXX This has been somewhat compelling for reducing CV; consider why.
-  inline void depthPartition(JNodeTable const &jnodes,
-      size_t const max_component, bool const edge_balanced)
+  inline void depthPartition(JNodeTable const &jnodes, size_t const max_component,
+      bool const vtx_weight, bool const pst_weight, bool const pre_weight)
   {
     std::vector<size_t> depth(jnodes.size(), 0);
     for (jnid_t id = jnodes.size() - 1; id != (jnid_t)-1; --id)
@@ -219,7 +223,9 @@ public:
     size_t cur_size = 0;
     for (size_t idx = 0; idx != jnids.size(); ++idx) {
       parts.at(jnids.at(idx)) = cur_part;
-      cur_size += edge_balanced ? jnodes.pst_weight(jnids.at(idx)) : 1;
+      if (vtx_weight) cur_size += 1;
+      if (pst_weight) cur_size += jnodes.pst_weight(jnids.at(idx));
+      if (pre_weight) cur_size += jnodes.pre_weight(jnids.at(idx));
       if (cur_size >= max_component) {
         ++cur_part;
         cur_size = 0;
@@ -228,8 +234,8 @@ public:
   }
 
   //XXX This is practically anti-optimal...why?
-  inline void heightPartition(JNodeTable const &jnodes,
-      size_t const max_component, bool const edge_balanced)
+  inline void heightPartition(JNodeTable const &jnodes, size_t const max_component,
+      bool const vtx_weight, bool const pst_weight, bool const pre_weight)
   {
     std::vector<size_t> height(jnodes.size(), 0);
     for (jnid_t id = 0; id != jnodes.size(); ++id)
@@ -245,7 +251,9 @@ public:
     size_t cur_size = 0;
     for (size_t idx = 0; idx != jnids.size(); ++idx) {
       parts.at(jnids.at(idx)) = cur_part;
-      cur_size += edge_balanced ? jnodes.pst_weight(jnids.at(idx)) : 1;
+      if (vtx_weight) cur_size += 1;
+      if (pst_weight) cur_size += jnodes.pst_weight(jnids.at(idx));
+      if (pre_weight) cur_size += jnodes.pre_weight(jnids.at(idx));
       if (++cur_size == max_component) {
         ++cur_part;
         cur_size = 0;
@@ -253,14 +261,16 @@ public:
     }
   }
 
-  inline void naivePartition(JNodeTable const &jnodes,
-      size_t const max_component, bool const edge_balanced)
+  inline void naivePartition(JNodeTable const &jnodes, size_t const max_component,
+      bool const vtx_weight, bool const pst_weight, bool const pre_weight)
   {
     short cur_part = 0;
     size_t cur_size = 0;
     for (jnid_t id = 0; id != jnodes.size(); ++id) {
       parts.at(id) = cur_part;
-      cur_size += edge_balanced ? jnodes.pst_weight(id) : 1;
+      if (vtx_weight) cur_size += 1;
+      if (pst_weight) cur_size += jnodes.pst_weight(id);
+      if (pre_weight) cur_size += jnodes.pre_weight(id);
       if (++cur_size == max_component) {
         ++cur_part;
         cur_size = 0;

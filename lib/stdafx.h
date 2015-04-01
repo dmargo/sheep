@@ -12,7 +12,7 @@
 #define USE_BUFIND
 //#define USE_SUFIND
 
-//#define USE_PRE_WEIGHT
+#define USE_PRE_WEIGHT
 
 
 #ifdef USE_LLAMA
