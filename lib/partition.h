@@ -62,7 +62,7 @@ public:
 
     // For each jnid_t, assign a part.
     forwardPartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
-    //backwardPartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
+    //naivePartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
 
     // Convert jnid_t-indexed parts to vid_t indexed parts.
     std::vector<short> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
@@ -261,7 +261,7 @@ public:
     for (size_t idx = 0; idx != jnids.size(); ++idx) {
       parts.at(jnids.at(idx)) = cur_part;
       cur_size += get_weight(jnodes, jnids.at(idx), vtx_weight, pst_weight, pre_weight);
-      if (++cur_size == max_component) {
+      if (cur_size >= max_component) {
         ++cur_part;
         cur_size = 0;
       }
@@ -276,7 +276,7 @@ public:
     for (jnid_t id = 0; id != jnodes.size(); ++id) {
       parts.at(id) = cur_part;
       cur_size += get_weight(jnodes, id, vtx_weight, pst_weight, pre_weight);
-      if (++cur_size == max_component) {
+      if (cur_size >= max_component) {
         ++cur_part;
         cur_size = 0;
       }
@@ -438,7 +438,7 @@ public:
         vid_t const Y = *eitr;
         size_t const j = pos.at(Y);
 
-        if (i <= j) {
+        if (i >= j) {
           buf.tail = i;
           buf.head = j;
           stream.write((char*)&buf, sizeof(xs1));
