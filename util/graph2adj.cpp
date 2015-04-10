@@ -25,7 +25,7 @@ int main(int argc, char* argv[]) {
       std::chrono::steady_clock::now() - start_point);
   printf("Loaded in: %lums\n\n", load_duration.count());
 
-  std::vector<vid_t> seq = defaultSequence(graph);
+  std::vector<vid_t> seq = degreeSequence(graph);
 
   std::vector<vid_t> index(*std::max_element(seq.cbegin(), seq.cend()) + 1);
   for (size_t i = 0; i != seq.size(); ++i)
