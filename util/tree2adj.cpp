@@ -52,16 +52,19 @@ int main(int argc, char* argv[]) {
       std::chrono::steady_clock::now() - start_point);
   printf("Loaded in: %lums\n\n", load_duration.count());
 
-  size_t edge_cnt = 0;
+  size_t edge_count = 0;
+  std::vector<size_t> edge_width(jnodes.size(), 0);
   std::vector<size_t> subt(jnodes.size(), 1);
+  std::vector<size_t> supr(jnodes.size(), 1);
+
   for (jnid_t id = 0; id != jnodes.size(); ++id) {
+    edge_width.at(id) += jnodes.pst_weight(id);
     if (jnodes.parent(id) != INVALID_JNID) {
-      ++edge_cnt;
+      ++edge_count;
+      edge_width.at(jnodes.parent(id)) += edge_width.at(id) - jnodes.pre_weight(id);
       subt.at(jnodes.parent(id)) += subt.at(id);
     }
   }
-
-  std::vector<size_t> supr(jnodes.size(), 1);
   for (jnid_t id = jnodes.size() - 1; id != (jnid_t) -1; --id) {
     if (jnodes.parent(id) != INVALID_JNID) {
       supr.at(id) += supr.at(jnodes.parent(id));
@@ -69,18 +72,18 @@ int main(int argc, char* argv[]) {
   }
 
   std::ofstream adj(adj_filename);
-  adj << jnodes.size() << ' ' << edge_cnt << " 011" << std::endl;
+  adj << jnodes.size() << ' ' << edge_count << " 011" << std::endl;
   for (jnid_t id = 0; id != jnodes.size(); ++id) {
     adj << 1; // vertex weight
 
     jnid_t const par_id = jnodes.parent(id);
     if (par_id != INVALID_JNID)
-      adj << ' ' << par_id + 1 << ' ' << (subt.at(id) + supr.at(par_id));
-     
-    for (auto itr = jnodes.kids(id).cbegin(); itr != jnodes.kids(id).cend(); ++itr) {
-      jnid_t const kid_id = *itr;
-      adj << ' ' << kid_id + 1 << ' ' << (subt.at(kid_id) + supr.at(id));
-    }
+      adj << ' ' << par_id + 1 << ' ' <<
+        (std::min(subt.at(id),edge_width.at(id)) + std::min(supr.at(par_id),edge_width.at(id)));
+
+    for (auto kid_id : jnodes.kids(id))
+      adj << ' ' << kid_id + 1 << ' ' <<
+        (std::min(subt.at(kid_id),edge_width.at(kid_id)) + std::min(supr.at(id),edge_width.at(kid_id)));
 
     adj << std::endl;
   }
