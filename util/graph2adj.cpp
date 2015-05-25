@@ -41,6 +41,11 @@ int main(int argc, char* argv[]) {
   std::ofstream adj(adj_filename);
   adj << graph.getNodes() << ' ' << edge_cnt << ' ' << "010" << std::endl;
   for (auto nitr = seq.cbegin(); nitr != seq.cend(); ++nitr) {
+    size_t post_degree = 0;
+    for (auto eitr = graph.getEdgeItr(*nitr); !eitr.isEnd(); ++eitr) {
+      if (index.at(*eitr) > index.at(*nitr))
+        ++post_degree;
+    }
     adj << graph.getDeg(*nitr);
     for (auto eitr = graph.getEdgeItr(*nitr); !eitr.isEnd(); ++eitr) {
       if (*eitr != *nitr)

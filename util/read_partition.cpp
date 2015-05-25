@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
 
   for (int i = 2; i < argc; ++i) {
     Partition part(seq, argv[i]);
-    part.evaluate(graph);
+    part.evaluate(graph, seq);
   }
 
   auto run_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
