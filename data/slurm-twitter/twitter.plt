@@ -8,5 +8,6 @@ set xlabel '#-Partitions'
 
 set key top left reverse Left
 set yrange [0:]
+set xrange [0:35]
 
 plot 'slurm-twitter.cost' u 1:2 t 'ordered fennel-VP' lt 8, '' u 1:3 t 'sheep' lt 7
