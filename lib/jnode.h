@@ -18,12 +18,7 @@
 typedef vid_t jnid_t;
 #define INVALID_JNID ((jnid_t)-1)
 
-#ifdef USE_BUFIND
-typedef BetterUnionFind<jnid_t> UnionFind;
-#endif
-#ifdef USE_SUFIND
-typedef SimpleUnionFind<jnid_t> UnionFind;
-#endif
+typedef FastUnionFind<jnid_t> UnionFind;
 
 class JNodeTable {
 private:
@@ -188,7 +183,7 @@ public:
 
   inline void cleanPst(jnid_t id) {
     std::sort(pst(id).begin(), pst(id).end());
-    #ifdef DDUP_PST
+    #ifndef DDUP_GRAPH
       auto end = std::unique(pst(id).begin(), pst(id).end());
       pst(id).len = std::distance(pst(id).begin(), end);
     #endif

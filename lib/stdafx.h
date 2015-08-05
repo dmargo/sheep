@@ -2,18 +2,18 @@
 
 #include <cassert>
 
+/* OPTION: Deduplicate edges while loading the graph.
+ * NOTE: This option does not work with distributed loading. */
+//#define DDUP_GRAPH
+
+/* OPTION: Save preorder weight for each vertex in the tree.
+ * These weights are needed by some (non-default) partitioning models.
+ * However, they consume sizeof(esize_t) bytes of memory per vertex. */
+//define USE_PRE_WEIGHT
+
 
 #define USE_LLAMA
 //#define USE_SNAP
-
-//#define DDUP_GRAPH
-#define DDUP_PST
-
-#define USE_BUFIND
-//#define USE_SUFIND
-
-#define USE_PRE_WEIGHT
-
 
 #ifdef USE_LLAMA
 class LLAMAGraph;

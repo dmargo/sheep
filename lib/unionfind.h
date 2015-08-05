@@ -3,7 +3,7 @@
 
 // T should be a type that can index an array.
 template <typename T>
-class BetterUnionFind {
+class FastUnionFind {
 protected:
   std::vector<T> parent;
   std::vector<char> rank;
@@ -33,11 +33,11 @@ protected:
   }
 
 public:
-  inline BetterUnionFind(T const universe) : parent(universe), rank(universe) {
+  inline FastUnionFind(T const universe) : parent(universe), rank(universe) {
     std::iota(parent.begin(), parent.end(), (T)0);
   }
 
-  inline BetterUnionFind(BetterUnionFind const &other, T partial_end) :
+  inline FastUnionFind(FastUnionFind const &other, T partial_end) :
     parent(other.parent.size()), rank(other.rank.size())
   {
     assert(partial_end <= other.parent.size());
@@ -74,7 +74,7 @@ public:
 
 
 
-//XXX: SimpleUnionFind is deprecated,  because BetterUnionFind is...better.
+//XXX: SimpleUnionFind uses marginally less memory than FastUnionFind.
 template <typename T>
 class SimpleUnionFind {
 protected:
