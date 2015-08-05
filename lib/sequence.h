@@ -148,24 +148,18 @@ std::vector<vid_t> readTextSequence(char const *const filename) {
 }
 
 void writeSequence(std::vector<vid_t> const &seq, char const *const filename) {
+#ifdef USE_BIN_SEQUENCE
+  writeBinarySequence(seq, filename);
+#else
   writeTextSequence(seq, filename);
+#endif
 }
 
 std::vector<vid_t> readSequence(char const *const filename) {
+#ifdef USE_BIN_SEQUENCE
+  return readBinarySequence(filename);
+#else
   return readTextSequence(filename);
+#endif
 }
 
-
-
-/* XXX This is a deprecated mess that needs to be rewritten to reflect new design choices.
-void partitionSequence(std::vector<vid_t> &seq, Partition const &p) {
-  for (jnid_t id = 0; id != p.tree.jnodes.size(); ++id) {
-    seq.push_back(p.tree.vid(id));
-    if (p.tree.jnodes.parent(id) != INVALID_JNID)
-      assert(p.parts.at(id) < p.parts.at(p.tree.jnodes.parent(id)));
-  }
-
-  std::stable_sort(seq.begin(), seq.end(), [&](vid_t const lhs, vid_t const rhs) {
-    return p.parts.at(p.tree.index.at(lhs)) < p.parts.at(p.tree.index.at(rhs)); });
-}
-*/

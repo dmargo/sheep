@@ -18,7 +18,11 @@
 typedef vid_t jnid_t;
 #define INVALID_JNID ((jnid_t)-1)
 
+#ifdef USE_SIMPLE_UF
+typedef SimpleUnionFind<jnid_t> UnionFind;
+#else
 typedef FastUnionFind<jnid_t> UnionFind;
+#endif
 
 class JNodeTable {
 private:
