@@ -16,40 +16,38 @@
 #include "jtree.h"
 #include "stdafx.h"
 
-uint32_t simple_hash(uint32_t k) {
+uint32_t simple_hash(vid_t k) {
   return k % 2;
 }
 
-uint32_t knuth_hash(uint32_t k) {
+uint32_t knuth_hash(vid_t k) {
   uint32_t prime = 2654435761;
   return k * prime;
 }
 
-uint32_t cormen_hash(uint32_t k) {
+uint32_t cormen_hash(vid_t k) {
   double A = 0.5 * (sqrt(5) - 1);
   uint32_t s = floor(A * pow(2,32));
   return k * s;
 }
-
-inline size_t get_weight(JNodeTable const &jnodes, jnid_t id,
-    bool const vtx_weight, bool const pst_weight, bool const pre_weight)
-{
-  size_t result = 0;
-  if (vtx_weight) result += 1;
-  if (pst_weight) result += jnodes.pst_weight(id);
-  if (pre_weight)
-    for (jnid_t kid : jnodes.kids(id))
-      result += jnodes.pre_weight(kid);
-  return result;
-}
-
-
 
 class Partition {
 public:
   short num_parts;
   std::vector<short> parts;
   #define INVALID_PART (short)-1
+
+  inline size_t get_weight(JNodeTable const &jnodes, jnid_t id,
+      bool const vtx_weight, bool const pst_weight, bool const pre_weight)
+  {
+    size_t result = 0;
+    if (vtx_weight) result += 1;
+    if (pst_weight) result += jnodes.pst_weight(id);
+    if (pre_weight)
+      for (jnid_t kid : jnodes.kids(id))
+        result += jnodes.pre_weight(kid);
+    return result;
+  }
 
   inline Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, short np,
       double balance_factor = 1.03, bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false) :
@@ -62,7 +60,6 @@ public:
 
     // For each jnid_t, assign a part.
     forwardPartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
-    //naivePartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
 
     // Convert jnid_t-indexed parts to vid_t indexed parts.
     std::vector<short> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
@@ -101,7 +98,10 @@ public:
 
 
 
-  // PARTITIONING ALGORITHMS
+  /* PARTITIONING ALGORITHMS
+   * The following algorithms are all intended for use with a JNodeTable.
+   * forwardPartition is the best method and the method described in our paper;
+   * the others are all experiments. */
 
   inline void forwardPartition(JNodeTable &jnodes, size_t const max_component,
       bool const vtx_weight, bool const pst_weight, bool const pre_weight)
@@ -216,7 +216,7 @@ public:
     }
   }
 
-  //XXX This has been somewhat compelling for reducing CV; consider why.
+  //XXX This has been somewhat compelling for reducing CV on the cheap.
   inline void depthPartition(JNodeTable const &jnodes, size_t const max_component,
       bool const vtx_weight, bool const pst_weight, bool const pre_weight)
   {
@@ -242,7 +242,7 @@ public:
     }
   }
 
-  //XXX This is practically anti-optimal...why?
+  //XXX In contrast, this is practically anti-optimal, which is interesting.
   inline void heightPartition(JNodeTable const &jnodes, size_t const max_component,
       bool const vtx_weight, bool const pst_weight, bool const pre_weight)
   {
@@ -292,6 +292,12 @@ public:
       *itr = rand() % num_parts;
   }
 
+
+
+  /* The remaining partitioning algorithms are NOT for JNodeTables.
+   * readPartition does what it says on the can;
+   * the other two are competing implementations of Fennel. */
+
   inline void readPartition(char const *filename) {
     std::ifstream stream(filename);
     short p;
@@ -301,7 +307,136 @@ public:
       parts.push_back(p);
   }
 
+  template <typename GraphType>
+  void fennel(GraphType const &graph, std::vector<vid_t> const &seq,
+      size_t const max_component, bool const edge_balanced)
+  {
+    double const n = graph.getNodes();
+    double const m = 2 * graph.getEdges(); // # of DIRECTED edges; getEdges() returns UNDIRECTED#.
+    double const k = num_parts;
 
+    double const y = 1.5;
+    double const a = edge_balanced ?
+      n * pow(k / m, y) : // From KDD14 paper.
+      m * (pow(k, y - 1.0) / pow(n, y)); // From original FENNEL paper.
+
+    std::vector<double> part_value;
+    std::vector<double> part_size(num_parts, 0.0);
+
+    //for (vid_t const X : seq) {
+    for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
+      vid_t const X = *nitr;
+      double X_weight = edge_balanced ? ((double) graph.getDeg(X)) : 1.0;
+
+      part_value.assign(num_parts, 0.0);
+      for (auto X_itr = graph.getEdgeItr(X); !X_itr.isEnd(); ++X_itr) {
+        vid_t const Y = *X_itr;
+        //if (X <= Y) continue;
+        if (parts[Y] != INVALID_PART)
+          part_value[parts[Y]] += 1.0;
+      }
+
+      short max_part = 0;
+      double max_value = std::numeric_limits<double>::lowest();
+      for (short p = 0; p != num_parts; ++p) {
+        if (part_size[p] + X_weight > max_component) continue; // Hard balance limit.
+
+        //double p_cost = a * y * pow(part_size[p], y - 1.0); // From original FENNEL paper.
+        double p_cost = a * pow(part_size[p] + X_weight, y) - a * pow(part_size[p], y);
+        double p_value = part_value[p] - p_cost;
+          if (p_value > max_value) {
+          max_part = p;
+          max_value = p_value;
+        }
+
+        if (part_size[p] == 0.0) break; // Everything will be 0.0 after this point.
+      }
+      parts[X] = max_part;
+      part_size[max_part] += X_weight;
+    }
+  }
+
+  void fennel(char const *const filename) {
+    // I tried to privilege edge-partitioned fennel by hardcoding |V| and |E|
+    // so that only one scan of the graph file would be necessary.
+    // This is obviously cheesy, but it was a prototype, and even with this
+    // advantage it was too slow to be worthwhile for our evaluation.
+    vid_t max_vid = 4036529;
+    vid_t vertex_count = 3997962;
+    size_t edge_count = 34681189;
+    double balance_factor = 1.03;
+
+    size_t max_component = (edge_count/num_parts)*balance_factor;
+    parts.assign(edge_count + 1, INVALID_PART);
+
+    struct xs1 {
+	    unsigned tail;
+	    unsigned head;
+	    float weight;
+    };
+    xs1 buf;
+    /*
+    std::ifstream stream(filename, std::ios::binary);
+    while (!stream.eof()) {
+      stream.read((char*)&buf, sizeof(xs1));
+      if (buf.tail > max_vid)
+        max_vid = buf.tail;
+      if (buf.head > max_vid)
+        max_vid = buf.head;
+      ++edge_count;
+    }
+    */
+
+    double const n = vertex_count;
+    double const m = 2 * edge_count; // # of DIRECTED edges; getEdges() returns UNDIRECTED#.
+    double const k = num_parts;
+
+    double const y = 1.5;
+    double const a = m * (pow(k, y - 1.0) / pow(n, y));
+
+    std::vector<double> part_value;
+    std::vector<double> part_size(num_parts, 0.0);
+    std::vector<bool> touches_part(num_parts * (max_vid + 1));
+
+    std::ifstream stream(filename, std::ios::binary);
+    for (size_t eid = 0; !stream.eof(); ++eid) {
+      stream.read((char*)&buf, sizeof(xs1));
+      vid_t const X = buf.tail;
+      vid_t const Y = buf.head;
+
+      part_value.assign(num_parts, 0.0);
+      for (short p = 0; k != num_parts; ++p) {
+        if (touches_part.at(num_parts * X + p) == true)
+          part_value[p] += 1.0;
+        if (touches_part.at(num_parts * Y + p) == true)
+          part_value[p] += 1.0;
+      }
+
+      short max_part = 0;
+      double max_value = std::numeric_limits<double>::lowest();
+      for (short p = 0; p != num_parts; ++p) {
+        if (part_size[p] + 1.0 > max_component) continue; // Hard balance limit.
+
+        double p_cost = a * pow(part_size[p] + 1.0, y) - a * pow(part_size[p], y);
+        double p_value = part_value[p] - p_cost;
+          if (p_value > max_value) {
+          max_part = p;
+          max_value = p_value;
+        }
+
+        if (part_size[p] == 0.0) break; // Everything will be 0.0 after this point.
+      }
+
+      parts[eid] = max_part;
+      part_size[max_part] += 1.0;
+      touches_part.at(num_parts * X + max_part) = true;
+      touches_part.at(num_parts * X + max_part) = true;
+    }
+  }
+
+  
+
+  /* EVALUATION AND I/O */
 
   inline void print() const
   {
@@ -411,6 +546,9 @@ public:
 
 
 
+  /* This write-out method reorders the graph such that if part[X] < part[Y] then X < Y.
+   * It uses seq for tie-breaks.
+   */
   template <typename GraphType>
   inline void writeIsomorphicGraph(
       GraphType const &graph, std::vector<vid_t> seq,
@@ -447,6 +585,9 @@ public:
     }
   }
 
+  /* This write-out method simply writes each partition to a separate file.
+   * It also isomorphs the graph according to seq, which is almost always desirable.
+   */
   template <typename GraphType>
   inline void writePartitionedGraph(
       GraphType const &graph, std::vector<vid_t> const &seq,
@@ -488,135 +629,6 @@ public:
 
     for (std::ofstream *stream : output_streams)
       delete stream;
-  }
-
-
-
-  template <typename GraphType>
-  void fennel(GraphType const &graph, std::vector<vid_t> const &seq,
-      size_t const max_component, bool const edge_balanced)
-  {
-    double const n = graph.getNodes();
-    double const m = 2 * graph.getEdges(); // # of DIRECTED edges; getEdges() returns UNDIRECTED#.
-    double const k = num_parts;
-
-    double const y = 1.5;
-    double const a = edge_balanced ?
-      n * pow(k / m, y) : // From KDD14 paper.
-      m * (pow(k, y - 1.0) / pow(n, y)); // From original FENNEL paper.
-
-    std::vector<double> part_value;
-    std::vector<double> part_size(num_parts, 0.0);
-
-    //for (vid_t const X : seq) {
-    for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
-      vid_t const X = *nitr;
-      double X_weight = edge_balanced ? ((double) graph.getDeg(X)) : 1.0;
-
-      part_value.assign(num_parts, 0.0);
-      for (auto X_itr = graph.getEdgeItr(X); !X_itr.isEnd(); ++X_itr) {
-        vid_t const Y = *X_itr;
-        //if (X <= Y) continue;
-        if (parts[Y] != INVALID_PART)
-          part_value[parts[Y]] += 1.0;
-      }
-
-      short max_part = 0;
-      double max_value = std::numeric_limits<double>::lowest();
-      for (short p = 0; p != num_parts; ++p) {
-        if (part_size[p] + X_weight > max_component) continue; // Hard balance limit.
-
-        //double p_cost = a * y * pow(part_size[p], y - 1.0); // From original FENNEL paper.
-        double p_cost = a * pow(part_size[p] + X_weight, y) - a * pow(part_size[p], y);
-        double p_value = part_value[p] - p_cost;
-          if (p_value > max_value) {
-          max_part = p;
-          max_value = p_value;
-        }
-
-        if (part_size[p] == 0.0) break; // Everything will be 0.0 after this point.
-      }
-      parts[X] = max_part;
-      part_size[max_part] += X_weight;
-    }
-  }
-
-  void fennel(char const *const filename) {
-    // I tried to privilege edge-partitioned fennel but hardcoding |V| and |E|
-    // so that only one scan of the graph file would be necessary.
-    // This is obviously cheesy, but it was a prototype, and even with this
-    // privilege it proves too slow.
-    vid_t max_vid = 4036529;
-    vid_t vertex_count = 3997962;
-    size_t edge_count = 34681189;
-    double balance_factor = 1.03;
-
-    size_t max_component = (edge_count/num_parts)*balance_factor;
-    parts.assign(edge_count + 1, INVALID_PART);
-
-    struct xs1 {
-	    unsigned tail;
-	    unsigned head;
-	    float weight;
-    };
-    xs1 buf;
-    /*
-    std::ifstream stream(filename, std::ios::binary);
-    while (!stream.eof()) {
-      stream.read((char*)&buf, sizeof(xs1));
-      if (buf.tail > max_vid)
-        max_vid = buf.tail;
-      if (buf.head > max_vid)
-        max_vid = buf.head;
-      ++edge_count;
-    }
-    */
-
-    double const n = vertex_count;
-    double const m = 2 * edge_count; // # of DIRECTED edges; getEdges() returns UNDIRECTED#.
-    double const k = num_parts;
-
-    double const y = 1.5;
-    double const a = m * (pow(k, y - 1.0) / pow(n, y));
-
-    std::vector<double> part_value;
-    std::vector<double> part_size(num_parts, 0.0);
-    std::vector<bool> touches_part(num_parts * (max_vid + 1));
-
-    std::ifstream stream(filename, std::ios::binary);
-    for (size_t eid = 0; !stream.eof(); ++eid) {
-      stream.read((char*)&buf, sizeof(xs1));
-      vid_t const X = buf.tail;
-      vid_t const Y = buf.head;
-
-      part_value.assign(num_parts, 0.0);
-      for (short p = 0; k != num_parts; ++p) {
-        if (touches_part.at(num_parts * X + p) == true)
-          part_value[p] += 1.0;
-        if (touches_part.at(num_parts * Y + p) == true)
-          part_value[p] += 1.0;
-      }
-
-      short max_part = 0;
-      double max_value = std::numeric_limits<double>::lowest();
-      for (short p = 0; p != num_parts; ++p) {
-        if (part_size[p] + 1.0 > max_component) continue; // Hard balance limit.
-
-        double p_cost = a * pow(part_size[p] + 1.0, y) - a * pow(part_size[p], y);
-        double p_value = part_value[p] - p_cost;
-          if (p_value > max_value) {
-          max_part = p;
-          max_value = p_value;
-        }
-
-        if (part_size[p] == 0.0) break; // Everything will be 0.0 after this point.
-      }
-
-      parts[eid] = max_part;
-      part_size[max_part] += 1.0;
-      touches_part.at(num_parts * X + max_part) = true;
-      touches_part.at(num_parts * X + max_part) = true;
-    }
   }
 };
 
