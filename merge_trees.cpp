@@ -11,11 +11,10 @@ int main(int argc, char* argv[]) {
 
   bool verbose = false;
   bool do_faqs = false;
-  bool do_distr = false;
 
   opterr = 0;
   int opt;
-  while ((opt = getopt(argc, argv, "o:vfd")) != -1) {
+  while ((opt = getopt(argc, argv, "o:vf")) != -1) {
     switch (opt) {
       case 'o':
         output_filename = optarg;
@@ -25,9 +24,6 @@ int main(int argc, char* argv[]) {
         break;
       case 'f':
         do_faqs = !do_faqs;
-        break;
-      case 'd':
-        do_distr = !do_distr;
         break;
       case '?':
         if (optopt == 'o')
@@ -62,8 +58,6 @@ int main(int argc, char* argv[]) {
   if (do_faqs) {
     JNodeTable::Facts faq = jnodes.getFacts();
     faq.print();
-    if (do_distr)
-      faq.print_distribution();
   }
 
   auto run_duration = std::chrono::duration_cast<std::chrono::milliseconds>(

@@ -233,8 +233,6 @@ public:
     jnid_t halo_id;
     jnid_t core_id;
 
-    std::vector<size_t> distr;
-
     Facts(JNodeTable const &jn);
 
     inline void print() const {
@@ -244,12 +242,6 @@ public:
       printf("\thalo:%u\tcore:%u\n", halo_id, core_id);
       printf("\tfill:%llu\n", fill);
     }
-
-    inline void print_distribution() const {
-      for (size_t i = 0; i != distr.size(); ++i)
-        if (distr.at(i) != 0)
-          printf("%zu : %zu\n", i, distr.at(i));
-    }
   };
 
   inline Facts getFacts() const { return Facts(*this); }
@@ -258,8 +250,7 @@ public:
 inline JNodeTable::Facts::Facts(JNodeTable const &jnodes) :
   vert_cnt(0), edge_cnt(0), width(0), fill(0),
   vert_height(0), edge_height(0), root_cnt(0),
-  halo_id(INVALID_JNID), core_id(INVALID_JNID), 
-  distr()
+  halo_id(INVALID_JNID), core_id(INVALID_JNID) 
 {
   std::vector<long long unsigned> vheight(jnodes.size(), 0);
   std::vector<long long unsigned> eheight(jnodes.size(), 0);
@@ -289,44 +280,5 @@ inline JNodeTable::Facts::Facts(JNodeTable const &jnodes) :
       halo_id = id;
     if (core_id == INVALID_JNID && jnodes.width(id) >= width)
       core_id = id;
-
-#if 0
-    if (distr.size() < jnodes.kids(id).size() + 1)
-      distr.resize(jnodes.kids(id).size() + 1);
-    distr.at(jnodes.kids(id).size()) += 1;
-#endif
   }
-
-#if 0
-  // Guaranteed to clear and free vectors.
-  std::vector<long long unsigned>().swap(vheight);
-  std::vector<long long unsigned>().swap(eheight);
-
-  std::vector<long long unsigned> vdepth(jnodes.size(), 0);
-  long long unsigned trivial_cost = edge_cnt * ceil(log2(vert_cnt));
-  long long unsigned linear_cost = 0;
-  long long unsigned tree_cost = vert_cnt * ceil(log2(vert_cnt));
-
-  // Descending pass; generally for depth-oriented facts.
-  for(jnid_t id = jnodes.size() - 1; id != (jnid_t)-1; --id) {
-    jnid_t const par_id = jnodes.parent(id);
-    if (par_id != INVALID_JNID)
-      vdepth.at(id) = vdepth.at(par_id) + 1;
- 
-    if (jnodes.size() - 1 - id != 0)
-      linear_cost += jnodes.pst_weight(id) * ceil(log2(jnodes.size() - 1 - id));
-    if (vdepth.at(id) != 0)
-      tree_cost += jnodes.pst_weight(id) * ceil(log2(vdepth.at(id)));
-
-    if (distr.size() < vdepth.at(id) + 1)
-      distr.resize(vdepth.at(id) + 1);
-    distr.at(vdepth.at(id)) += 1;
-  }
-
-  //TODO: Move this into official print, assuming you're not discontinuing.
-  printf("\nCOSTS:\n");
-  printf("\ttrivial: %llu\n", trivial_cost);
-  printf("\tlinear: %llu\n", linear_cost);
-  printf("\ttree: %llu\n", tree_cost);
-#endif
 }
