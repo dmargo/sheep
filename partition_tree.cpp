@@ -3,8 +3,8 @@
 #include <unistd.h>
 #include <vector>
 
-#include <jtree.h>
 #include <graph_wrapper.h>
+#include <jnode.h>
 #include <partition.h>
 #include <sequence.h>
 #include <stdafx.h>

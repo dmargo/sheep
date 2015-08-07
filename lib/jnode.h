@@ -1,19 +1,12 @@
 #pragma once
-#include <cmath>
-#include <cstring>
-#include <fstream>
-#include <limits>
-#include <queue>
+
 #include <vector>
+
+#include <mpi.h>
 
 #include "jdata.h"
 #include "unionfind.h"
-
-#include <fcntl.h>
-#include <mpi.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <unistd.h>
+#include "stdafx.h"
 
 typedef vid_t jnid_t;
 #define INVALID_JNID ((jnid_t)-1)
@@ -201,8 +194,7 @@ public:
     assert(tmp == id);
   }
 
-  //XXX Complicated; consider exporting this to its own merge.h
-  bool newUnion(jnid_t id, vid_t Xclude, size_t max_len = (size_t)-1);
+  bool newUnion(jnid_t const id, vid_t Xclude, size_t max_len);
 
   inline JData<vid_t>& jxn(jnid_t id) { return jxn_data[id]; }
   inline JData<vid_t> const & jxn(jnid_t id) const { return jxn_data[id]; }

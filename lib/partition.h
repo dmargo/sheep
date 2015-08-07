@@ -4,16 +4,13 @@
 #include <parallel/algorithm>
 #include <cmath>
 #include <cstdlib>
-#include <ctime>
 #include <fstream>
 #include <limits>
-#include <queue>
 #include <unordered_set>
 #include <vector>
 
 #include "graph_wrapper.h"
 #include "jnode.h"
-#include "jtree.h"
 #include "stdafx.h"
 
 uint32_t simple_hash(vid_t k) {

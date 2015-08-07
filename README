@@ -11,8 +11,9 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
 
 2. USAGE: ./scripts/dist-partition.sh [options...] $GRAPH $NUM_PARTITIONS
   $GRAPH may be a .dat (XSS/Graph500 binary) or .net (SNAP) file.
-  If $NUM_PARTITIONS = 0, then we skip the partitioning phase.
+  There is a snap2xss conversion utility in llama/utils
   By default, $GRAPH = test/hep-th.dat and $NUM_PARTITIONS = 2
+  If $NUM_PARTITIONS = 0, then we skip the partitioning phase.
 
 3. OPTIONS
   -h (home)    sets the sheep directory. By default, this is your current working directory.
