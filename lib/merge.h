@@ -14,8 +14,8 @@ struct SortedRange {
   inline size_t size() const { return std::distance(itr,end); }
 };
 
-bool balance_line_merge(JData<vid_t> &new_data, std::vector<SortedRange> &kid_itrs,
-    vid_t Xclude, size_t max_len)
+bool balance_line_merge(JData<vid_t> &new_data, size_t max_len,
+    std::vector<SortedRange> &kid_itrs, vid_t Xclude)
 {
   for (auto end = kid_itrs.end(); end != kid_itrs.begin();) {
     // Find range of minimums (linear search)
@@ -51,8 +51,8 @@ bool balance_line_merge(JData<vid_t> &new_data, std::vector<SortedRange> &kid_it
  * XXX: TBD whether this is significant for Big graphs.
  * XXX: I've seen at least one case where it made a HUGE difference. Needs to be benchmarked.
  * does priority_queue virtualize std::greater calls? */
-bool heap_merge(JData<vid_t> &new_data, std::vector<SortedRange> &kid_itrs,
-    vid_t Xclude, size_t max_len)
+bool heap_merge(JData<vid_t> &new_data, size_t max_len,
+    std::vector<SortedRange> &kid_itrs, vid_t Xclude)
 {
   std::priority_queue< SortedRange, std::vector<SortedRange>, std::greater<SortedRange> >
       q(std::greater<SortedRange>(), std::move(kid_itrs));
@@ -76,8 +76,8 @@ bool heap_merge(JData<vid_t> &new_data, std::vector<SortedRange> &kid_itrs,
   return true;
 }
 
-bool asymmetric_merge(JData<vid_t> &new_data, std::vector<SortedRange> &kid_itrs,
-    vid_t Xclude, size_t max_len)
+bool asymmetric_merge(JData<vid_t> &new_data, size_t max_len,
+    std::vector<SortedRange> &kid_itrs, vid_t Xclude)
 {
   assert(kid_itrs.size() == 2);
   SortedRange big = kid_itrs[0];
@@ -85,7 +85,7 @@ bool asymmetric_merge(JData<vid_t> &new_data, std::vector<SortedRange> &kid_itrs
   if (big.size() < small.size())
     std::swap(big,small);
   if (big.size() < small.size() * 8)
-    return balance_line_merge(new_data, kid_itrs, Xclude, max_len);
+    return balance_line_merge(new_data, max_len, kid_itrs, Xclude);
 
   for (; small.itr != small.end; small.itr++) {
     auto *big_middle = std::lower_bound(big.itr, big.end, *small.itr);
@@ -116,3 +116,11 @@ bool asymmetric_merge(JData<vid_t> &new_data, std::vector<SortedRange> &kid_itrs
   return true;
 }
 
+bool heuristic_merge(JData<vid_t> &new_data, size_t max_len,
+    std::vector<SortedRange> &kid_itrs, vid_t Xclude)
+{
+  if (kid_itrs.size() < 32)
+    return balance_line_merge(new_data, max_len, kid_itrs, Xclude);
+  else
+    return heap_merge(new_data, max_len, kid_itrs, Xclude);
+}

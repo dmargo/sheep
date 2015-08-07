@@ -65,7 +65,7 @@ jnid_t JTree::insert(GraphType const &graph, vid_t const X, Options const opts)
   if (opts.make_pst)
     jnodes.cleanPst(current);
 
-  if (opts.make_jxn && !jnodes.newUnion(current, X, opts.width_limit))
+  if (opts.make_jxn && !jnodes.newUnion(current, opts.width_limit, X))
     goto FAILURE;
 
   //XXX This cannot be revoked, so it must be deferred until now.

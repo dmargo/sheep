@@ -196,11 +196,10 @@ public:
     assert(tmp == id);
   }
 
-  inline bool newUnion(jnid_t const id, vid_t Xclude, size_t max_len) {
+  inline bool newUnion(jnid_t const id, size_t max_len, vid_t Xclude) {
+    size_t sum = 0;
     std::vector<SortedRange> kid_itrs;
     kid_itrs.reserve(kids(id).size() + 1);
-    size_t sum = 0;
-
     for (auto itr = kids(id).cbegin(); itr != kids(id).cend(); itr++) {
       if (jxn(*itr).len != 0) {
         kid_itrs.emplace_back(jxn(*itr).begin(), jxn(*itr).end());
@@ -214,18 +213,11 @@ public:
 
     max_len = std::min(max_len, sum);
     newJxn(id, max_len);
-
-    bool success;
-    if (kid_itrs.size() < 32)
-      success = balance_line_merge(jxn(id), kid_itrs, Xclude, max_len);
-    else
-      success = heap_merge(jxn(id), kid_itrs, Xclude, max_len);
-
+    bool success = heuristic_merge(jxn(id), max_len, kid_itrs, Xclude);
     if (success)
       jxn_data.shrinkJData(id);
     else
       jxn_data.deleteJData(id);
-
     return success;
   }
 
@@ -271,42 +263,6 @@ public:
 
   inline Facts getFacts() const { return Facts(*this); }
 };
-
-inline JNodeTable::Facts::Facts(JNodeTable const &jnodes) :
-  vert_cnt(0), edge_cnt(0), width(0), fill(0),
-  vert_height(0), edge_height(0), root_cnt(0),
-  halo_id(INVALID_JNID), core_id(INVALID_JNID) 
-{
-  std::vector<long long unsigned> vheight(jnodes.size(), 0);
-  std::vector<long long unsigned> eheight(jnodes.size(), 0);
-
-  // Ascending pass; it is natural to compute most facts here.
-  for (jnid_t id = 0; id != jnodes.size(); ++id) {
-    jnid_t const par_id = jnodes.parent(id);
-
-    vert_cnt++;
-    edge_cnt += jnodes.pst_weight(id);
-    width = std::max(width, jnodes.width(id));
-    fill += jnodes.width(id) - jnodes.pst_weight(id) - 1;
-
-    vheight.at(id)++;
-    eheight.at(id) += jnodes.pst_weight(id);
-    if (par_id != INVALID_JNID) {
-      vheight.at(par_id) = std::max<long long unsigned>(vheight.at(par_id), vheight.at(id));
-      eheight.at(par_id) = std::max<long long unsigned>(eheight.at(par_id), eheight.at(id));
-    }
-    else {
-      vert_height = std::max<long long unsigned>(vert_height, vheight.at(id));
-      edge_height = std::max<long long unsigned>(edge_height, eheight.at(id));
-      root_cnt++;
-    }
-
-    if (halo_id == INVALID_JNID && jnodes.width(id) > 3)
-      halo_id = id;
-    if (core_id == INVALID_JNID && jnodes.width(id) >= width)
-      core_id = id;
-  }
-}
 
 #include "jnode.cpp"
 

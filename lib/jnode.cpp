@@ -7,6 +7,9 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+/* 
+ * CONSTRUCTORS AND I/O
+ */
 JNodeTable::JNodeTable(jnid_t max_jnids, bool init_kids, size_t memory_limit) :
   nodes_state(State::ALLOCATED), end_id(0),
   max_id(max_jnids), nodes((JNode*)malloc(sizeof(JNode) * max_id)),
@@ -146,6 +149,11 @@ void JNodeTable::save(char const *const filename) {
   stream.write((char*)nodes, sizeof(JNode) * max_id);
 }
 
+
+
+/*
+ * TREE MERGING METHODS
+ */
 void JNodeTable::merge(JNodeTable const &lhs, JNodeTable const &rhs, bool const make_kids)
 {
   assert(lhs.size() == rhs.size());
@@ -217,6 +225,47 @@ void JNodeTable::mpi_merge(bool const make_kids)
     else
       memcpy(nodes, outbuf, sizeof(JNode) * end_id);
     free(outbuf);
+  }
+}
+
+
+
+/* 
+ * FAQ
+ */
+inline JNodeTable::Facts::Facts(JNodeTable const &jnodes) :
+  vert_cnt(0), edge_cnt(0), width(0), fill(0),
+  vert_height(0), edge_height(0), root_cnt(0),
+  halo_id(INVALID_JNID), core_id(INVALID_JNID) 
+{
+  std::vector<long long unsigned> vheight(jnodes.size(), 0);
+  std::vector<long long unsigned> eheight(jnodes.size(), 0);
+
+  // Ascending pass; it is natural to compute most facts here.
+  for (jnid_t id = 0; id != jnodes.size(); ++id) {
+    jnid_t const par_id = jnodes.parent(id);
+
+    vert_cnt++;
+    edge_cnt += jnodes.pst_weight(id);
+    width = std::max(width, jnodes.width(id));
+    fill += jnodes.width(id) - jnodes.pst_weight(id) - 1;
+
+    vheight.at(id)++;
+    eheight.at(id) += jnodes.pst_weight(id);
+    if (par_id != INVALID_JNID) {
+      vheight.at(par_id) = std::max<long long unsigned>(vheight.at(par_id), vheight.at(id));
+      eheight.at(par_id) = std::max<long long unsigned>(eheight.at(par_id), eheight.at(id));
+    }
+    else {
+      vert_height = std::max<long long unsigned>(vert_height, vheight.at(id));
+      edge_height = std::max<long long unsigned>(edge_height, eheight.at(id));
+      root_cnt++;
+    }
+
+    if (halo_id == INVALID_JNID && jnodes.width(id) > 3)
+      halo_id = id;
+    if (core_id == INVALID_JNID && jnodes.width(id) >= width)
+      core_id = id;
   }
 }
 
