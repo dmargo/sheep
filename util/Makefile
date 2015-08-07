@@ -11,7 +11,7 @@ force:
 
 
 DEPPATH = -I../lib -I../../llama/llama/include
-DEPCPP = ../lib/jnode.cpp ../lib/jtree.cpp
+DEPCPP =
 DEPH 	 = ../lib/graph_wrapper.h ../lib/jdata.h ../lib/jnode.h ../lib/jtree.h \
 			   ../lib/partition.h ../lib/sequence.h ../lib/stdafx.h ../lib/unionfind.h
 
