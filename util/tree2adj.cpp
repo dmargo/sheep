@@ -4,8 +4,8 @@
 #include <unistd.h>
 #include <vector>
 
+#include <defs.h>
 #include <jnode.h>
-#include <stdafx.h>
 
 int main(int argc, char* argv[]) {
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdafx.h"
+#include "defs.h"
 
 #ifdef USE_LLAMA
 #include <llama.h>

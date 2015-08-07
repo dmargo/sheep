@@ -2,7 +2,7 @@
 
 #include <algorithm>
 #include <cstring>
-#include "stdafx.h"
+#include "defs.h"
 
 #ifndef NDEBUG
 #define DEBUG_ONLY(statement) statement

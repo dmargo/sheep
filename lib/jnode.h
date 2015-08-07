@@ -10,10 +10,10 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+#include "defs.h"
 #include "jdata.h"
 #include "merge.h"
 #include "unionfind.h"
-#include "stdafx.h"
 
 typedef vid_t jnid_t;
 #define INVALID_JNID ((jnid_t)-1)

@@ -4,9 +4,9 @@
 #include <fstream>
 #include <vector>
 
+#include "defs.h"
 #include "graph_wrapper.h"
 #include "jnode.h"
-#include "stdafx.h"
 
 /* A JTREE represents the isomorphism between a graph and a chordal embedding (JNODES) via an INDEX.
  * In particular, JTree implements the algorithm to make a chordal embedding from a sequence isomorphism. */

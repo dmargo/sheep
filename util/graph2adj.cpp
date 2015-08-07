@@ -4,9 +4,9 @@
 #include <unistd.h>
 #include <vector>
 
+#include <defs.h>
 #include <graph_wrapper.h>
 #include <sequence.h>
-#include <stdafx.h>
 
 int main(int argc, char* argv[]) {
   if (optind + 1 >= argc) {

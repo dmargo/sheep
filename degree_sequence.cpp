@@ -1,8 +1,8 @@
 
 #include <chrono>
 
+#include <defs.h>
 #include <sequence.h>
-#include <stdafx.h>
 
 int main(int argc, char* argv[]) {
   if (argc != 3) {

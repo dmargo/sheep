@@ -3,10 +3,10 @@
 #include <unistd.h>
 #include <vector>
 
+#include <defs.h>
 #include <graph_wrapper.h>
 #include <partition.h>
 #include <sequence.h>
-#include <stdafx.h>
 
 int main(int argc, char* argv[]) {
 

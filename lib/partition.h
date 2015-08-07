@@ -9,9 +9,9 @@
 #include <unordered_set>
 #include <vector>
 
+#include "defs.h"
 #include "graph_wrapper.h"
 #include "jnode.h"
-#include "stdafx.h"
 
 class Partition {
 public:

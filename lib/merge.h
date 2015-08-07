@@ -2,8 +2,8 @@
 
 #include <queue>
 
+#include "defs.h"
 #include "jdata.h"
-#include "stdafx.h"
 
 struct SortedRange {
   vid_t const *itr;

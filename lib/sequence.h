@@ -7,7 +7,7 @@
 #include <mpi.h>
 #include <parallel/algorithm>
 
-#include "stdafx.h"
+#include "defs.h"
 
 /* SEQEUENCE CONSTRUCTORS */
 template <typename GraphType>

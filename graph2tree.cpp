@@ -7,10 +7,10 @@
 #include <mpi.h>
 #include <unistd.h>
 
+#include <defs.h>
 #include <graph_wrapper.h>
 #include <jtree.h>
 #include <sequence.h>
-#include <stdafx.h>
 
 int main(int argc, char* argv[]) {
   bool use_mpi_sort = false;

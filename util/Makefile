@@ -12,8 +12,8 @@ force:
 
 DEPPATH = -I../lib -I../../llama/llama/include
 DEPCPP =
-DEPH 	 = ../lib/graph_wrapper.h ../lib/jdata.h ../lib/jnode.h ../lib/jtree.h \
-			   ../lib/partition.h ../lib/sequence.h ../lib/stdafx.h ../lib/unionfind.h
+DEPH 	 = ../lib/defs.h ../lib/graph_wrapper.h ../lib/jdata.h ../lib/jnode.h ../lib/jtree.h \
+			   ../lib/merge.h ../lib/partition.h ../lib/sequence.h ../lib/unionfind.h
 
 efennel: efennel.cpp $(DEPCPP) $(DEPH) 
 	$(CC) $(CXXFLAGS) $(DEPPATH) -o efennel efennel.cpp $(DEPCPP) $(LDFLAGS) $(LIBS)
