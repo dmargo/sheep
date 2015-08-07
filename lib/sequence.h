@@ -106,6 +106,8 @@ std::vector<vid_t> fileSequence(char const *const filename) {
   return seq;
 }
 
+
+
 /* SEQUENCE I/O */
 void writeBinarySequence(std::vector<vid_t> const &seq, char const *const filename) {
   std::ofstream stream(filename, std::ios::binary | std::ios::trunc);
