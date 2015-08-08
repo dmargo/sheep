@@ -256,7 +256,7 @@ void Partition::fennel(char const *const filename) {
   // This is obviously cheesy, but it was a prototype, and even with this
   // advantage it was too slow to be worthwhile for our evaluation.
   vid_t max_vid = 4036529;
-  vid_t vertex_count = 3997962;
+  size_t vertex_count = 3997962;
   size_t edge_count = 34681189;
   double balance_factor = 1.03;
 

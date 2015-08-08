@@ -8,7 +8,7 @@ class LLAMAGraph {
 private:
   ll_database database;
   ll_mlcsr_ro_graph *G; //XXX This should be const but LLAMA's methods need const markup
-  vid_t num_nodes;
+  size_t num_nodes;
 
 public:
   LLAMAGraph(char const *filename, size_t const part = 0, size_t const num_parts = 0,
@@ -43,7 +43,7 @@ public:
     return G->max_nodes();
   }
 
-  inline vid_t getNodes() const {
+  inline size_t getNodes() const {
     return num_nodes;
   }
 
@@ -52,10 +52,10 @@ public:
   }
 
   inline bool isNode(vid_t X) const {
-    return X < G->max_nodes() && G->out_degree(X) != 0;
+    return (node_t) X < G->max_nodes() && G->out_degree(X) != 0;
   }
 
-  inline vid_t getDeg(vid_t X) const {
+  inline size_t getDeg(vid_t X) const {
     return G->out_degree(X);   
   }
 
@@ -160,7 +160,7 @@ public:
     return max_vid;
   }
 
-  inline vid_t getNodes() const {
+  inline size_t getNodes() const {
     return (size_t)G->GetNodes();
   }
 
@@ -172,7 +172,7 @@ public:
     return G->IsNode(X);
   }
 
-  inline vid_t getDeg(vid_t X) const {
+  inline size_t getDeg(vid_t X) const {
     return G->GetNI(X).GetDeg();
   }
 

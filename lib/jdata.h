@@ -172,7 +172,7 @@ public:
     if (alloc_max - alloc_end < SIZEOF_JDATA(DataType, 0))
       throw std::bad_alloc();
     size_t const remaining = (alloc_max - alloc_end - SIZEOF_JDATA(DataType, 0)) / sizeof(DataType);
-    if (remaining < max_len) {
+    if (max_len > remaining) {
       if (requires_max)
         throw std::bad_alloc();
       else

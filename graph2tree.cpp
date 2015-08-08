@@ -121,7 +121,7 @@ int main(int argc, char* argv[]) {
 
   if (jopts.verbose) printf("Loading %s...\n", graph_filename);
   GraphWrapper graph(graph_filename, part, num_parts);
-  if (jopts.verbose) printf("Nodes:%u Edges:%zu\n", graph.getNodes(), graph.getEdges());
+  if (jopts.verbose) printf("Nodes:%zu Edges:%zu\n", graph.getNodes(), graph.getEdges());
 
   auto load_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
       std::chrono::steady_clock::now() - start_point);

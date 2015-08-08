@@ -232,8 +232,8 @@ public:
 
   /* JNODETABLE FAQS */
   inline void print(jnid_t id) const {
-    printf("%6zu:w%6u:pre%6u:pst        ->[%4u]\n",
-      width(id), pre_weight(id), pst_weight(id),  parent(id));
+    printf("%6zu:w%6zu:pre%6zu:pst        ->[%4zu]\n",
+      width(id), (size_t) pre_weight(id), (size_t) pst_weight(id),  (size_t) parent(id));
   }
 
   struct Facts {
@@ -241,10 +241,10 @@ public:
     size_t edge_cnt;
 
     size_t width;
-    long long unsigned fill;
+    size_t fill;
 
-    long long unsigned vert_height;
-    long long unsigned edge_height;
+    size_t vert_height;
+    size_t edge_height;
     size_t root_cnt;
 
     jnid_t halo_id;
@@ -254,10 +254,10 @@ public:
 
     inline void print() const {
       printf("TREEFAQS: width:%zu\troots:%zu\n", width, root_cnt);
-      printf("\tvheight:%llu\teheight:%llu\n", vert_height, edge_height);
+      printf("\tvheight:%zu\teheight:%zu\n", vert_height, edge_height);
       printf("\tverts:%zu\tedges:%zu\n", vert_cnt, edge_cnt);
-      printf("\thalo:%u\tcore:%u\n", halo_id, core_id);
-      printf("\tfill:%llu\n", fill);
+      printf("\thalo:%zu\tcore:%zu\n", (size_t) halo_id, (size_t) core_id);
+      printf("\tfill:%zu\n", fill);
     }
   };
 

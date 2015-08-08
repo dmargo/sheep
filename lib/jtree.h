@@ -31,24 +31,11 @@ public:
   inline void print() const {
     std::vector<vid_t> jnid2vid = get_sequence();
     for (jnid_t id = 0; id != size(); ++id) {
-      printf("%4u:%-8u", id, jnid2vid.at(id));
+      printf("%4zu:%-8zu", (size_t) id, (size_t) jnid2vid.at(id));
       jnodes.print(id);
     }
   }
 
-  template <typename GraphType>
-  inline void write_isomorphism(GraphType const &graph, char const *const filename) const {
-    std::ofstream stream(filename);
-
-    std::vector<vid_t> jnid2vid = get_sequence();
-    for (jnid_t X_id = 0; X_id != size(); ++X_id) {
-      for (auto eitr = graph.getEdgeItr(jnid2vid.at(X_id)); !eitr.isEnd(); ++eitr) {
-        jnid_t const Y_id = vid2jnid(*eitr);
-        assert(Y_id != INVALID_JNID);
-        stream << X_id << ' ' << Y_id << std::endl;
-      }
-    }
-  }
 
 
   /* JTREE OPTIONS */

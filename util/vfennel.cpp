@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
   auto load_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
       std::chrono::steady_clock::now() - start_point);
   printf("Loaded in: %lums\n", load_duration.count());
-  printf("Nodes:%u Edges:%zu\n", graph.getNodes(), graph.getEdges());
+  printf("Nodes:%zu Edges:%zu\n", graph.getNodes(), graph.getEdges());
 
   std::vector<vid_t> seq = defaultSequence(graph);
 

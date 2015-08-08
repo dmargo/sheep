@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
   auto load_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
       std::chrono::steady_clock::now() - start_point);
   printf("Loaded in: %lums\n", load_duration.count());
-  printf("Nodes:%u Edges:%zu\n", graph.getNodes(), graph.getEdges());
+  printf("Nodes:%zu Edges:%zu\n", graph.getNodes(), graph.getEdges());
 
   for (int i = 2; i < argc; ++i) {
     Partition part(seq, argv[i]);
