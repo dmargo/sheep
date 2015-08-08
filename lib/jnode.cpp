@@ -196,16 +196,18 @@ void mpi_merge_reduction(void *in, void *inout, int *len, MPI_Datatype *datatype
 
 void JNodeTable::mpi_merge(bool const make_kids)
 {
+  MPI_Datatype MPI_jnid_t = sizeof(jnid_t) == 4 ? MPI_UINT32_T : MPI_UINT64_T;
+  MPI_Datatype MPI_esize_t = sizeof(esize_t) == 4 ? MPI_UINT32_T : MPI_UINT64_T;
 #ifndef USE_PRE_WEIGHT
   int count = 2;
   int blocklengths[2] = { 1, 1 };
   MPI_Aint offsets[2] = { offsetof(JNode, parent), offsetof(JNode, pst_weight) };
-  MPI_Datatype types[2] = { MPI_UNSIGNED, MPI_UNSIGNED };
+  MPI_Datatype types[2] = { MPI_jnid_t, MPI_esize_t };
 #else
   int count = 3;
   int blocklengths[3] = { 1, 1, 1 };
   MPI_Aint offsets[3] = { offsetof(JNode, parent), offsetof(JNode, pst_weight), offsetof(JNode, pre_weight) };
-  MPI_Datatype types[3] = { MPI_UNSIGNED, MPI_UNSIGNED, MPI_UNSIGNED };
+  MPI_Datatype types[3] = { MPI_jnid_t, MPI_esize_t, MPI_esize_t };
 #endif
   MPI_Datatype mpi_jnode_type;
   MPI_Type_create_struct(count, blocklengths, offsets, types, &mpi_jnode_type);

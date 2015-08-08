@@ -34,15 +34,18 @@ std::vector<vid_t> degreeSequence(GraphType const &graph) {
 
 template <typename GraphType>
 std::vector<vid_t> mpiSequence(GraphType const &graph) {
+  MPI_Datatype MPI_vid_t = sizeof(vid_t) == 4 ? MPI_UINT32_T : MPI_UINT64_T;
+  MPI_Datatype MPI_esize_t = sizeof(esize_t) == 4 ? MPI_UINT32_T : MPI_UINT64_T;
+
   vid_t max_vid = 0;
   vid_t local_max = graph.getMaxVid();
-  MPI_Allreduce((void*)&local_max, (void*)&max_vid, 1, MPI_UNSIGNED, MPI_MAX, MPI_COMM_WORLD);
+  MPI_Allreduce((void*)&local_max, (void*)&max_vid, 1, MPI_vid_t, MPI_MAX, MPI_COMM_WORLD);
 
-  vid_t *degree = (vid_t*)malloc((max_vid + 1) * sizeof(vid_t));
-  vid_t *local_degree = (vid_t*)calloc(max_vid + 1, sizeof(vid_t));
+  esize_t *degree = (esize_t*)malloc((max_vid + 1) * sizeof(esize_t));
+  esize_t *local_degree = (esize_t*)calloc(max_vid + 1, sizeof(esize_t));
   for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr)
     local_degree[*nitr] = graph.getDeg(*nitr);
-  MPI_Allreduce((void*)local_degree, (void*)degree, max_vid, MPI_UNSIGNED, MPI_SUM, MPI_COMM_WORLD);
+  MPI_Allreduce((void*)local_degree, (void*)degree, max_vid, MPI_esize_t, MPI_SUM, MPI_COMM_WORLD);
   free(local_degree);
   
   std::vector<vid_t> seq;
