@@ -191,7 +191,7 @@ void mpi_merge_reduction(void *in, void *inout, int *len, MPI_Datatype *datatype
   tmp.merge(lhs, rhs, false);
 
   assert(*len = tmp.end_id);
-  memcpy(inout, tmp.nodes, sizeof(JNodeTable::JNode*) * tmp.end_id);
+  memcpy(inout, tmp.nodes, sizeof(JNodeTable::JNode) * tmp.end_id);
 }
 
 void JNodeTable::mpi_merge(bool const make_kids)
