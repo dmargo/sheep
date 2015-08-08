@@ -15,10 +15,13 @@ PARTS=${PARTS:-${@:-2}}
 
 cd $JTREE_HOME
 
-./graph2tree $GRAPH -o "${PREFIX}.tre" $VERBOSE
+if [ $SEQ_FILE = '-']; then
+  ./graph2tree $GRAPH -o "${PREFIX}.tre" $VERBOSE
+else
+  ./graph2tree $GRAPH -s $SEQ_FILE -o "${PREFIX}.tre" $VERBOSE
+fi
 
 echo "Reduced in 0.0 seconds."
 
-SEQ_FILE='-'
 source scripts/part-worker.sh
 

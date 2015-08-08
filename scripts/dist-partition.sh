@@ -20,11 +20,12 @@ USE_MPI_REDUCE=$FALSE
 KEEP_DATA=$FALSE
 
 INITIAL_WORKERS=2
+export SEQ_FILE='-'
 export VERBOSE=''
 
-while getopts "sh:t:airkw:c:v" opt; do
+while getopts "lh:t:airkw:s:vc:" opt; do
   case $opt in
-    s)
+    l)
       USE_SLURM=$TRUE;;
     h)
       JTREE_HOME=$OPTARG;;
@@ -40,10 +41,12 @@ while getopts "sh:t:airkw:c:v" opt; do
       KEEP_DATA=$TRUE;;
     w)
       INITIAL_WORKERS=$OPTARG;;
-    c)
-      export CORES=$OPTARG;;
+    s)
+      export SEQ_FILE=$OPTARG;;
     v)
       export VERBOSE='-v';;
+    c)
+      CORES=$OPTARG;;
     :)
       echo "Option -$OPTARG requires an argument."
       exit 1;;

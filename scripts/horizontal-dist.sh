@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # SETUP
-export SEQ_FILE="${PREFIX}.seq"
-if [ $USE_MPI_SORT -eq $FALSE ]; then
-  source scripts/sort-worker.sh
+if [ $SEQ_FILE = '-' ]; then
+  export SEQ_FILE="${PREFIX}.seq"
+  if [ $USE_MPI_SORT -eq $FALSE ]; then
+    source scripts/sort-worker.sh
+  fi
 fi
 
 # MAP

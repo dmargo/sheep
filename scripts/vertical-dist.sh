@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # SETUP
-export SEQ_FILE="${PREFIX}.seq"
-source scripts/sort-worker.sh
-
-
+if [ $SEQ_FILE = '-' ]; then
+  export SEQ_FILE="${PREFIX}.seq"
+  source scripts/sort-worker.sh
+fi
 
 # LAUNCH WORKERS
 for ID_NUM in `seq 0 $(( $WORKERS - 1 ))`; do
