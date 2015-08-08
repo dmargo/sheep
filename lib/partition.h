@@ -10,11 +10,13 @@
 #include "graph_wrapper.h"
 #include "jnode.h"
 
+typedef short part_t;
+#define INVALID_PART (part_t)-1
+
 class Partition {
 public:
-  short num_parts;
-  std::vector<short> parts;
-  #define INVALID_PART (short)-1
+  part_t num_parts;
+  std::vector<part_t> parts;
 
   inline size_t get_weight(JNodeTable const &jnodes, jnid_t id,
       bool const vtx_weight, bool const pst_weight, bool const pre_weight)
@@ -28,7 +30,7 @@ public:
     return result;
   }
 
-  inline Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, short np,
+  inline Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
       double balance_factor = 1.03, bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false) :
     num_parts(np), parts(jnodes.size(), INVALID_PART)
   {
@@ -41,7 +43,7 @@ public:
     forwardPartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
 
     // Convert jnid_t-indexed parts to vid_t indexed parts.
-    std::vector<short> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
+    std::vector<part_t> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
     for (size_t i = 0; i != seq.size(); ++i)
       tmp.at(seq.at(i)) = parts.at(i);
     parts = std::move(tmp);
@@ -53,14 +55,14 @@ public:
     num_parts = *std::max_element(parts.cbegin(), parts.cend());
 
     // Convert jnid_t-indexed parts to vid_t indexed parts.
-    std::vector<short> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
+    std::vector<part_t> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
     for (size_t i = 0; i != seq.size(); ++i)
       tmp.at(seq.at(i)) = parts.at(i);
     parts = std::move(tmp);
   }
 
   template <typename GraphType>
-  inline Partition(GraphType const &graph, std::vector<vid_t> const &seq, short np, 
+  inline Partition(GraphType const &graph, std::vector<vid_t> const &seq, part_t np, 
       double balance_factor = 1.03, bool edge_balanced = true) :
     num_parts(np), parts(graph.getMaxVid() + 1, INVALID_PART)
   {
@@ -69,7 +71,7 @@ public:
     fennel(graph, seq, max_component, edge_balanced);
   }
 
-  inline Partition(char const *filename, short np) :
+  inline Partition(char const *filename, part_t np) :
     num_parts(np), parts()
   {
     fennel(filename);
@@ -107,7 +109,7 @@ public:
 
   inline void readPartition(char const *filename) {
     std::ifstream stream(filename);
-    short p;
+    part_t p;
 
     assert(parts.size() == 0);
     while (stream >> p)
@@ -126,7 +128,7 @@ public:
 
   inline void print() const
   {
-    short max_part = *std::max_element(parts.cbegin(), parts.cend()) + 1;
+    part_t max_part = *std::max_element(parts.cbegin(), parts.cend()) + 1;
     size_t first_part = std::count(parts.cbegin(), parts.cend(), 0);
     size_t second_part = std::count(parts.cbegin(), parts.cend(), 1);
 

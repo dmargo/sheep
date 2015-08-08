@@ -39,7 +39,7 @@ void Partition::forwardPartition(JNodeTable &jnodes, size_t const max_component,
           if (parts.at(kid) != INVALID_PART) continue;
 
           // Find a part (bin) for this kid.
-          for (short cur_part = 0; cur_part != (short) part_size.size(); ++cur_part) {
+          for (part_t cur_part = 0; cur_part != (part_t) part_size.size(); ++cur_part) {
             // If kid packs...
             if (part_size.at(cur_part) + component_below.at(kid) <= max_component) {
               component_below.at(id) -= component_below.at(kid);
@@ -65,7 +65,7 @@ void Partition::forwardPartition(JNodeTable &jnodes, size_t const max_component,
 
     // Pack floating components
     while (parts.at(id) == INVALID_PART) {
-      for (short cur_part = part_size.size() - 1; cur_part != -1; --cur_part) {
+      for (part_t cur_part = part_size.size() - 1; cur_part != -1; --cur_part) {
         if (part_size.at(cur_part) + component_below.at(id) <= max_component) {
           part_size.at(cur_part) += component_below.at(id);
           parts.at(id) = cur_part;
@@ -100,7 +100,7 @@ void Partition::backwardPartition(JNodeTable const &jnodes, size_t const max_com
   }
 
   // Pack parts along the critical path
-  short cur_part = 0;
+  part_t cur_part = 0;
   size_t part_size = 0;
   while (critical != INVALID_JNID) {
     if (part_size + component_below.at(critical) < max_component) {
@@ -134,7 +134,7 @@ void Partition::depthPartition(JNodeTable const &jnodes, size_t const max_compon
   __gnu_parallel::stable_sort(jnids.begin(), jnids.end(),
     [&](jnid_t const lhs, jnid_t const rhs) { return depth.at(lhs) > depth.at(rhs); });
 
-  short cur_part = 0;
+  part_t cur_part = 0;
   size_t cur_size = 0;
   for (size_t idx = 0; idx != jnids.size(); ++idx) {
     parts.at(jnids.at(idx)) = cur_part;
@@ -160,7 +160,7 @@ void Partition::heightPartition(JNodeTable const &jnodes, size_t const max_compo
   __gnu_parallel::stable_sort(jnids.begin(), jnids.end(),
     [&](jnid_t const lhs, jnid_t const rhs) { return height.at(lhs) < height.at(rhs); });
 
-  short cur_part = 0;
+  part_t cur_part = 0;
   size_t cur_size = 0;
   for (size_t idx = 0; idx != jnids.size(); ++idx) {
     parts.at(jnids.at(idx)) = cur_part;
@@ -175,7 +175,7 @@ void Partition::heightPartition(JNodeTable const &jnodes, size_t const max_compo
 void Partition::naivePartition(JNodeTable const &jnodes, size_t const max_component,
     bool const vtx_weight, bool const pst_weight, bool const pre_weight)
 {
-  short cur_part = 0;
+  part_t cur_part = 0;
   size_t cur_size = 0;
   for (jnid_t id = 0; id != jnodes.size(); ++id) {
     parts.at(id) = cur_part;
@@ -230,9 +230,9 @@ void Partition::fennel(GraphType const &graph, std::vector<vid_t> const &seq,
         part_value[parts[Y]] += 1.0;
     }
 
-    short max_part = 0;
+    part_t max_part = 0;
     double max_value = std::numeric_limits<double>::lowest();
-    for (short p = 0; p != num_parts; ++p) {
+    for (part_t p = 0; p != num_parts; ++p) {
       if (part_size[p] + X_weight > max_component) continue; // Hard balance limit.
 
       //double p_cost = a * y * pow(part_size[p], y - 1.0); // From original FENNEL paper.
@@ -299,16 +299,16 @@ void Partition::fennel(char const *const filename) {
     vid_t const Y = buf.head;
 
     part_value.assign(num_parts, 0.0);
-    for (short p = 0; k != num_parts; ++p) {
+    for (part_t p = 0; k != num_parts; ++p) {
       if (touches_part.at(num_parts * X + p) == true)
         part_value[p] += 1.0;
       if (touches_part.at(num_parts * Y + p) == true)
         part_value[p] += 1.0;
     }
 
-    short max_part = 0;
+    part_t max_part = 0;
     double max_value = std::numeric_limits<double>::lowest();
-    for (short p = 0; p != num_parts; ++p) {
+    for (part_t p = 0; p != num_parts; ++p) {
       if (part_size[p] + 1.0 > max_component) continue; // Hard balance limit.
 
       double p_cost = a * pow(part_size[p] + 1.0, y) - a * pow(part_size[p], y);
@@ -374,10 +374,10 @@ void Partition::writePartitionedGraph(
     GraphType const &graph, std::vector<vid_t> const &seq,
     char const *const output_prefix) const
 {
-  short const max_part = *std::max_element(parts.cbegin(), parts.cend());
+  part_t const max_part = *std::max_element(parts.cbegin(), parts.cend());
   assert(max_part < 100);
   std::vector<std::ofstream*> output_streams;
-  for (short p = 0; p != max_part + 1; ++p) {
+  for (part_t p = 0; p != max_part + 1; ++p) {
     char *output_filename = (char*)malloc(strlen(output_prefix) + 3);
     sprintf(output_filename, "%s%02d", output_prefix, p);
     output_streams.emplace_back(new std::ofstream(output_filename, std::ios::trunc));
@@ -391,7 +391,7 @@ void Partition::writePartitionedGraph(
   for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
     vid_t const X = *nitr;
     jnid_t const X_pos = pos.at(X);
-    short const X_part = parts.at(X);
+    part_t const X_part = parts.at(X);
     assert(X_part != INVALID_PART);
 
     for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
@@ -399,10 +399,10 @@ void Partition::writePartitionedGraph(
       if (X >= Y) continue;
 
       jnid_t const Y_pos = pos.at(Y);
-      short const Y_part = parts.at(Y);
+      part_t const Y_part = parts.at(Y);
       assert(Y_part != INVALID_PART);
 
-      short edge_part = X_pos < Y_pos ? X_part : Y_part;
+      part_t edge_part = X_pos < Y_pos ? X_part : Y_part;
 
       *output_streams.at(edge_part) << X << " " << Y << std::endl;
     }
@@ -434,28 +434,28 @@ void Partition::evaluate(GraphType const &graph) const {
   size_t Vcom_vol = 0;
   size_t ECV_hash = 0;
 
-  short max_part = *std::max_element(parts.cbegin(), parts.cend());
+  part_t max_part = *std::max_element(parts.cbegin(), parts.cend());
   std::vector<size_t> vertex_balance(max_part + 1, 0);
   std::vector<size_t> hash_balance(max_part + 1, 0);
 
   for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
     vid_t const X = *nitr;
-    short const X_part = parts.at(X);
+    part_t const X_part = parts.at(X);
     assert(X_part != INVALID_PART);
     vertex_balance.at(X_part) += 1;
 
-    std::unordered_set<short> Vcom_vol_nbrs = {X_part};
-    std::unordered_set<short> ECV_hash_nbrs = {};
+    std::unordered_set<part_t> Vcom_vol_nbrs = {X_part};
+    std::unordered_set<part_t> ECV_hash_nbrs = {};
 
     for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
       vid_t const Y = *eitr;
-      short const Y_part = parts.at(Y);
+      part_t const Y_part = parts.at(Y);
       assert(Y_part != INVALID_PART);
 
       if (X < Y && X_part != Y_part) ++edges_cut;
       Vcom_vol_nbrs.insert(Y_part);
 
-      short hash_part = cormen_hash(X) < cormen_hash(Y) ? X_part : Y_part;
+      part_t hash_part = cormen_hash(X) < cormen_hash(Y) ? X_part : Y_part;
       ECV_hash_nbrs.insert(hash_part);
       if (X < Y) hash_balance.at(hash_part) += 1;
 
@@ -486,23 +486,23 @@ void Partition::evaluate(GraphType const &graph, std::vector<vid_t> const &seq) 
   size_t ECV_down = 0;
   size_t ECV_up = 0;
 
-  short max_part = *std::max_element(parts.cbegin(), parts.cend()) + 1;
+  part_t max_part = *std::max_element(parts.cbegin(), parts.cend()) + 1;
   std::vector<size_t> down_balance(max_part, 0);
   std::vector<size_t> up_balance(max_part, 0);
 
   for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
     vid_t const X = *nitr;
     jnid_t const X_pos = pos.at(X);
-    short const X_part = parts.at(X);
+    part_t const X_part = parts.at(X);
     assert(X_part != INVALID_PART);
 
-    std::unordered_set<short> ECV_down_nbrs = {};
-    std::unordered_set<short> ECV_up_nbrs = {};
+    std::unordered_set<part_t> ECV_down_nbrs = {};
+    std::unordered_set<part_t> ECV_up_nbrs = {};
 
     for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
       vid_t const Y = *eitr;
       jnid_t const Y_pos = pos.at(Y);
-      short const Y_part = parts.at(Y);
+      part_t const Y_part = parts.at(Y);
       assert(Y_part != INVALID_PART);
 
       ECV_down_nbrs.insert((X_pos < Y_pos) ? X_part : Y_part);
