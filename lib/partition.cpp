@@ -4,9 +4,40 @@
 #include <cstdlib>
 #include <limits>
 
+size_t get_weight(JNodeTable const &jnodes, jnid_t id,
+    bool const vtx_weight, bool const pst_weight, bool const pre_weight)
+{
+  size_t result = 0;
+  if (vtx_weight) result += 1;
+  if (pst_weight) result += jnodes.pst_weight(id);
+  if (pre_weight)
+    for (jnid_t kid : jnodes.kids(id))
+      result += jnodes.pre_weight(kid);
+  return result;
+}
+
 /* 
  * TREE PARTITIONING ALGORITHMS
  */
+Partition::Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
+    double balance_factor, bool vtx_weight, bool pst_weight, bool pre_weight) :
+  num_parts(np), parts(jnodes.size(), INVALID_PART)
+{
+  size_t total_weight = 0;
+  for (jnid_t id = 0; id != jnodes.size(); ++id)
+    total_weight += get_weight(jnodes, id, vtx_weight, pst_weight, pre_weight);
+  size_t max_component = (total_weight / num_parts) * balance_factor;
+
+  // For each jnid_t, assign a part.
+  forwardPartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
+
+  // Convert jnid_t-indexed parts to vid_t indexed parts.
+  std::vector<part_t> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
+  for (size_t i = 0; i != seq.size(); ++i)
+    tmp.at(seq.at(i)) = parts.at(i);
+  parts = std::move(tmp);
+}
+
 void Partition::forwardPartition(JNodeTable &jnodes, size_t const max_component,
     bool const vtx_weight, bool const pst_weight, bool const pre_weight)
 {
@@ -333,7 +364,7 @@ void Partition::fennel(char const *const filename) {
 /*
  * I/O AND EVALUATION
  */
-template <typename GraphType>
+template <typename GraphType, typename WriterType>
 void Partition::writeIsomorphicGraph(
     GraphType const &graph, std::vector<vid_t> seq,
     char const *const output_filename) const
@@ -345,15 +376,7 @@ void Partition::writeIsomorphicGraph(
   for (size_t i = 0; i != seq.size(); ++i)
     pos[seq[i]] = i;
 
-  struct xs1 {
-	  unsigned tail;
-	  unsigned head;
-	  float weight;
-  };
-  xs1 buf;
-  buf.weight = 1.0;
-  std::ofstream stream(output_filename, std::ios::binary | std::ios::trunc);
-
+  WriterType writer(output_filename);
   for (size_t i = 0; i < seq.size(); ++i) {
     vid_t const X = seq[i];
     for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
@@ -361,26 +384,25 @@ void Partition::writeIsomorphicGraph(
       size_t const j = pos.at(Y);
 
       if (i < j) {
-        buf.tail = i;
-        buf.head = j;
-        stream.write((char*)&buf, sizeof(xs1));
+        writer.write(i,j);
       }
     }
   }
 }
 
-template <typename GraphType>
+template <typename GraphType, typename WriterType>
 void Partition::writePartitionedGraph(
     GraphType const &graph, std::vector<vid_t> const &seq,
     char const *const output_prefix) const
 {
   part_t const max_part = *std::max_element(parts.cbegin(), parts.cend());
   assert(max_part < 100);
-  std::vector<std::ofstream*> output_streams;
+
+  std::vector<WriterType*> output_writers;
   for (part_t p = 0; p != max_part + 1; ++p) {
     char *output_filename = (char*)malloc(strlen(output_prefix) + 3);
     sprintf(output_filename, "%s%02d", output_prefix, p);
-    output_streams.emplace_back(new std::ofstream(output_filename, std::ios::trunc));
+    output_writers.emplace_back(new WriterType(output_filename));
     free(output_filename);
   }
   
@@ -403,13 +425,12 @@ void Partition::writePartitionedGraph(
       assert(Y_part != INVALID_PART);
 
       part_t edge_part = X_pos < Y_pos ? X_part : Y_part;
-
-      *output_streams.at(edge_part) << X << " " << Y << std::endl;
+      output_writers.at(edge_part)->write(X,Y);
     }
   }
 
-  for (std::ofstream *stream : output_streams)
-    delete stream;
+  for (WriterType *writer : output_writers)
+    delete writer;
 }
 
 

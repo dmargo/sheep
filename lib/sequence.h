@@ -8,8 +8,9 @@
 #include <parallel/algorithm>
 
 #include "defs.h"
+#include "readerwriter.h"
 
-/* SEQEUENCE CONSTRUCTORS */
+/* SEQUENCE CONSTRUCTORS */
 template <typename GraphType>
 std::vector<vid_t> defaultSequence(GraphType const &graph) {
   std::vector<vid_t> seq;
@@ -65,30 +66,29 @@ std::vector<vid_t> mpiSequence(GraphType const &graph) {
 }
 
 std::vector<vid_t> fileSequence(char const *const filename) {
+  //XXX DRY; fix this later
   std::vector<vid_t> degree;
+  if (strcmp(".dat", filename + strlen(filename) - 4) == 0) {
+    XS1Reader reader(filename);
 
-  if (strcmp(".net", filename + strlen(filename) - 4) == 0) {
-    vid_t X;
-    std::ifstream stream(filename);
-    while(stream >> X) {
-      if (degree.size() < X + 1) degree.resize(X + 1);
-      degree[X] += 1;
-    }
-  } else if (strcmp(".dat", filename + strlen(filename) - 4) == 0) {
-    struct xs1 {
-	    unsigned tail;
-	    unsigned head;
-	    float weight;
-    };
-    xs1 buf;
-    std::ifstream stream(filename, std::ios::binary);
-    while (!stream.eof()) {
-      stream.read((char*)&buf, sizeof(xs1));
-      size_t const required_size = std::max(buf.tail, buf.head) + 1;
+    vid_t X,Y;
+    while(reader.read(X,Y)) {
+      size_t const required_size = std::max(X,Y) + 1;
       if (degree.size() < required_size) degree.resize(required_size);
-      degree[buf.tail] += 1;
-      degree[buf.head] += 1;
+      degree[X] += 1;
+      degree[Y] += 1;
     }
+  } else if (strcmp(".net", filename + strlen(filename) - 4) == 0) {
+    SNAPReader reader(filename);
+
+    vid_t X,Y;
+    while(reader.read(X,Y)) {
+      size_t const required_size = std::max(X,Y) + 1;
+      if (degree.size() < required_size) degree.resize(required_size);
+      degree[X] += 1;
+      degree[Y] += 1;
+    }
+
   } else {
     printf("sequence.h:netSequence(): Unsupported file type.\n");
     exit(1);

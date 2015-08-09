@@ -132,7 +132,7 @@ int main(int argc, char* argv[]) {
     if (verbose) printf("Partitioning took: %f seconds\n", partition_duration.count() / 1000.0);
 
     part.print();
-    part.writeIsomorphicGraph(graph, seq, output_filename);
+    part.writeIsomorphicGraph<GraphWrapper, SNAPWriter>(graph, seq, output_filename);
   }
 
   auto run_duration = std::chrono::duration_cast<std::chrono::milliseconds>(

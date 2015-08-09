@@ -9,6 +9,7 @@
 #include "defs.h"
 #include "graph_wrapper.h"
 #include "jnode.h"
+#include "readerwriter.h"
 
 typedef short part_t;
 #define INVALID_PART (part_t)-1
@@ -18,36 +19,8 @@ public:
   part_t num_parts;
   std::vector<part_t> parts;
 
-  inline size_t get_weight(JNodeTable const &jnodes, jnid_t id,
-      bool const vtx_weight, bool const pst_weight, bool const pre_weight)
-  {
-    size_t result = 0;
-    if (vtx_weight) result += 1;
-    if (pst_weight) result += jnodes.pst_weight(id);
-    if (pre_weight)
-      for (jnid_t kid : jnodes.kids(id))
-        result += jnodes.pre_weight(kid);
-    return result;
-  }
-
   inline Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
-      double balance_factor = 1.03, bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false) :
-    num_parts(np), parts(jnodes.size(), INVALID_PART)
-  {
-    size_t total_weight = 0;
-    for (jnid_t id = 0; id != jnodes.size(); ++id)
-      total_weight += get_weight(jnodes, id, vtx_weight, pst_weight, pre_weight);
-    size_t max_component = (total_weight / num_parts) * balance_factor;
-
-    // For each jnid_t, assign a part.
-    forwardPartition(jnodes, max_component, vtx_weight, pst_weight, pre_weight);
-
-    // Convert jnid_t-indexed parts to vid_t indexed parts.
-    std::vector<part_t> tmp(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_PART);
-    for (size_t i = 0; i != seq.size(); ++i)
-      tmp.at(seq.at(i)) = parts.at(i);
-    parts = std::move(tmp);
-  }
+      double balance_factor = 1.03, bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false);
 
   inline Partition(std::vector<jnid_t> const &seq, char const *filename) : num_parts(), parts()
   {
@@ -139,7 +112,7 @@ public:
   /* This write-out method reorders the graph such that if part[X] < part[Y] then X < Y.
    * It uses seq for tie-breaks.
    */
-  template <typename GraphType>
+  template <typename GraphType, typename WriterType = SNAPWriter>
   inline void writeIsomorphicGraph(
       GraphType const &graph, std::vector<vid_t> seq,
       char const *const output_filename) const;
@@ -147,7 +120,7 @@ public:
   /* This write-out method simply writes each partition to a separate file.
    * It also isomorphs the graph according to seq, which is almost always desirable.
    */
-  template <typename GraphType>
+  template <typename GraphType, typename WriterType = SNAPWriter>
   inline void writePartitionedGraph(
       GraphType const &graph, std::vector<vid_t> const &seq,
       char const *const output_prefix) const;

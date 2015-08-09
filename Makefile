@@ -13,7 +13,7 @@ force:
 DEPPATH = -Ilib -I../llama/llama/include
 DEPCPP  = lib/jnode.cpp lib/jtree.cpp lib/partition.cpp
 DEPH 	  = lib/defs.h lib/graph_wrapper.h lib/jdata.h lib/jnode.h lib/jtree.h \
-			    lib/merge.h lib/partition.h lib/sequence.h lib/unionfind.h
+			    lib/merge.h lib/partition.h lib/readerwriter.h lib/sequence.h lib/unionfind.h
 
 degree_sequence: degree_sequence.cpp $(DEPCPP) $(DEPH) 
 	$(CC) $(CXXFLAGS) $(DEPPATH) -o degree_sequence degree_sequence.cpp $(LDFLAGS) $(LIBS)
