@@ -83,6 +83,7 @@ int main(int argc, char* argv[]) {
   if (do_faqs)
     jnodes.getFacts().print();
 
+  /* SIMPLE PARTITIONING */
   if (strcmp(graph_filename, "") == 0) {
     std::vector<vid_t> seq = readSequence(argv[optind]);
     for (int i = optind + 2; i != argc; ++i) {
@@ -91,6 +92,7 @@ int main(int argc, char* argv[]) {
       part.print();
     }
   }
+  /* PARTITIONING AND EVALUATION */
   else if (strcmp(output_filename, "") == 0) {
     GraphWrapper graph(graph_filename);
     std::vector<vid_t> seq = strcmp(argv[optind], "-") == 0 ?
@@ -112,6 +114,7 @@ int main(int argc, char* argv[]) {
       part.evaluate(graph, seq);
     }
   }
+  /* PARTITIONING AND I/O */
   else {
     GraphWrapper graph(graph_filename);
     std::vector<vid_t> seq = strcmp(argv[optind], "-") == 0 ?

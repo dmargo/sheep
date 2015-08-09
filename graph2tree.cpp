@@ -127,9 +127,9 @@ int main(int argc, char* argv[]) {
       std::chrono::steady_clock::now() - start_point);
   if (is_leader) printf("Loaded graph in: %f seconds\n", load_duration.count() / 1000.0);
   
-  std::vector<vid_t> seq = use_mpi_sort ?
-    mpiSequence(graph) : strcmp(sequence_filename, "") != 0 ?
-    readSequence(sequence_filename) :
+  std::vector<vid_t> seq =
+    use_mpi_sort ? mpiSequence(graph) :
+    strcmp(sequence_filename, "") != 0 ? readSequence(sequence_filename) :
     degreeSequence(graph);
 
   auto sort_duration = std::chrono::duration_cast<std::chrono::milliseconds>(

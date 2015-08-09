@@ -14,9 +14,9 @@ void Partition::forwardPartition(JNodeTable &jnodes, size_t const max_component,
   // 1. Count the uncut component below X.
   // 2. If component_below(X) > max_component, pack bins.
   // Obviously there is some subtlety the bin packing setup. Things you might do:
-  // 1. Pack kids more aggressively instead of halting as soon as the component fits (see batchtree.cpp)
+  // 1. Pack kids more aggressively instead of halting as soon as the component fits.
   // 2. Try packing half-size components since this is ideal for bin packing.
-  // 3. Move to edge-weighted stuff if you want to minimize edge cuts. This is probably the best idea.
+  // 3. Move to edge-weighted stuff if you want to minimize edge cuts.
   // 4. Spend more time reasoning about optimization criteria for communication volume.
   std::vector<size_t> part_size;
   std::vector<size_t> component_below(jnodes.size(), 0);
@@ -360,7 +360,7 @@ void Partition::writeIsomorphicGraph(
       vid_t const Y = *eitr;
       size_t const j = pos.at(Y);
 
-      if (i >= j) {
+      if (i < j) {
         buf.tail = i;
         buf.head = j;
         stream.write((char*)&buf, sizeof(xs1));

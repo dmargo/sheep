@@ -9,6 +9,7 @@
 #include <sequence.h>
 
 int main(int argc, char* argv[]) {
+
   if (optind + 1 >= argc) {
     printf("USAGE: graph2adj input_graph output_graph\n");
     return 1;

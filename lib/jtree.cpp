@@ -98,6 +98,8 @@ void JTree::insertSequence(GraphType const &graph, std::vector<vid_t> const &seq
     if (!opts.make_pad && !graph.isNode(X)) continue;
     jnid_t const current = insert(graph, X, opts);
 
+    /* XXX This code is hard to understand...it supports features that are likely to be cut.
+     * If you are code-reading for the first time, you probably have no need to understand this. */
     if (opts.find_max_width) {
       if (current != INVALID_JNID)
         current_width = std::max(current_width, jnodes.width(current));

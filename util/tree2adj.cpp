@@ -9,34 +9,6 @@
 
 int main(int argc, char* argv[]) {
 
-#if 0
-  opterr = 0;
-  int opt;
-  while ((opt = getopt(argc, argv, "fk:g:")) != -1) {
-    switch (opt) {
-      case 'f':
-        do_faqs = !do_faqs;
-        break;
-      case 'k':
-        num_parts = atoll(optarg);
-        break;
-      case 'g':
-        graph_filename = optarg;
-        break;
-      case '?':
-        if (optopt == 'c')
-          printf("Option -%c requires a long long.\n", optopt);
-        else if (optopt == 'g')
-          printf("Option -%c requires a string.\n", optopt);
-        else
-          printf("Unknown option character '\\x%x'.\n", optopt);
-        return 1;
-      default:
-        abort();
-    }
-  }
-#endif
-
   if (optind + 1 >= argc) {
     printf("USAGE: tree2adj input_tree output_graph\n");
     return 1;
