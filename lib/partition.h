@@ -19,7 +19,7 @@ public:
   part_t num_parts;
   std::vector<part_t> parts;
 
-  inline Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
+  Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
       double balance_factor = 1.03, bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false);
 
   inline Partition(std::vector<jnid_t> const &seq, char const *filename) : num_parts(), parts()
@@ -95,9 +95,9 @@ public:
 
   void fennel(char const *const filename);
 
-  
 
-  /* I/O AND EVALUATION */
+
+  /* EVALUATORS */
 
   inline void print() const
   {
@@ -109,27 +109,50 @@ public:
     printf("First two partition sizes: %zu and %zu\n", first_part, second_part);
   }
 
-  /* This write-out method reorders the graph such that if part[X] < part[Y] then X < Y.
+  template <typename GraphType>
+  void evaluate(GraphType const &graph) const; 
+
+  template <typename GraphType>
+  void evaluate(GraphType const &graph, std::vector<vid_t> const &seq) const;
+  
+
+
+  /* INPUT/OUTPUT 
+   * This write-out method reorders the graph such that if part[X] < part[Y] then X < Y.
    * It uses seq for tie-breaks.
    */
   template <typename GraphType, typename WriterType = SNAPWriter>
-  inline void writeIsomorphicGraph(
+  void writeIsomorphicGraph(
       GraphType const &graph, std::vector<vid_t> seq,
+      char const *const output_filename) const;
+
+  template <typename ReaderType, typename WriterType = SNAPWriter>
+  void writeIsomorphicGraph_template(
+      char const *const input_filename, std::vector<vid_t> seq,
+      char const *const output_filename) const;
+
+  template <typename WriterType = SNAPWriter>
+  void writeIsomorphicGraph(
+      char const *const input_filename, std::vector<vid_t> const &seq,
       char const *const output_filename) const;
 
   /* This write-out method simply writes each partition to a separate file.
    * It also isomorphs the graph according to seq, which is almost always desirable.
    */
   template <typename GraphType, typename WriterType = SNAPWriter>
-  inline void writePartitionedGraph(
+  void writePartitionedGraph(
       GraphType const &graph, std::vector<vid_t> const &seq,
       char const *const output_prefix) const;
 
-  template <typename GraphType>
-  inline void evaluate(GraphType const &graph) const; 
+  template <typename ReaderType, typename WriterType = SNAPWriter>
+  void writePartitionedGraph_template(
+      char const *const input_filename, std::vector<vid_t> const &seq,
+      char const *const output_prefix) const;
 
-  template <typename GraphType>
-  inline void evaluate(GraphType const &graph, std::vector<vid_t> const &seq) const;
+  template <typename WriterType = SNAPWriter>
+  void writePartitionedGraph(
+      char const *const input_filename, std::vector<vid_t> const &seq,
+      char const *const output_prefix) const;
 };
 
 #include "partition.cpp"

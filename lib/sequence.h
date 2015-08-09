@@ -65,33 +65,17 @@ std::vector<vid_t> mpiSequence(GraphType const &graph) {
   return seq;
 }
 
-std::vector<vid_t> fileSequence(char const *const filename) {
-  //XXX DRY; fix this later
+template <typename ReaderType>
+std::vector<vid_t> fileSequence_template(char const *const filename) {
+  ReaderType reader(filename);
+
+  vid_t X,Y;
   std::vector<vid_t> degree;
-  if (strcmp(".dat", filename + strlen(filename) - 4) == 0) {
-    XS1Reader reader(filename);
-
-    vid_t X,Y;
-    while(reader.read(X,Y)) {
-      size_t const required_size = std::max(X,Y) + 1;
-      if (degree.size() < required_size) degree.resize(required_size);
-      degree[X] += 1;
-      degree[Y] += 1;
-    }
-  } else if (strcmp(".net", filename + strlen(filename) - 4) == 0) {
-    SNAPReader reader(filename);
-
-    vid_t X,Y;
-    while(reader.read(X,Y)) {
-      size_t const required_size = std::max(X,Y) + 1;
-      if (degree.size() < required_size) degree.resize(required_size);
-      degree[X] += 1;
-      degree[Y] += 1;
-    }
-
-  } else {
-    printf("sequence.h:netSequence(): Unsupported file type.\n");
-    exit(1);
+  while(reader.read(X,Y)) {
+    size_t const required_size = std::max(X,Y) + 1;
+    if (degree.size() < required_size) degree.resize(required_size);
+    degree[X] += 1;
+    degree[Y] += 1;
   }
 
   std::vector<vid_t> seq;
@@ -107,6 +91,12 @@ std::vector<vid_t> fileSequence(char const *const filename) {
       return lhs < rhs;
   });
   return seq;
+}
+
+std::vector<vid_t> fileSequence(char const *const filename) {
+  return (strcmp(".dat", filename + strlen(filename) - 4) == 0) ?
+    fileSequence_template<XS1Reader>(filename) :
+    fileSequence_template<SNAPReader>(filename);
 }
 
 

@@ -116,9 +116,8 @@ int main(int argc, char* argv[]) {
   }
   /* PARTITIONING AND I/O */
   else {
-    GraphWrapper graph(graph_filename);
     std::vector<vid_t> seq = strcmp(argv[optind], "-") == 0 ?
-      degreeSequence(graph) :
+      fileSequence(graph_filename) :
       readSequence(argv[optind]);
 
     short const num_parts = atoi(argv[optind + 2]);
@@ -132,7 +131,7 @@ int main(int argc, char* argv[]) {
     if (verbose) printf("Partitioning took: %f seconds\n", partition_duration.count() / 1000.0);
 
     part.print();
-    part.writeIsomorphicGraph<GraphWrapper, SNAPWriter>(graph, seq, output_filename);
+    part.writePartitionedGraph(graph_filename, seq, output_filename);
   }
 
   auto run_duration = std::chrono::duration_cast<std::chrono::milliseconds>(

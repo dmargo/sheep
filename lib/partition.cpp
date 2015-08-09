@@ -362,79 +362,8 @@ void Partition::fennel(char const *const filename) {
 
 
 /*
- * I/O AND EVALUATION
+ * EVALUATORS
  */
-template <typename GraphType, typename WriterType>
-void Partition::writeIsomorphicGraph(
-    GraphType const &graph, std::vector<vid_t> seq,
-    char const *const output_filename) const
-{
-  std::stable_sort(seq.begin(), seq.end(), [&](vid_t const lhs, vid_t const rhs)
-      { return parts.at(lhs) < parts.at(rhs); });
-
-  std::vector<jnid_t> pos(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_JNID);
-  for (size_t i = 0; i != seq.size(); ++i)
-    pos[seq[i]] = i;
-
-  WriterType writer(output_filename);
-  for (size_t i = 0; i < seq.size(); ++i) {
-    vid_t const X = seq[i];
-    for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
-      vid_t const Y = *eitr;
-      size_t const j = pos.at(Y);
-
-      if (i < j) {
-        writer.write(i,j);
-      }
-    }
-  }
-}
-
-template <typename GraphType, typename WriterType>
-void Partition::writePartitionedGraph(
-    GraphType const &graph, std::vector<vid_t> const &seq,
-    char const *const output_prefix) const
-{
-  part_t const max_part = *std::max_element(parts.cbegin(), parts.cend());
-  assert(max_part < 100);
-
-  std::vector<WriterType*> output_writers;
-  for (part_t p = 0; p != max_part + 1; ++p) {
-    char *output_filename = (char*)malloc(strlen(output_prefix) + 3);
-    sprintf(output_filename, "%s%02d", output_prefix, p);
-    output_writers.emplace_back(new WriterType(output_filename));
-    free(output_filename);
-  }
-  
-  std::vector<jnid_t> pos(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_JNID);
-  for (size_t i = 0; i != seq.size(); ++i)
-    pos[seq[i]] = i;
-
-  for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
-    vid_t const X = *nitr;
-    jnid_t const X_pos = pos.at(X);
-    part_t const X_part = parts.at(X);
-    assert(X_part != INVALID_PART);
-
-    for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
-      vid_t const Y = *eitr;
-      if (X >= Y) continue;
-
-      jnid_t const Y_pos = pos.at(Y);
-      part_t const Y_part = parts.at(Y);
-      assert(Y_part != INVALID_PART);
-
-      part_t edge_part = X_pos < Y_pos ? X_part : Y_part;
-      output_writers.at(edge_part)->write(X,Y);
-    }
-  }
-
-  for (WriterType *writer : output_writers)
-    delete writer;
-}
-
-
-
 static inline uint32_t simple_hash(vid_t k) {
   return k % 2;
 }
@@ -501,7 +430,7 @@ void Partition::evaluate(GraphType const &graph, std::vector<vid_t> const &seq) 
   evaluate(graph);
 
   std::vector<jnid_t> pos(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_JNID);
-  for (size_t i = 0; i != seq.size(); ++i)
+  for (jnid_t i = 0; i != seq.size(); ++i)
     pos[seq[i]] = i;
 
   size_t ECV_down = 0;
@@ -542,5 +471,165 @@ void Partition::evaluate(GraphType const &graph, std::vector<vid_t> const &seq) 
   printf("  balance: %zu (%f%%)\n", max_down_bal, (double) max_down_bal / (graph.getEdges() / num_parts));
   printf("ECV(up)  : %zu (%f%%)\n", ECV_up, (double) ECV_up / graph.getEdges());
   printf("  balance: %zu (%f%%)\n", max_up_bal, (double) max_up_bal / (graph.getEdges() / num_parts));
+}
+
+
+
+/*
+ * INPUT/OUTPUT
+ */
+template <typename GraphType, typename WriterType>
+void Partition::writeIsomorphicGraph(
+    GraphType const &graph, std::vector<vid_t> seq,
+    char const *const output_filename) const
+{
+  std::stable_sort(seq.begin(), seq.end(), [&](vid_t const lhs, vid_t const rhs)
+      { return parts.at(lhs) < parts.at(rhs); });
+
+  std::vector<jnid_t> pos(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_JNID);
+  for (jnid_t i = 0; i != seq.size(); ++i)
+    pos[seq[i]] = i;
+
+  WriterType writer(output_filename);
+  for (jnid_t X_pos = 0; X_pos < seq.size(); ++X_pos) {
+    vid_t const X = seq[X_pos];
+
+    for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
+      vid_t const Y = *eitr;
+      jnid_t const Y_pos = pos.at(Y);
+
+      // XXX GraphType is an undirected graph, so no need to write edges twice.
+      if (X_pos < Y_pos)
+        writer.write(X_pos,Y_pos);
+    }
+  }
+}
+
+template <typename ReaderType, typename WriterType>
+void Partition::writeIsomorphicGraph_template(
+    char const *const input_filename, std::vector<vid_t> seq,
+    char const *const output_filename) const
+{
+  std::stable_sort(seq.begin(), seq.end(), [&](vid_t const lhs, vid_t const rhs)
+      { return parts.at(lhs) < parts.at(rhs); });
+
+  std::vector<jnid_t> pos(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_JNID);
+  for (jnid_t i = 0; i != seq.size(); ++i)
+    pos[seq[i]] = i;
+
+  vid_t X,Y;
+  ReaderType reader(input_filename);
+  WriterType writer(output_filename);
+  while(reader.read(X,Y)) {
+    jnid_t X_pos = pos.at(X);
+    jnid_t Y_pos = pos.at(Y);
+    writer.write(X_pos,Y_pos);
+  }
+}
+
+template <typename WriterType>
+void Partition::writeIsomorphicGraph(
+    char const *const input_filename, std::vector<vid_t> const &seq,
+    char const *const output_filename) const
+{
+  if (strcmp(".dat", input_filename + strlen(input_filename) - 4) == 0)
+    writeIsomorphicGraph_template<XS1Reader,WriterType>(input_filename, seq, output_filename);
+  else
+    writeIsomorphicGraph_template<SNAPReader,WriterType>(input_filename, seq, output_filename);
+}
+
+template <typename GraphType, typename WriterType>
+void Partition::writePartitionedGraph(
+    GraphType const &graph, std::vector<vid_t> const &seq,
+    char const *const output_prefix) const
+{
+  std::vector<jnid_t> pos(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_JNID);
+  for (jnid_t i = 0; i != seq.size(); ++i)
+    pos[seq[i]] = i;
+
+  part_t const max_part = *std::max_element(parts.cbegin(), parts.cend());
+  assert(max_part < 10000);
+
+  std::vector<WriterType*> writers;
+  for (part_t p = 0; p != max_part + 1; ++p) {
+    char *output_filename = (char*)malloc(strlen(output_prefix) + 5);
+    sprintf(output_filename, "%s%04d", output_prefix, p);
+    writers.emplace_back(new WriterType(output_filename));
+    free(output_filename);
+  }
+
+  for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr) {
+    vid_t const X = *nitr;
+    jnid_t const X_pos = pos.at(X);
+    part_t const X_part = parts.at(X);
+    assert(X_part != INVALID_PART);
+
+    for (auto eitr = graph.getEdgeItr(X); !eitr.isEnd(); ++eitr) {
+      vid_t const Y = *eitr;
+      if (X >= Y) continue;
+      //XXX GraphType is an undirected graph, so no need to write edges twice.
+
+      jnid_t const Y_pos = pos.at(Y);
+      part_t const Y_part = parts.at(Y);
+      assert(Y_part != INVALID_PART);
+
+      part_t edge_part = X_pos < Y_pos ? X_part : Y_part;
+      writers.at(edge_part)->write(X,Y);
+    }
+  }
+
+  for (WriterType *writer : writers)
+    delete writer;
+}
+
+template <typename ReaderType, typename WriterType>
+void Partition::writePartitionedGraph_template(
+    char const *const input_filename, std::vector<vid_t> const &seq,
+    char const *const output_prefix) const
+{
+  std::vector<jnid_t> pos(*std::max_element(seq.cbegin(), seq.cend()) + 1, INVALID_JNID);
+  for (jnid_t i = 0; i != seq.size(); ++i)
+    pos[seq[i]] = i;
+
+  part_t const max_part = *std::max_element(parts.cbegin(), parts.cend());
+  assert(max_part < 10000);
+
+  std::vector<WriterType*> writers;
+  for (part_t p = 0; p != max_part + 1; ++p) {
+    char *output_filename = (char*)malloc(strlen(output_prefix) + 5);
+    sprintf(output_filename, "%s%04d", output_prefix, p);
+    writers.emplace_back(new WriterType(output_filename));
+    free(output_filename);
+  }
+
+  vid_t X,Y;
+  ReaderType reader(input_filename);
+  while(reader.read(X,Y)) {
+    jnid_t X_pos = pos.at(X);
+    jnid_t Y_pos = pos.at(Y);
+
+    part_t X_part = parts.at(X);
+    part_t Y_part = parts.at(Y);
+
+    assert(X_part != INVALID_PART);
+    assert(Y_part != INVALID_PART);
+
+    part_t edge_part = X_pos < Y_pos ? X_part : Y_part;
+    writers.at(edge_part)->write(X,Y);
+  }
+
+  for (WriterType *writer : writers)
+    delete writer;
+}
+
+template <typename WriterType>
+void Partition::writePartitionedGraph(
+    char const *const input_filename, std::vector<vid_t> const &seq,
+    char const *const output_prefix) const
+{
+  if (strcmp(".dat", input_filename + strlen(input_filename) - 4) == 0)
+    writePartitionedGraph_template<XS1Reader,WriterType>(input_filename, seq, output_prefix);
+  else
+    writePartitionedGraph_template<SNAPReader,WriterType>(input_filename, seq, output_prefix);
 }
 
