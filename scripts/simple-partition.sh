@@ -15,7 +15,7 @@ PARTS=${PARTS:-${@:-2}}
 
 cd $JTREE_HOME
 
-if [ $SEQ_FILE = '-']; then
+if [ $SEQ_FILE = '-' ]; then
   ./graph2tree $GRAPH -o "${PREFIX}.tre" $VERBOSE
 else
   ./graph2tree $GRAPH -s $SEQ_FILE -o "${PREFIX}.tre" $VERBOSE

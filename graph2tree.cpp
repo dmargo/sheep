@@ -10,6 +10,7 @@
 #include <defs.h>
 #include <graph_wrapper.h>
 #include <jtree.h>
+#include <partition.h>
 #include <sequence.h>
 
 int main(int argc, char* argv[]) {
@@ -18,6 +19,7 @@ int main(int argc, char* argv[]) {
 
   size_t part = 0;
   size_t num_parts = 0;
+  size_t partitions = 0;
   char const *sequence_filename = "";
   char const *output_filename = "";
 
@@ -28,7 +30,7 @@ int main(int argc, char* argv[]) {
 
   opterr = 0;
   int opt;
-  while ((opt = getopt(argc, argv, "irl:s:o:vkejm:w:xfdpc")) != -1) {
+  while ((opt = getopt(argc, argv, "irl:p:s:o:vkejm:w:xfdtc")) != -1) {
     switch (opt) {
       case 'i':
         use_mpi_sort = !use_mpi_sort;
@@ -40,6 +42,9 @@ int main(int argc, char* argv[]) {
         part=atoll(strtok(optarg, "/"));
         num_parts=atoll(strtok(nullptr, "/"));
         assert(strtok(nullptr, "/") == nullptr);
+        break;
+      case 'p':
+        partitions=atoll(optarg);
         break;
       case 's':
         sequence_filename = optarg;
@@ -71,7 +76,7 @@ int main(int argc, char* argv[]) {
       case 'f':
         do_faqs = !do_faqs;
         break;
-      case 'p':
+      case 't':
         do_print = !do_print;
         break;
       case 'c':
@@ -115,6 +120,12 @@ int main(int argc, char* argv[]) {
       sprintf(tmp_filename, "%s%02dr0.tre", output_filename, rank);
       output_filename = tmp_filename;
     }
+    // If using MPI to output partitioning results, make sure outputs have different names.
+    else if (use_mpi_reduce && partitions != 0 && strcmp(output_filename, "") != 0) {
+      char *const tmp_filename = (char*)malloc(strlen(output_filename) + 9);
+      sprintf(tmp_filename, "%s-w%04d-p", output_filename, rank);
+      output_filename = tmp_filename;
+    }
   }
   bool const is_leader = ((use_mpi_sort || use_mpi_reduce) && part == 1) ||
                          (!(use_mpi_sort || use_mpi_reduce) && strcmp(sequence_filename, "") == 0);
@@ -132,12 +143,15 @@ int main(int argc, char* argv[]) {
     strcmp(sequence_filename, "") != 0 ? readSequence(sequence_filename) :
     degreeSequence(graph);
 
+  if (use_mpi_sort && part == 1 && strcmp(sequence_filename, "") != 0)
+    writeSequence(seq, sequence_filename);
+
   auto sort_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
       std::chrono::steady_clock::now() - start_point) - load_duration;
   if (is_leader && (use_mpi_sort || strcmp(sequence_filename, "") == 0))
     printf("Sorted in: %f seconds\n", sort_duration.count() / 1000.0);
 
-  JTree tree = !use_mpi_reduce && (strcmp(output_filename, "") != 0) ?
+  JTree tree = !use_mpi_reduce && strcmp(output_filename, "") != 0 ?
     JTree(graph, seq, output_filename, jopts) :
     JTree(graph, seq, jopts);
 
@@ -153,13 +167,24 @@ int main(int argc, char* argv[]) {
     if (is_leader) printf("Reduced in: %f seconds\n", reduce_duration.count() / 1000.0);
   }
 
-  if (use_mpi_sort || use_mpi_reduce) {
-    MPI_Finalize();
-    if (use_mpi_sort && part == 1 && strcmp(sequence_filename, "") != 0)
-      writeSequence(seq, sequence_filename);
-    if (use_mpi_reduce && part == 1 && strcmp(output_filename, "") != 0)
-      tree.jnodes.save(output_filename);
+  if (partitions != 0) {
+    if (!use_mpi_reduce || part == 1)
+      tree.jnodes.makeKids();
+    Partition p = !use_mpi_reduce || part == 1 ?
+      Partition(seq, tree.jnodes, partitions) : Partition();
+    if (use_mpi_reduce)
+      p.mpi_sync();
+
+    if (strcmp(output_filename, "") != 0)
+      p.writePartitionedGraph(graph, seq, output_filename);
+    else if (is_leader)
+      p.print();
   }
+  else if (use_mpi_reduce && part == 1 && strcmp(output_filename, "") != 0)
+    tree.jnodes.save(output_filename);
+
+  if (use_mpi_sort || use_mpi_reduce)
+    MPI_Finalize();
 
   auto build_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
       (std::chrono::steady_clock::now() - start_point));

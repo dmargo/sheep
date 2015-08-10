@@ -69,7 +69,6 @@ JNodeTable::JNodeTable(char const *filename) :
   end_id = *((jnid_t*)nodes_map);
   nodes = (JNode*)(nodes_map + sizeof(jnid_t));
 
-  kid_data = std::move(JDataTable<jnid_t>(max_id));
   makeKids();
 
   //XXX Currently there's nothing you can do with these, so why bother?
@@ -86,7 +85,7 @@ JNodeTable::JNodeTable(char const *filename) :
 
 JNodeTable::JNodeTable(JNode *n, jnid_t end) :
   nodes_state(State::TEMPORARY), end_id(end), max_id(end_id), nodes(n),
-  kid_data(max_id), pst_data(0), jxn_data(0), roots(0)
+  kid_data(0), pst_data(0), jxn_data(0), roots(0)
 {
   if (nodes != nullptr)
     makeKids();

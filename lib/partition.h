@@ -16,13 +16,15 @@ typedef short part_t;
 
 class Partition {
 public:
-  part_t num_parts;
   std::vector<part_t> parts;
+  part_t num_parts;
 
   Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
       double balance_factor = 1.03, bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false);
 
-  inline Partition(std::vector<jnid_t> const &seq, char const *filename) : num_parts(), parts()
+  inline Partition() : parts(), num_parts() {}
+
+  inline Partition(std::vector<jnid_t> const &seq, char const *filename) : parts(), num_parts()
   {
     readPartition(filename);
     num_parts = *std::max_element(parts.cbegin(), parts.cend());
@@ -37,7 +39,7 @@ public:
   template <typename GraphType>
   inline Partition(GraphType const &graph, std::vector<vid_t> const &seq, part_t np, 
       double balance_factor = 1.03, bool edge_balanced = true) :
-    num_parts(np), parts(graph.getMaxVid() + 1, INVALID_PART)
+    parts(graph.getMaxVid() + 1, INVALID_PART), num_parts(np)
   {
     size_t total_weight = edge_balanced ? 2 * graph.getEdges() : graph.getNodes();
     size_t max_component = (total_weight / num_parts) * balance_factor;
@@ -45,10 +47,12 @@ public:
   }
 
   inline Partition(char const *filename, part_t np) :
-    num_parts(np), parts()
+    parts(), num_parts(np)
   {
     fennel(filename);
   }
+
+  void mpi_sync();
 
 
 

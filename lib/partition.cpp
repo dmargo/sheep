@@ -1,8 +1,10 @@
 #include "partition.h"
 
-#include <parallel/algorithm>
 #include <cstdlib>
 #include <limits>
+
+#include <mpi.h>
+#include <parallel/algorithm>
 
 size_t get_weight(JNodeTable const &jnodes, jnid_t id,
     bool const vtx_weight, bool const pst_weight, bool const pre_weight)
@@ -16,12 +18,9 @@ size_t get_weight(JNodeTable const &jnodes, jnid_t id,
   return result;
 }
 
-/* 
- * TREE PARTITIONING ALGORITHMS
- */
 Partition::Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
     double balance_factor, bool vtx_weight, bool pst_weight, bool pre_weight) :
-  num_parts(np), parts(jnodes.size(), INVALID_PART)
+  parts(jnodes.size(), INVALID_PART), num_parts(np)
 {
   size_t total_weight = 0;
   for (jnid_t id = 0; id != jnodes.size(); ++id)
@@ -38,6 +37,23 @@ Partition::Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t 
   parts = std::move(tmp);
 }
 
+void Partition::mpi_sync()
+{
+  vid_t max_vid = parts.size();
+  MPI_Datatype MPI_vid_t = sizeof(vid_t) == 4 ? MPI_UINT32_T : MPI_UINT64_T;
+  MPI_Bcast(&max_vid, 1, MPI_vid_t, 0, MPI_COMM_WORLD);
+  parts.resize(max_vid, INVALID_PART);
+
+  assert(sizeof(part_t) == 2);
+  MPI_Bcast(parts.data(), parts.size(), MPI_SHORT, 0, MPI_COMM_WORLD);
+  MPI_Bcast(&num_parts, 1, MPI_SHORT, 0, MPI_COMM_WORLD);
+}
+
+
+
+/* 
+ * TREE PARTITIONING ALGORITHMS
+ */
 void Partition::forwardPartition(JNodeTable &jnodes, size_t const max_component,
     bool const vtx_weight, bool const pst_weight, bool const pre_weight)
 {
@@ -80,7 +96,7 @@ void Partition::forwardPartition(JNodeTable &jnodes, size_t const max_component,
             }
           }
         }
-        // If kid packing fails, open a new part (bin)
+        // If packing fails, open a new part (bin)
         if (component_below.at(id) > max_component)
           part_size.push_back(0);
       } while(component_below.at(id) > max_component);
@@ -90,11 +106,13 @@ void Partition::forwardPartition(JNodeTable &jnodes, size_t const max_component,
       component_below.at(jnodes.parent(id)) += component_below.at(id);
   }
 
+  /* At the conclusion of the loop, parts are only assigned to "cut" vertices.
+   * So, push part assignments down the tree to vertices that don't yet have them. */
   for (jnid_t id = jnodes.size() - 1; id != (jnid_t)-1; --id) {
     if (parts.at(id) == INVALID_PART && jnodes.parent(id) != INVALID_JNID)
       parts.at(id) = parts.at(jnodes.parent(id));
 
-    // Pack floating components
+    // If id is a root, then it needs to be packed into a bin.
     while (parts.at(id) == INVALID_PART) {
       for (part_t cur_part = part_size.size() - 1; cur_part != -1; --cur_part) {
         if (part_size.at(cur_part) + component_below.at(id) <= max_component) {

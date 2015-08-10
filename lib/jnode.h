@@ -156,8 +156,9 @@ public:
   }
 
   inline void makeKids() {
-    std::vector<size_t> kids_size(size(), 0);
+    kid_data = std::move(JDataTable<jnid_t>(max_id));
 
+    std::vector<size_t> kids_size(size(), 0);
     for (jnid_t id = 0; id != size(); ++id) {
       newKids(id, kids_size[id]);
       if (parent(id) != INVALID_JNID)
