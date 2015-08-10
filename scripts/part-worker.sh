@@ -14,8 +14,6 @@ if [ "$PARTS" != 0 ]; then
     echo "PARTITION: $(hostname)"
   fi
 
-
-
   INPUT_TREE="${PREFIX}.tre"
   while [ ! -f $INPUT_TREE ]; do
     [ $USE_INOTIFY -eq 0 ] && inotifywait -qqt 1 -e create -e moved_to $DIR || sleep 1
@@ -23,12 +21,12 @@ if [ "$PARTS" != 0 ]; then
 
   BEG=$(date +%s%N)
 
-  if [ -z "${SEQ_FILE}" ]; then
-    ./partition_tree -f -g $GRAPH $INPUT_TREE $PARTS
-  else
+  if [ $OUT_FILE = '']; then
     ./partition_tree -f -g $GRAPH $SEQ_FILE $INPUT_TREE $PARTS
+  else
+    ./partition_tree -f -g $GRAPH $SEQ_FILE $INPUT_TREE $PARTS -o $OUT_FILE
   fi
-  
+
   END=$(date +%s%N)
   ELAPSED=$(echo "scale=8; ($END - $BEG) / 1000000000" | bc)
   echo "Partitioned in $ELAPSED seconds."

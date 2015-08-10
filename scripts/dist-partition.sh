@@ -19,11 +19,12 @@ USE_MPI_SORT=$FALSE
 USE_MPI_REDUCE=$FALSE
 KEEP_DATA=$FALSE
 
-INITIAL_WORKERS=2
-export SEQ_FILE='-'
 export VERBOSE=''
+export SEQ_FILE='-'
+export OUT_FILE=''
+INITIAL_WORKERS=2
 
-while getopts "lh:t:airkw:s:vc:" opt; do
+while getopts "lh:t:airkvs:o:w:c:" opt; do
   case $opt in
     l)
       USE_SLURM=$TRUE;;
@@ -39,12 +40,14 @@ while getopts "lh:t:airkw:s:vc:" opt; do
       USE_MPI_REDUCE=$TRUE;;
     k)
       KEEP_DATA=$TRUE;;
-    w)
-      INITIAL_WORKERS=$OPTARG;;
-    s)
-      export SEQ_FILE=$OPTARG;;
     v)
       export VERBOSE='-v';;
+    s)
+      export SEQ_FILE=$OPTARG;;
+    o)
+      export OUT_FILE=$OPTARG;;
+    w)
+      INITIAL_WORKERS=$OPTARG;;
     c)
       CORES=$OPTARG;;
     :)
