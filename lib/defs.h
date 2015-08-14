@@ -33,18 +33,20 @@
 //#define USE_PRE_WEIGHT
 
 
+/* OPTION: Use LLAMA or SNAP for storage.
+ * BE WARNED: LLAMA vastly outperforms SNAP,
+ * and SNAP has not been tested in quite some time. */
 #define USE_LLAMA
 //#define USE_SNAP
 
+
+/* SIZE TYPES
+ * These are used for fundamental storage;
+ * larger types can store larger graphs, but at significant cost. */
 #ifdef USE_LLAMA
-class LLAMAGraph;
-typedef LLAMAGraph GraphWrapper;
 typedef uint32_t vid_t;
 typedef uint32_t esize_t;
-#endif
-#ifdef USE_SNAP
-class SNAPGraph;
-typedef SNAPGraph GraphWrapper;
+#elif USE_SNAP
 typedef int vid_t;
 typedef size_t esize_t;
 #endif

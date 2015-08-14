@@ -42,12 +42,11 @@ std::vector<vid_t> mpiSequence(GraphType const &graph) {
   vid_t local_max = graph.getMaxVid();
   MPI_Allreduce((void*)&local_max, (void*)&max_vid, 1, MPI_vid_t, MPI_MAX, MPI_COMM_WORLD);
 
-  esize_t *degree = (esize_t*)malloc((max_vid + 1) * sizeof(esize_t));
-  esize_t *local_degree = (esize_t*)calloc(max_vid + 1, sizeof(esize_t));
+  std::vector<esize_t> degree(max_vid + 1);
+  std::vector<esize_t> local_degree(max_vid + 1, 0);
   for (auto nitr = graph.getNodeItr(); !nitr.isEnd(); ++nitr)
     local_degree[*nitr] = graph.getDeg(*nitr);
-  MPI_Allreduce((void*)local_degree, (void*)degree, max_vid, MPI_esize_t, MPI_SUM, MPI_COMM_WORLD);
-  free(local_degree);
+  MPI_Allreduce((void*)local_degree.data(), (void*)degree.data(), max_vid, MPI_esize_t, MPI_SUM, MPI_COMM_WORLD);
   
   std::vector<vid_t> seq;
   for (vid_t X = 0; X != max_vid + 1; ++X)
@@ -61,7 +60,6 @@ std::vector<vid_t> mpiSequence(GraphType const &graph) {
     else
       return lhs < rhs;
   });
-  free(degree);
   return seq;
 }
 
@@ -73,7 +71,8 @@ std::vector<vid_t> fileSequence_template(char const *const filename) {
   std::vector<vid_t> degree;
   while(reader.read(X,Y)) {
     size_t const required_size = std::max(X,Y) + 1;
-    if (degree.size() < required_size) degree.resize(required_size);
+    if (degree.size() < required_size)
+      degree.resize(required_size, 0);
     degree[X] += 1;
     degree[Y] += 1;
   }
@@ -113,7 +112,6 @@ void writeBinarySequence(std::vector<vid_t> const &seq, char const *const filena
 
 std::vector<vid_t>  readBinarySequence(char const *const filename) {
   std::ifstream stream(filename, std::ios::binary);
-  //XXX Test if file exists.
 
   size_t size = 0;
   stream.read((char*)&size, sizeof(size_t));

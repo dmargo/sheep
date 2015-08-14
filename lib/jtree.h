@@ -16,9 +16,9 @@ private:
 public:
   JNodeTable jnodes; //The chordal embedding; indexed (labeled) by jnid_t.
 
-  inline size_t size() const { return jnodes.size(); }
-  
   inline jnid_t vid2jnid(vid_t X) const { return X < index.size() ? index[X] : INVALID_JNID; }
+
+  inline size_t size() const { return jnodes.size(); }
 
   inline std::vector<vid_t> get_sequence() const {
     std::vector<vid_t> seq(size());

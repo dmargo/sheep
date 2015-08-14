@@ -114,13 +114,13 @@ int main(int argc, char* argv[]) {
     MPI_Comm_size(MPI_COMM_WORLD, &size);
     num_parts = size;
   
-    // If using MPI and mmap together, make sure maps have different names.
+    // If using MPI and mmap, make sure maps have different names.
     if (!use_mpi_reduce && strcmp(output_filename, "") != 0) {
       char *const tmp_filename = (char*)malloc(strlen(output_filename) + 9);
       sprintf(tmp_filename, "%s%02dr0.tre", output_filename, rank);
       output_filename = tmp_filename;
     }
-    // If using MPI to output partitioning results, make sure outputs have different names.
+    // If using MPI to output partitions, make sure outputs have different names.
     else if (use_mpi_reduce && partitions != 0 && strcmp(output_filename, "") != 0) {
       char *const tmp_filename = (char*)malloc(strlen(output_filename) + 9);
       sprintf(tmp_filename, "%s-w%04d-p", output_filename, rank);
@@ -139,9 +139,12 @@ int main(int argc, char* argv[]) {
   if (is_leader) printf("Loaded graph in: %f seconds\n", load_duration.count() / 1000.0);
   
   std::vector<vid_t> seq =
-    use_mpi_sort ? mpiSequence(graph) :
-    strcmp(sequence_filename, "") != 0 ? readSequence(sequence_filename) :
-    degreeSequence(graph);
+    use_mpi_sort ?
+      mpiSequence(graph) :
+    strcmp(sequence_filename, "") != 0 ?
+      readSequence(sequence_filename) :
+    //else
+      degreeSequence(graph);
 
   if (use_mpi_sort && part == 1 && strcmp(sequence_filename, "") != 0)
     writeSequence(seq, sequence_filename);
@@ -151,16 +154,18 @@ int main(int argc, char* argv[]) {
   if (is_leader && (use_mpi_sort || strcmp(sequence_filename, "") == 0))
     printf("Sorted in: %f seconds\n", sort_duration.count() / 1000.0);
 
-  JTree tree = !use_mpi_reduce && strcmp(output_filename, "") != 0 ?
-    JTree(graph, seq, output_filename, jopts) :
-    JTree(graph, seq, jopts);
+  JTree tree =
+    !use_mpi_reduce && strcmp(output_filename, "") != 0 ?
+      JTree(graph, seq, output_filename, jopts) :
+    //else
+      JTree(graph, seq, jopts);
 
   auto map_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
       std::chrono::steady_clock::now() - start_point) - sort_duration - load_duration;
   if (is_leader) printf("Mapped in: %f seconds\n", map_duration.count() / 1000.0);
 
   if (use_mpi_reduce) {
-    tree.jnodes.mpi_merge();
+    tree.jnodes.mpi_merge(jopts.make_kids);
 
     auto reduce_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
         std::chrono::steady_clock::now() - start_point) - map_duration - sort_duration - load_duration;

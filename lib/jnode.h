@@ -65,11 +65,13 @@ public:
   
   ~JNodeTable();
 
-  void save(char const *filename);
 
+  void save(char const *filename);
   void merge(JNodeTable const &lhs, JNodeTable const &rhs, bool make_kids = false);
   void mpi_merge(bool make_kids = false);
+  template <bool make_kids>
   friend void mpi_merge_reduction(void *in, void *inout, int *len, MPI_Datatype *datatype);
+
 
   inline jnid_t size() const { return end_id; }
 
@@ -94,7 +96,6 @@ public:
     end_id--;
   }
  
-
 
   /* JNODE SET/GET/CONSTRUCTION HELPERS */
   inline jnid_t& parent(jnid_t id) { return nodes[id].parent; }
@@ -128,7 +129,6 @@ public:
       parent(kid) = id;
   }
   
-
 
   /* JDATA TABLE WRAPPERS */
   inline void newKids(jnid_t id, size_t max_size) { 
@@ -172,7 +172,6 @@ public:
   }
 
 
-
   inline void newPst(jnid_t id, size_t max_size) {
     size_t tmp = pst_data.newJData(max_size, true);
     assert(tmp == id);
@@ -189,7 +188,6 @@ public:
     #endif
     pst_data.shrinkJData(id);
   }
-
 
 
   inline void newJxn(jnid_t id, size_t max_size) {
@@ -229,7 +227,6 @@ public:
     return 1 + (id < jxn_data.size() ? jxn(id).size() : pst_weight(id));
   }
   
-
 
   /* JNODETABLE FAQS */
   inline void print(jnid_t id) const {

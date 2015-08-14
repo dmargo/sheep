@@ -132,9 +132,10 @@ public:
     return EdgeItr(G, X);
   }
 };
-#endif
+typedef LLAMAGraph GraphWrapper;
 
-#ifdef USE_SNAP
+
+#elif USE_SNAP
 #include <Snap.h>
 #undef max
 #undef min
@@ -240,5 +241,6 @@ public:
     return EdgeItr(G, X);
   }
 };
+typedef SNAPGraph GraphWrapper;
 #endif
 
