@@ -7,12 +7,13 @@ class FastUnionFind {
 protected:
   std::vector<T> parent;
   std::vector<char> rank;
-  //XXX The max value I've seen for rank is 8 on very large graphs.
-  //I believe it needs to kept separate from parent for alignment savings, though this is not? cache-optimal.
-  //It is also very sparse. However, it saves measurable time. Not sure what to trade-off.
+  //XXX If rank overflows it is NOT a correctness issue. It only affects performance.
+  //The maximum value I've seen for rank is 8 on very large graphs.
+  //I believe it needs to kept separate from parent for aligned space saving.
+  //It is also very sparse. However, it improves performance significantly.
 
   //XXX This is currently the innermost loop of the most basic algorithm.
-  //Like 9% of runtime is spent in std::vector::operator[]
+  //Like 9% of runtime is spent here in std::vector::operator[]
   inline T find_root(T const element) {
     assert (element < parent.size());
 

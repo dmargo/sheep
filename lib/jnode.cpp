@@ -70,17 +70,6 @@ JNodeTable::JNodeTable(char const *filename) :
   nodes = (JNode*)(nodes_map + sizeof(jnid_t));
 
   makeKids();
-
-  //XXX Currently there's nothing you can do with these, so why bother?
-  #if 0
-  pst_data = std::move(JDataTable<vid_t>(max_id, memory_limit));
-  jxn_data = std::move(JDataTable<vid_t>(max_id, memory_limit));
-
-  roots = UnionFind(max_id);
-  for (jnid_t id = 0; id < size(); ++id)
-    if (parent(id) != INVALID_JNID)
-      roots.unify(id, parent(id));
-  #endif
 }
 
 JNodeTable::JNodeTable(JNode *n, jnid_t end) :

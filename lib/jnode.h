@@ -85,13 +85,16 @@ public:
   inline void deleteJNode(jnid_t id) {
     assert(id == end_id - 1);
 
-    for (jnid_t const kid : kids(id)) {
-      parent(kid) = INVALID_JNID;
-      pre_weight(kid) = 0;
-    }
-    if (id < kid_data.size()) kid_data.deleteJData(id);
-    if (id < pst_data.size()) pst_data.deleteJData(id);
-    if (id < jxn_data.size()) jxn_data.deleteJData(id);
+    if (id < kid_data.size()) {
+      for (jnid_t const kid : kids(id)) {
+        parent(kid) = INVALID_JNID;
+        pre_weight(kid) = 0;
+      }
+      kid_data.deleteJData(id);}
+    if (id < pst_data.size())
+      pst_data.deleteJData(id);
+    if (id < jxn_data.size())
+      jxn_data.deleteJData(id);
 
     end_id--;
   }

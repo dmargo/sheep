@@ -164,21 +164,25 @@ public:
   }
 
   inline size_t newJData(size_t max_len, bool const requires_max = true) {
+    // If zero-length, use the dummy allocation (sparsifying).
     if (max_len == 0) {
       offsets.push_back(0);
       return size() - 1;
     }
 
+    // Check remaining space.
     if (alloc_max - alloc_end < SIZEOF_JDATA(DataType, 0))
       throw std::bad_alloc();
-    size_t const remaining = (alloc_max - alloc_end - SIZEOF_JDATA(DataType, 0)) / sizeof(DataType);
-    if (max_len > remaining) {
+    size_t const remaining_len =
+      (alloc_max - alloc_end - SIZEOF_JDATA(DataType, 0)) / sizeof(DataType);
+    if (max_len > remaining_len) {
       if (requires_max)
         throw std::bad_alloc();
       else
-        max_len = remaining;
+        max_len = remaining_len;
     }
 
+    // Do the allocation.
     offsets.push_back(alloc_end);
     new(allocation + alloc_end) JData<DataType>(max_len);
     alloc_end += SIZEOF_JDATA(DataType, max_len);

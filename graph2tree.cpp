@@ -173,6 +173,7 @@ int main(int argc, char* argv[]) {
   }
 
   if (partitions != 0) {
+    //XXX Unfortunate hack; Partition requires kids, which are normally made on-load.
     if (!use_mpi_reduce || part == 1)
       tree.jnodes.makeKids();
     Partition p = !use_mpi_reduce || part == 1 ?
