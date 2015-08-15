@@ -3,14 +3,16 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
 0. DEPENDENCIES
   cd ..
   git clone https://github.com/goatdb/llama.git
-  # You also need MPI.
+  # You also need some form of MPI library. I use openmpi.
+  # This code depends on MMAP and so is non-portable;
+  # we have a plan to change this if there is interest (contact dmargo).
 
 1. QUICK START
   make -j4
   ./scripts/dist-partition.sh
 
-2. USAGE: ./scripts/dist-partition.sh [options...] $GRAPH $NUM_PARTITIONS
-  $GRAPH may be a .dat (XSS/Graph500 binary) or .net (SNAP) file.
+2. USAGE: ./scripts/dist-partition.sh [options... -o $OUTPUT_FILE] $GRAPH $NUM_PARTITIONS
+  $GRAPH may be a .net (SNAP) or a .dat (XSS/Graph500 binary) file.
   There is a snap2xss conversion utility in llama/utils
   By default, $GRAPH = test/hep-th.dat and $NUM_PARTITIONS = 2
   If $NUM_PARTITIONS = 0, then we skip the partitioning phase.
@@ -20,6 +22,7 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
   -w (workers)  sets the number of distributed workers. By default, this is 2.
   -t (trials)   sets the number of trials to run. By default, this is 1.
   -s (sequence) processes the graph in the given vertex order. By default, this is degree sort order.
+  -o (output)   output the partitioned edges into appropriately-numbered files.
   -k (keep)     retains the partitioner's intermediate data. This is useful for debugging.
   -v (verbose)  gives verbose messages.
 
@@ -46,8 +49,12 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
       ./scripts/dist-partition.sh -w 64 -sir $GRAPH $NUM_PARTITIONS
 
 5. READING THE OUTPUT:
+  If you write out partitions, you will not get an evaluation.
+  This is because it is MUCH more expensive to evaluate the partitions than it is just to write them out.
+  In most real applications you will not want to bother with the evaluator unless your graph is small.
+
   By default, the evaluator reports ~EVERY POSSIBLE EVALUATION METRIC.~
-  This includes metrics that are irrelevant to your particular partitioning problem.
+  This includes metrics that are not relevant to your particular partitioning problem.
   If you are running scripts/dist-partition.sh, then the metrics you care about are ECV(down) and its balance.
 
   The evaluator reports vertex-balanced partitioning metrics, edge-balanced partitioning metrics via hashing,
@@ -68,13 +75,19 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
   The important binaries are graph2tree and partition_tree,
   and to a lesser extent degree_sequence and merge_trees.
   These binaries merely string together a few Sheep library calls; all of the real code is in lib/.
-  However, the easiest way to understand lib/ is to see how the code is used in these binaries.
+  However, the easiest way to understand lib/ is to see how the code is used by these binaries.
 
-  usage: graph2tree $GRAPH [-s $SEQUENCE] [-o $OUTPUT_TREE] [options...]
-    graph2tree converts a $GRAPH into a tree inorder $SEQUENCE and optionally writes the tree to $OUTPUT_TREE.
+  usage: graph2tree $GRAPH [-s $SEQUENCE] [-o $OUTPUT_FILE] [-p $NUM_PARTITIONS] [options...]
+    graph2tree converts a $GRAPH into a tree in order $SEQUENCE.
     By default, $SEQUENCE is the degree sequence of $GRAPH.
     If given, then $SEQUENCE must be an ascii file with one vertex identity per line.
-    The most useful option is -f. This will tell you many parameters of the output tree.
+    A useful option is -f: this will tell you many parameters of the resulting tree.
+
+    graph2tree may optionally write the tree to $OUTPUT_FILE
+    If $NUM_PARTITIONS is given, then graph2tree will write the partitions to $OUTPUT_FILE instead.
+    `mpirun -n $WORKERS ./graph2tree -ri $GRAPH -p $NUM_PARTITIONS -o $OUTPUT_FILE` is by far
+    the fastest way to generate partitions and write them out;
+    if you are looking to use Sheep for a high-performance application then this is what you need.
 
     By default graph2tree is serial, but it supports MPI through the -ir flags.
     Use -r for an MPI reduce. This is your bread-and-butter parallelism.
