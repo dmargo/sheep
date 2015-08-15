@@ -8,7 +8,12 @@ if [ $SEQ_FILE = '-' ]; then
   fi
 fi
 
+
+
 # MAP
+FAST_PART=$( [ $USE_MPI_REDUCE -eq $TRUE ] && [ "$OUT_FILE" != '' ] && [ "$PARTS" != 0 ] && \
+  echo $TRUE || echo $FALSE )
+
 if [ $USE_MPI_SORT -eq $FALSE ] && [ $USE_MPI_REDUCE -eq $FALSE ]; then
   echo "Loaded in 0.0 seconds."
   BEG=$(date +%s%N)
@@ -25,8 +30,14 @@ if [ $USE_MPI_SORT -eq $FALSE ] && [ $USE_MPI_REDUCE -eq $FALSE ]; then
 else
   MPI_SORT=$( [ $USE_MPI_SORT -eq $TRUE ] && echo '-i' || echo '')
   MPI_REDUCE=$( [ $USE_MPI_REDUCE -eq $TRUE ] && echo '-r' || echo '')
-  mpiexec -n $WORKERS ./graph2tree $GRAPH -s $SEQ_FILE -o ${PREFIX} $MPI_SORT $MPI_REDUCE $VERBOSE
+  if [ $FAST_PART -eq $TRUE ]; then
+    echo 'Using fast partition path...'
+    mpiexec -n $WORKERS ./graph2tree $GRAPH -s $SEQ_FILE -o $OUT_FILE -p $PARTS $MPI_SORT $MPI_REDUCE $VERBOSE
+  else
+    mpiexec -n $WORKERS ./graph2tree $GRAPH -s $SEQ_FILE -o $PREFIX $MPI_SORT $MPI_REDUCE $VERBOSE
+  fi
 fi
+
 
 
 # REDUCE
@@ -52,11 +63,13 @@ if [ $USE_MPI_REDUCE -eq $FALSE ]; then
   ELAPSED=$(echo "scale=8; ($END - $BEG) / 1000000000" | bc)
   echo "Reduced in $ELAPSED seconds."
   mv "${PREFIX}00r${STEP}.tre" "${PREFIX}.tre"
-else
+elif [ $FAST_PART -eq $FALSE ]; then
   mv $PREFIX "${PREFIX}.tre"
 fi
 
 
 
 # PARTITION
-source scripts/part-worker.sh
+if [ $FAST_PART -eq $FALSE ]; then
+  source scripts/part-worker.sh
+fi

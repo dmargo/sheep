@@ -183,7 +183,7 @@ int main(int argc, char* argv[]) {
     printf("Sorted in: %f seconds\n", sort_duration.count() / 1000.0);
 
   JTree tree =
-    !use_mpi_reduce && strcmp(output_filename, "") != 0 ?
+    !use_mpi_reduce && strcmp(output_filename, "") != 0 && partitions == 0 ?
       JTree(graph, seq, output_filename, jopts) :
     //else
       JTree(graph, seq, jopts);

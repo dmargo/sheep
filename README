@@ -86,7 +86,7 @@ THIS IS STUDENT-QUALITY CODE, SO SERIOUSLY, READ THE MANUAL.
     graph2tree may optionally write the tree to $OUTPUT_FILE
     If $NUM_PARTITIONS is given, then graph2tree will write the partitions to $OUTPUT_FILE instead.
     `mpirun -n $WORKERS ./graph2tree -ri $GRAPH -p $NUM_PARTITIONS -o $OUTPUT_FILE` is by far
-    the fastest way to generate partitions and write them out;
+    the fastest way to generate partitions and write them out for sufficiently large graphs.
     if you are looking to use Sheep for a high-performance application then this is what you need.
 
     By default graph2tree is serial, but it supports MPI through the -ir flags.

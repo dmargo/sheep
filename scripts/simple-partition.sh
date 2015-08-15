@@ -15,13 +15,14 @@ PARTS=${PARTS:-${@:-2}}
 
 cd $JTREE_HOME
 
-if [ $SEQ_FILE = '-' ]; then
-  ./graph2tree $GRAPH -o "${PREFIX}.tre" $VERBOSE
+USE_SEQ=$( [ $SEQ_FILE != '-' ] && echo "-s $SEQ_FILE" || echo '' )
+if [ "$OUT_FILE" != '' ] && [ "$PARTS" != '0' ]; then
+  echo 'Using fast partition path...'
+  ./graph2tree $GRAPH $USE_SEQ -o $OUT_FILE -p $PARTS $VERBOSE
+  echo "Reduced in 0.0 seconds."
 else
-  ./graph2tree $GRAPH -s $SEQ_FILE -o "${PREFIX}.tre" $VERBOSE
+  ./graph2tree $GRAPH $USE_SEQ -o "${PREFIX}.tre" $VERBOSE
+  echo "Reduced in 0.0 seconds"
+  source scripts/part-worker.sh
 fi
-
-echo "Reduced in 0.0 seconds."
-
-source scripts/part-worker.sh
 

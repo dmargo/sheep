@@ -21,7 +21,7 @@ if [ "$PARTS" != 0 ]; then
 
   BEG=$(date +%s%N)
 
-  if [ $OUT_FILE = '']; then
+  if [ "$OUT_FILE" = '' ]; then
     ./partition_tree -f -g $GRAPH $SEQ_FILE $INPUT_TREE $PARTS
   else
     ./partition_tree -f -g $GRAPH $SEQ_FILE $INPUT_TREE $PARTS -o $OUT_FILE
