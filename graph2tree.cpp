@@ -148,7 +148,7 @@ int main(int argc, char* argv[]) {
       sprintf(tmp_filename, "%s%02dr0.tre", output_filename, rank);
       output_filename = tmp_filename;
     }
-    // If using MPI to output partitions, make sure outputs have different names.
+    // Elif using MPI to output partitions, make sure outputs have different names.
     else if (use_mpi_reduce && partitions != 0 && strcmp(output_filename, "") != 0) {
       char *const tmp_filename = (char*)malloc(strlen(output_filename) + 9);
       sprintf(tmp_filename, "%s-w%04d-p", output_filename, rank);

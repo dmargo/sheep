@@ -160,7 +160,6 @@ JNodeTable::~JNodeTable() {
   }
 }
 
-
 void JNodeTable::save(char const *const filename) {
   std::ofstream stream(filename, std::ios::binary | std::ios::trunc);
   stream.write((char*)&end_id, sizeof(jnid_t));
@@ -200,16 +199,6 @@ void JNodeTable::merge(JNodeTable const &lhs, JNodeTable const &rhs, bool const 
   }
 }
 
-template <bool make_kids>
-void mpi_merge_reduction(void *in, void *inout, int *len, MPI_Datatype *datatype) {
-  JNodeTable lhs((JNodeTable::JNode*)in, *len);
-  JNodeTable rhs((JNodeTable::JNode*)inout, *len);
-
-  JNodeTable tmp(*len, make_kids, 0);
-  tmp.merge(lhs, rhs, make_kids);
-  memcpy(inout, tmp.nodes, sizeof(JNodeTable::JNode) * tmp.end_id);
-}
-
 void JNodeTable::mpi_merge(bool const make_kids)
 {
   MPI_Datatype MPI_jnid_t = sizeof(jnid_t) == 4 ? MPI_UINT32_T : MPI_UINT64_T;
@@ -231,7 +220,7 @@ void JNodeTable::mpi_merge(bool const make_kids)
 
   int rank;
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-  JNode *outbuf = rank != 0 ? nullptr : (JNode*)malloc(sizeof(JNode) * max_id);
+  JNode *outbuf = rank == 0 ? (JNode*)malloc(sizeof(JNode) * max_id) : nullptr;
 
   MPI_Op reduce_op;
   if (make_kids)
@@ -247,6 +236,16 @@ void JNodeTable::mpi_merge(bool const make_kids)
       memcpy(nodes, outbuf, sizeof(JNode) * end_id);
     free(outbuf);
   }
+}
+
+template <bool make_kids>
+void mpi_merge_reduction(void *in, void *inout, int *len, MPI_Datatype *datatype) {
+  JNodeTable lhs((JNodeTable::JNode*)in, *len);
+  JNodeTable rhs((JNodeTable::JNode*)inout, *len);
+
+  JNodeTable tmp(*len, make_kids, 0);
+  tmp.merge(lhs, rhs, make_kids);
+  memcpy(inout, tmp.nodes, sizeof(JNodeTable::JNode) * tmp.end_id);
 }
 
 

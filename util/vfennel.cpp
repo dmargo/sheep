@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
 
     auto partition_start = std::chrono::steady_clock::now();
 
-    Partition part(graph, seq, num_parts);
+    Partition part(graph, seq, num_parts);//, 1.03, false);
     part.print();
 
     auto partition_duration = std::chrono::duration_cast<std::chrono::milliseconds>(

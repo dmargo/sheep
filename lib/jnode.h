@@ -93,9 +93,8 @@ public:
   JNodeTable& operator=(JNodeTable const &other) = delete;
   
   ~JNodeTable();
-
-
   void save(char const *filename);
+
   void merge(JNodeTable const &lhs, JNodeTable const &rhs, bool make_kids = false);
   void mpi_merge(bool make_kids = false);
   template <bool make_kids>
