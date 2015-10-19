@@ -41,13 +41,13 @@ private:
 
 public:
   LLAMAGraph(char const *filename, size_t const part = 0, size_t const num_parts = 0,
-             bool const is_undirected = true) : database("./db/"), num_nodes(0)
+             bool const undirected = true) : database("./db/"), num_nodes(0)
   {
     ll_loader_config loader_config;
     loader_config.lc_no_properties = true;
     loader_config.lc_partial_load_part = part;
     loader_config.lc_partial_load_num_parts = num_parts;
-    if (is_undirected)
+    if (undirected)
       loader_config.lc_direction = LL_L_UNDIRECTED_DOUBLE;
     #ifdef DDUP_GRAPH
       loader_config.lc_deduplicate = true;

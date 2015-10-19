@@ -112,13 +112,19 @@ int main(int argc, char* argv[]) {
     jnodes.getFacts().print();
 
   /* SIMPLE PARTITIONING */
-  if (strcmp(graph_filename, "") == 0) {
+  if ((strcmp(graph_filename, "") == 0) && (strcmp(output_filename, "") == 0)) {
     std::vector<vid_t> seq = readSequence(argv[optind]);
     for (int i = optind + 2; i != argc; ++i) {
       short const num_parts = atoi(argv[optind + 2]);
       Partition part(seq, jnodes, num_parts, balance_factor, vtx_weight, pst_weight, pre_weight);
       part.print();
     }
+  }
+  /* PARTITION REORDERING */
+  else if (strcmp(graph_filename, "") == 0) {
+    std::vector<vid_t> seq = readSequence(argv[optind]);
+    std::vector<vid_t> result = partition_sequence(seq, jnodes, vtx_weight, pst_weight, pre_weight);
+    writeSequence(result, output_filename);
   }
   /* PARTITIONING AND EVALUATION */
   else if (strcmp(output_filename, "") == 0) {
@@ -159,7 +165,7 @@ int main(int argc, char* argv[]) {
     if (verbose) printf("Partitioning took: %f seconds\n", partition_duration.count() / 1000.0);
 
     part.print();
-    part.writePartitionedGraph(graph_filename, seq, output_filename);
+    part.writeIsomorphicGraph(graph_filename, seq, output_filename);
   }
 
   auto run_duration = std::chrono::duration_cast<std::chrono::milliseconds>(

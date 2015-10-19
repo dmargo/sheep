@@ -40,18 +40,22 @@
 #include "jnode.h"
 #include "readerwriter.h"
 
-typedef short part_t;
-#define INVALID_PART (part_t)-1
+
+std::vector<vid_t> partition_sequence(std::vector<jnid_t> const &seq, JNodeTable &jnodes,
+    bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false);
+
 
 class Partition {
 public:
+  typedef short part_t;
+  #define INVALID_PART (part_t)-1
   std::vector<part_t> parts;
   part_t num_parts;
 
   Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
       double balance_factor = 1.03, bool vtx_weight = false, bool pst_weight = true, bool pre_weight = false);
 
-  inline Partition() : parts(), num_parts() {}
+  Partition() : parts(), num_parts() {}
 
   inline Partition(std::vector<jnid_t> const &seq, char const *filename) : parts(), num_parts()
   {

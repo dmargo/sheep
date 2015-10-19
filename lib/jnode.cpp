@@ -238,6 +238,7 @@ void JNodeTable::mpi_merge(bool const make_kids)
   }
 }
 
+// MPI_Ops can't take additional arguments; this template is a pseudo-argument.
 template <bool make_kids>
 void mpi_merge_reduction(void *in, void *inout, int *len, MPI_Datatype *datatype) {
   JNodeTable lhs((JNodeTable::JNode*)in, *len);

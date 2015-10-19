@@ -47,6 +47,45 @@ size_t get_weight(JNodeTable const &jnodes, jnid_t id,
   return result;
 }
 
+std::vector<vid_t> partition_sequence(std::vector<jnid_t> const &seq, JNodeTable &jnodes,
+    bool vtx_weight, bool pst_weight, bool pre_weight)
+{
+  std::vector<size_t> component_below(jnodes.size(), 0);
+  std::vector<jnid_t> roots;
+
+  for (jnid_t id = 0; id != jnodes.size(); ++id) {
+    component_below.at(id) += get_weight(jnodes, id, vtx_weight, pst_weight, pre_weight);
+    if (jnodes.parent(id) != INVALID_JNID)
+      component_below.at(jnodes.parent(id)) += component_below.at(id);
+    else
+      roots.push_back(id);
+  }
+  std::sort(roots.begin(), roots.end(),
+  [&component_below](const jnid_t lhs, const jnid_t rhs) -> bool
+    { return component_below.at(lhs) > component_below.at(rhs); });
+  // Now the smallest roots are at the back, so it's a smallest-first stack.
+
+  std::vector<vid_t> result;
+  result.reserve(jnodes.size());
+  while (!roots.empty()) {
+    jnid_t const id = roots.back(); roots.pop_back();
+    result.push_back(seq.at(id));
+
+    std::sort(jnodes.kids(id).begin(), jnodes.kids(id).end(),
+    [&component_below](jnid_t const lhs, jnid_t const rhs) {
+      return component_below.at(lhs) > component_below.at(rhs); });
+    for (jnid_t const kid : jnodes.kids(id))
+      roots.push_back(kid);
+    // Again, the smallest roots end up at the back, so they're retrieved first.
+  }
+
+  // DFS puts the "top" of the tree at the beginning, so reverse.
+  std::reverse(result.begin(), result.end());
+  return result;
+}
+
+
+
 Partition::Partition(std::vector<jnid_t> const &seq, JNodeTable &jnodes, part_t np,
     double balance_factor, bool vtx_weight, bool pst_weight, bool pre_weight) :
   parts(jnodes.size(), INVALID_PART), num_parts(np)

@@ -115,6 +115,7 @@ public:
 
     if (id < kid_data.size()) {
       for (jnid_t const kid : kids(id)) {
+        //assert(id != roots.find(kid)); // Expensive, but asserts adopt() has not been called.
         parent(kid) = INVALID_JNID;
         pre_weight(kid) = 0;
       }
