@@ -27,6 +27,9 @@ graph2adj: graph2adj.cpp $(DEPCPP) $(DEPH)
 read_partition: read_partition.cpp $(DEPCPP) $(DEPH) 
 	$(CC) $(CXXFLAGS) $(DEPPATH) -o read_partition read_partition.cpp $(LDFLAGS) $(LIBS)
 	
+transform: transform.cpp $(DEPCPP) $(DEPH) 
+	$(CC) $(CXXFLAGS) $(DEPPATH) -o transform transform.cpp $(LDFLAGS) $(LIBS)
+
 tree2adj: tree2adj.cpp $(DEPCPP) $(DEPH) 
 	$(CC) $(CXXFLAGS) $(DEPPATH) -o tree2adj tree2adj.cpp $(LDFLAGS) $(LIBS)
 

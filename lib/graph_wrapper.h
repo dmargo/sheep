@@ -88,6 +88,10 @@ public:
     return G->out_degree(X);   
   }
 
+  // XXX
+  // This is broken for directed graphs and nodes with only in-edges.
+  // This is not a problem in my partitioner code, which uses undirected graphs only.
+  // However I would like to fix it for future code; I am not sure of the best way.
   class NodeItr {
   private:
     ll_mlcsr_ro_graph *const G;

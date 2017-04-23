@@ -38,10 +38,15 @@
 #include <unistd.h>
 
 #include <defs.h>
+#ifndef DDUP_GRAPH
+  #define DDUP_GRAPH
+#endif
 #include <graph_wrapper.h>
 #include <jnode.h>
 #include <jtree.h>
 #include <sequence.h>
+
+
 
 uint64_t unary_length(uint64_t x) {
   return x; // x - 1 zeros + 1 one
@@ -160,7 +165,7 @@ void sequence_gaps(GraphWrapper const &graph, std::vector<vid_t> const &seq,
       vid_t const Y = *eitr;
       size_t const Y_pos = pos.at(Y);
 
-      if (!forward_only || X_pos < Y_pos)
+      if (X_pos != Y_pos || (forward_only && X_pos < Y_pos))
         *(buf_itr++) = Y_pos;
     }
     if (buf_itr != buf.begin()) {
@@ -174,13 +179,18 @@ void sequence_gaps(GraphWrapper const &graph, std::vector<vid_t> const &seq,
       size_t const initial_gap = pinned_pos <= X_pos ?
         gap_between(pinned_pos, X_pos) :
         gap_between(X_pos, pinned_pos);
+      assert(initial_gap != 0);
       gap_count.at(initial_gap) += 1;
-      for (size_t i = 1; i != buf_size; ++i)
-        gap_count.at(gap_between(buf.at(i-1), buf.at(i))) += 1;
+      for (size_t i = 1; i != buf_size; ++i) {
+        size_t const this_gap = gap_between(buf.at(i-1), buf.at(i));
+        assert(this_gap != 0);
+        gap_count.at(this_gap) += 1;
+      }
     }
   }
 
-  evaluate_gaps(gap_count);
+  assert(gap_count.at(0) == 0);
+  evaluate_gaps(gap_count, false);
 }
 
 void tree_gaps(GraphWrapper const &graph, JTree const &tree,
@@ -206,7 +216,7 @@ void tree_gaps(GraphWrapper const &graph, JTree const &tree,
       vid_t const Y = *eitr;
       jnid_t const Y_pos = tree.vid2jnid(Y);
 
-      if (!forward_only || X_pos < Y_pos)
+      if (X_pos != Y_pos || (forward_only && X_pos < Y_pos))
         *(buf_itr++) = Y_pos;
     }
     if (buf_itr != buf.begin()) {
@@ -232,13 +242,18 @@ void tree_gaps(GraphWrapper const &graph, JTree const &tree,
       size_t const initial_gap = pinned_pos <= X_pos ?
         gap_between(pinned_pos, X_pos) :
         gap_between(X_pos, pinned_pos);
+      assert(initial_gap != 0);
       gap_count.at(initial_gap) += 1;
-      for (size_t i = 1; i != buf_size; ++i)
-        gap_count.at(gap_between(buf.at(i-1), buf.at(i))) += 1;
+      for (size_t i = 1; i != buf_size; ++i) {
+        size_t const this_gap = gap_between(buf.at(i-1), buf.at(i));
+        assert(this_gap != 0);
+        gap_count.at(this_gap) += 1;
+      }
     }
   }
 
-  evaluate_gaps(gap_count);
+  assert(gap_count.at(0) == 0);
+  evaluate_gaps(gap_count, false);
 }
 
 void tree_cost(JTree const &tree) {
@@ -298,6 +313,7 @@ int main(int argc, char* argv[]) {
   auto start_point = std::chrono::steady_clock::now();
 
   GraphWrapper graph(graph_filename, 0,0, undirected);
+  printf("Nodes:%zu Edges:%zu\n", graph.getNodes(), graph.getEdges());
 
   auto load_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
       std::chrono::steady_clock::now() - start_point);
@@ -305,7 +321,7 @@ int main(int argc, char* argv[]) {
 
   std::vector<vid_t> seq = strcmp(seq_filename, "") != 0 ?
     readSequence(seq_filename) :
-    defaultSequence(graph);
+    identitySequence(graph);
 
   if (strcmp(tree_filename, "") == 0) {
     sequence_gaps(graph, seq, forward_only, mode);

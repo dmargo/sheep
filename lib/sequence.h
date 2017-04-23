@@ -31,6 +31,7 @@
 
 #include <algorithm>
 #include <fstream>
+#include <numeric>
 #include <vector>
 
 #include <mpi.h>
@@ -40,6 +41,13 @@
 #include "readerwriter.h"
 
 /* SEQUENCE CONSTRUCTORS */
+template <typename GraphType>
+std::vector<vid_t> identitySequence(GraphType const &graph) {
+  std::vector<vid_t> seq(graph.getMaxVid());
+  std::iota(seq.begin(), seq.end(), 0);
+  return seq;
+}
+
 template <typename GraphType>
 std::vector<vid_t> defaultSequence(GraphType const &graph) {
   std::vector<vid_t> seq;

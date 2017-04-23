@@ -2,6 +2,7 @@ efennel
 gaps
 graph2adj
 read_partition
+transform
 tree2adj
 tree2dot
 vfennel
