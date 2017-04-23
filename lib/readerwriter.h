@@ -83,7 +83,7 @@ public:
     stream(filename) {}
 
   bool read(vid_t &X, vid_t &Y) {
-    bool result = (stream >> X);
+    bool result = (bool) (stream >> X);
     result &= (bool) (stream >> Y);
     return result;
   }
